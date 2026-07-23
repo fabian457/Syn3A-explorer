@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JCVI-syn3A Genome Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>JCVI-syn3A Genome Explorer</h1>
+    <p class="subtitle">
+      Hover the illustration to explore the minimal cell's contents. Click a shape to select it and
+      see what gene(s) encode it. Illustration by David Goodsell.
+    </p>
+  </header>
+
+  <main>
+    <div class="content-row">
+      <div id="illustration-stage" class="illustration-stage">
+        <img id="baseImg" src="assets/syn3A-grey.png" alt="Goodsell illustration of JCVI-syn3A, greyscale" />
+        <canvas id="colorCanvas" width="5612" height="3748"></canvas>
+        <canvas id="dimCanvas" width="5612" height="3748"></canvas>
+        <canvas id="selectionCanvas" width="5612" height="3748"></canvas>
+      </div>
+
+      <aside id="detail-panel" class="detail-panel is-empty">
+        <button id="detail-close" class="detail-close" aria-label="Close">&times;</button>
+        <p id="detail-placeholder" class="detail-placeholder">
+          Hover or click a shape in the illustration to learn about it.
+        </p>
+        <h2 id="detail-name"></h2>
+        <p id="detail-fullname" class="detail-fullname"></p>
+        <p id="detail-description" class="detail-description"></p>
+
+        <h3>Loci</h3>
+        <table class="detail-loci">
+          <thead>
+            <tr><th>Locus tag</th><th>Gene</th><th>Coordinates</th></tr>
+          </thead>
+          <tbody id="detail-loci-body"></tbody>
+        </table>
+
+        <h3>Links</h3>
+        <ul id="detail-links" class="detail-links"></ul>
+      </aside>
+    </div>
+
+    <section class="genome-track-section">
+      <h2>Genome</h2>
+      <svg id="genome-track" class="genome-track" preserveAspectRatio="none"></svg>
+    </section>
+  </main>
+
+  <div id="tooltip" class="tooltip hidden"></div>
+
+  <script src="data/products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

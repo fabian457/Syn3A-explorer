@@ -1,0 +1,5570 @@
+[
+  {
+    "displayName": "Chromosomal replication initiator protein dnaA",
+    "labelLocusNumber": "0001",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0001",
+        "gene": "dnaA",
+        "annotation": "Chromosomal replication initiator protein",
+        "start": 1,
+        "end": 1353,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "DNA polymerase",
+    "labelLocusNumber": "0002",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0002",
+        "gene": "dnaN",
+        "annotation": "DNA polymerase III subunit beta",
+        "start": 1511,
+        "end": 2638,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0044",
+        "gene": "holA",
+        "annotation": "DNA polymerase III subunit delta",
+        "start": 40049,
+        "end": 40789,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0047",
+        "gene": "dnaX",
+        "annotation": "DNA polymerase III subunit gamma and tau",
+        "start": 42003,
+        "end": 44009,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0303",
+        "gene": "polC",
+        "annotation": "PolC-type DNA polymerase III",
+        "start": 183022,
+        "end": 187470,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0406",
+        "gene": "dnaG",
+        "annotation": "DNA primase",
+        "start": 251740,
+        "end": 253578,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0608",
+        "gene": "dnaI",
+        "annotation": "Primosomal protein",
+        "start": 373389,
+        "end": 374327,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0609",
+        "gene": "dnaB",
+        "annotation": "Chromosome replication initiation protein",
+        "start": 374337,
+        "end": 375521,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0612",
+        "gene": "dnaE",
+        "annotation": "DNA polymerase III subunit alpha",
+        "start": 379257,
+        "end": 382220,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0695",
+        "gene": "pcrA",
+        "annotation": "ATP-dependent DNA helicase",
+        "start": 433800,
+        "end": 435968,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0826",
+        "gene": "yqeN",
+        "annotation": "DNA polymerase III subunit delta",
+        "start": 503314,
+        "end": 504264,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0834",
+        "gene": "dnaC",
+        "annotation": "Replicative DNA helicase",
+        "start": 509138,
+        "end": 510454,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribonuclease M5",
+    "labelLocusNumber": "0003",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0003",
+        "gene": "rnmV",
+        "annotation": "Ribonuclease M5",
+        "start": 2675,
+        "end": 3217,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "16S rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))-dimethyltransferase",
+    "labelLocusNumber": "0004",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0004",
+        "gene": "ksgA",
+        "annotation": "16S rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))- dimethyltransferase",
+        "start": 3207,
+        "end": 4007,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "DNA gyrase",
+    "labelLocusNumber": "0006",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0006",
+        "gene": "gyrB",
+        "annotation": "DNA gyrase subunit B",
+        "start": 5515,
+        "end": 7419,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0007",
+        "gene": "gyrA",
+        "annotation": "DNA gyrase subunit A",
+        "start": 7435,
+        "end": 9939,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribose/galactose ABC transporter",
+    "labelLocusNumber": "0008",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0008",
+        "gene": "rnsD; uptD",
+        "annotation": "Nucleoside ABC transporter permease",
+        "start": 9991,
+        "end": 10968,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0009",
+        "gene": "rnsC; uptD",
+        "annotation": "Nucleoside ABC transporter permease",
+        "start": 10968,
+        "end": 13535,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0010",
+        "gene": "rnsA; uptA",
+        "annotation": "Nucleoside ABC transporter ATP-binding protein",
+        "start": 13525,
+        "end": 15141,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0011",
+        "gene": "rnsB; uptB",
+        "annotation": "Nucleoside ABC transporter substrate-binding protein",
+        "start": 15153,
+        "end": 16799,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Nucleoside ABC transporter substrate-binding",
+    "labelLocusNumber": "0011",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0011",
+        "gene": "rnsB; uptB",
+        "annotation": "Nucleoside ABC transporter substrate-binding protein",
+        "start": 15153,
+        "end": 16799,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Methionine--tRNA ligase",
+    "labelLocusNumber": "0012",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0012",
+        "gene": "metRS",
+        "annotation": "Methionine--tRNA ligase",
+        "start": 16986,
+        "end": 18515,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "30S ribosome",
+    "labelLocusNumber": "0025",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0025",
+        "gene": "rpsR",
+        "annotation": "30S ribosomal protein S18",
+        "start": 22769,
+        "end": 22996,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0027",
+        "gene": "rpsF",
+        "annotation": "30S ribosomal protein S6",
+        "start": 23468,
+        "end": 23881,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0082",
+        "gene": "rpsT",
+        "annotation": "30S ribosomal protein S20",
+        "start": 63285,
+        "end": 63530,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0148",
+        "gene": "rpsL",
+        "annotation": "30S ribosomal protein S12",
+        "start": 100119,
+        "end": 100538,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0149",
+        "gene": "rpsG",
+        "annotation": "30S ribosomal protein S7",
+        "start": 100625,
+        "end": 101092,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0238",
+        "gene": "rpsD",
+        "annotation": "30S ribosomal protein S4",
+        "start": 146578,
+        "end": 147204,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0294",
+        "gene": "rpsO",
+        "annotation": "30S ribosomal protein S15",
+        "start": 176397,
+        "end": 176663,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0362",
+        "gene": "rpsP",
+        "annotation": "30S ribosomal protein S16",
+        "start": 214180,
+        "end": 214458,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0482",
+        "gene": "rpsU",
+        "annotation": "30S ribosomal protein S21",
+        "start": 311391,
+        "end": 311555,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0540",
+        "gene": "rpsB",
+        "annotation": "30S ribosomal protein S2",
+        "start": 349834,
+        "end": 350712,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0637",
+        "gene": "rpsI",
+        "annotation": "30S ribosomal protein S9",
+        "start": 395531,
+        "end": 395929,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0646",
+        "gene": "rpsK",
+        "annotation": "30S ribosomal protein S11",
+        "start": 406105,
+        "end": 406494,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0647",
+        "gene": "rpsM",
+        "annotation": "30S ribosomal protein S13",
+        "start": 406520,
+        "end": 406885,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0654",
+        "gene": "rpsE",
+        "annotation": "30S ribosomal protein S5",
+        "start": 410768,
+        "end": 411532,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0657",
+        "gene": "rpsH",
+        "annotation": "30S ribosomal protein S8",
+        "start": 412483,
+        "end": 412872,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0658",
+        "gene": "rpsN",
+        "annotation": "30S ribosomal protein S14",
+        "start": 412892,
+        "end": 413077,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0662",
+        "gene": "rpsQ",
+        "annotation": "30S ribosomal protein S17",
+        "start": 414381,
+        "end": 414641,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0665",
+        "gene": "rpsC",
+        "annotation": "30S ribosomal protein S3",
+        "start": 415470,
+        "end": 416171,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0667",
+        "gene": "rpsS",
+        "annotation": "30S ribosomal protein S19",
+        "start": 416548,
+        "end": 416814,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0672",
+        "gene": "rpsJ",
+        "annotation": "30S ribosomal protein S10",
+        "start": 419409,
+        "end": 419717,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Single-stranded DNA-binding protein",
+    "labelLocusNumber": "0026",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0026",
+        "gene": "priB",
+        "annotation": "Single-stranded DNA-binding protein",
+        "start": 23016,
+        "end": 23456,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized FMN-dependent NADH-azoreductase",
+    "labelLocusNumber": "0029",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0029",
+        "gene": null,
+        "annotation": "Uncharacterized FMN-dependent NADH-azoreductase",
+        "start": 24273,
+        "end": 24872,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized ABC transporter",
+    "labelLocusNumber": "0030",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0030",
+        "gene": null,
+        "annotation": "Uncharacterized ABC transporter ATP-binding protein",
+        "start": 24909,
+        "end": 25943,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized ABC transporter",
+    "labelLocusNumber": "0034",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0034",
+        "gene": null,
+        "annotation": "Uncharacterized efflux ABC transporter permease",
+        "start": 29509,
+        "end": 34896,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0033",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0033",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 26204,
+        "end": 29362,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Membrane anchored AAA+ protease ftsH",
+    "labelLocusNumber": "0039",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0039",
+        "gene": "ftsH",
+        "annotation": "Membrane anchored AAA+ protease",
+        "start": 35062,
+        "end": 37008,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "tRNA lysidine(34) synthetase",
+    "labelLocusNumber": "0040",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0040",
+        "gene": "tilS",
+        "annotation": "tRNA lysidine(34) synthetase",
+        "start": 37240,
+        "end": 38445,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized transcriptional regulator",
+    "labelLocusNumber": "0042",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0042",
+        "gene": null,
+        "annotation": "Uncharacterized transcriptional regulator",
+        "start": 38448,
+        "end": 39275,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized methyltransferase",
+    "labelLocusNumber": "0043",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0043",
+        "gene": "yabD",
+        "annotation": "Uncharacterized methyltransferase",
+        "start": 39327,
+        "end": 40049,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "dTMP kinase",
+    "labelLocusNumber": "0045",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0045",
+        "gene": "tmk",
+        "annotation": "dTMP kinase",
+        "start": 40767,
+        "end": 41408,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Recombination protein recR",
+    "labelLocusNumber": "0046",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0046",
+        "gene": "recR",
+        "annotation": "Recombination protein",
+        "start": 41411,
+        "end": 42001,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized peroxiredoxin",
+    "labelLocusNumber": "0054",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0054",
+        "gene": "ahpC",
+        "annotation": "Uncharacterized peroxiredoxin",
+        "start": 45293,
+        "end": 45742,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0060",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0060",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 46274,
+        "end": 47098,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Serine--tRNA ligase",
+    "labelLocusNumber": "0061",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0061",
+        "gene": "serRS",
+        "annotation": "Serine--tRNA ligase",
+        "start": 47181,
+        "end": 48449,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized tRNA dihydrouridine synthase",
+    "labelLocusNumber": "0063",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0063",
+        "gene": "dusB",
+        "annotation": "Uncharacterized tRNA dihydrouridine synthase",
+        "start": 48559,
+        "end": 49533,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Lysine--tRNA ligase",
+    "labelLocusNumber": "0064",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0064",
+        "gene": "lysRS",
+        "annotation": "Lysine--tRNA ligase",
+        "start": 49536,
+        "end": 51038,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Thioredoxin",
+    "labelLocusNumber": "0065",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0065",
+        "gene": "trxA",
+        "annotation": "Thioredoxin",
+        "start": 51128,
+        "end": 51436,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Low specificity hydrolase",
+    "labelLocusNumber": "0066",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0066",
+        "gene": null,
+        "annotation": "Low specificity hydrolase",
+        "start": 51447,
+        "end": 52289,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Asparagine--tRNA ligase",
+    "labelLocusNumber": "0076",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0076",
+        "gene": "asnRS",
+        "annotation": "Asparagine--tRNA ligase",
+        "start": 58156,
+        "end": 59520,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized hydrolase",
+    "labelLocusNumber": "0077",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0077",
+        "gene": null,
+        "annotation": "Uncharacterized hydrolase",
+        "start": 59529,
+        "end": 60368,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "tRNA (N6-adenosine(37)-N6)-threonylcarbamoyltransferase complex",
+    "labelLocusNumber": "0079",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0079",
+        "gene": "tsaD",
+        "annotation": "tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex transferase subunit D",
+        "start": 60404,
+        "end": 61360,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0144",
+        "gene": "tsaC",
+        "annotation": "tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex transferase subunit",
+        "start": 96001,
+        "end": 96501,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0270",
+        "gene": "tsaE; yjeE",
+        "annotation": "tRNA (N6-adenosine(37)-N6)-threonylcarbamoyltransferase complex ATPase",
+        "start": 164055,
+        "end": 164471,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0271",
+        "gene": "tsaB; yeaZ",
+        "annotation": "tRNA N6-adenosine(37)-N6-threonylcarbamoyltransferase complex dimerization subunit",
+        "start": 164473,
+        "end": 165036,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0080",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0080",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 61455,
+        "end": 61676,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "tRNA uridine 5-carboxymethylaminomethyl modification enzyme",
+    "labelLocusNumber": "0081",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0081",
+        "gene": "mnmE; trmE",
+        "annotation": "tRNA uridine(34) 5-carboxymethylaminomethyl synthesis GTPase",
+        "start": 61876,
+        "end": 63234,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0434",
+        "gene": "rlmFO",
+        "annotation": "23S rRNA (uridine(1939)-m5)-methyltransferase",
+        "start": 284461,
+        "end": 285777,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0094",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0094",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 63664,
+        "end": 64380,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Preprotein translocase subunit A",
+    "labelLocusNumber": "0095",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0095",
+        "gene": "secA",
+        "annotation": "Preprotein translocase subunit A",
+        "start": 64495,
+        "end": 67329,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized 5'-3' exonuclease",
+    "labelLocusNumber": "0097",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0097",
+        "gene": "yycJ",
+        "annotation": "Uncharacterized 5'-3' exonuclease",
+        "start": 67494,
+        "end": 68405,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Exodeoxyribonuclease VII",
+    "labelLocusNumber": "0105",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0105",
+        "gene": "xseB",
+        "annotation": "Exodeoxyribonuclease VII small subunit",
+        "start": 68809,
+        "end": 69024,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0106",
+        "gene": "xseA",
+        "annotation": "Exodeoxyribonuclease VII large subunit",
+        "start": 69014,
+        "end": 70423,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Transcription antitermination factor",
+    "labelLocusNumber": "0107",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0107",
+        "gene": "nusB",
+        "annotation": "Transcription antitermination factor",
+        "start": 70425,
+        "end": 70823,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized lipoprotein",
+    "labelLocusNumber": "0108",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0108",
+        "gene": null,
+        "annotation": "Uncharacterized lipoprotein",
+        "start": 70835,
+        "end": 71947,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Deoxyribonuclease IV",
+    "labelLocusNumber": "0109",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0109",
+        "gene": null,
+        "annotation": "Deoxyribonuclease IV",
+        "start": 71973,
+        "end": 72842,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Glycolipid synthase A",
+    "labelLocusNumber": "0113",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0113",
+        "gene": "bcsA",
+        "annotation": "Glycolipid synthase A",
+        "start": 73088,
+        "end": 74437,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Glycolipid synthase B",
+    "labelLocusNumber": "0114",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0114",
+        "gene": "bcsB; cps",
+        "annotation": "Glycolipid synthase B",
+        "start": 74511,
+        "end": 75431,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "UTP--glucose-1-phosphate uridylyltransferase",
+    "labelLocusNumber": "0115",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0115",
+        "gene": "galU; gtaB",
+        "annotation": "UTP--glucose-1-phosphate uridylyltransferase",
+        "start": 75879,
+        "end": 76751,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Acyl-phosphate glycerol 3-phosphate acyltransferase",
+    "labelLocusNumber": "0117",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0117",
+        "gene": "plsY",
+        "annotation": "Acyl-phosphate glycerol 3-phosphate acyltransferase",
+        "start": 77446,
+        "end": 78207,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Glutamate--tRNA ligase",
+    "labelLocusNumber": "0126",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0126",
+        "gene": "gluRS",
+        "annotation": "Glutamate--tRNA ligase",
+        "start": 78403,
+        "end": 79854,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized phosphohydrolase",
+    "labelLocusNumber": "0127",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0127",
+        "gene": null,
+        "annotation": "Uncharacterized phosphohydrolase",
+        "start": 79857,
+        "end": 81071,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "RNA polymerase",
+    "labelLocusNumber": "0128",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0128",
+        "gene": "rpoE",
+        "annotation": "DNA-directed RNA polymerase subunit delta",
+        "start": 81097,
+        "end": 81525,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0407",
+        "gene": "rpoD",
+        "annotation": "RNA polymerase subunit sigma",
+        "start": 253581,
+        "end": 255101,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0645",
+        "gene": "rpoA",
+        "annotation": "DNA-directed RNA polymerase subunit alpha",
+        "start": 405148,
+        "end": 406101,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0803",
+        "gene": "rpoC",
+        "annotation": "DNA-directed RNA polymerase subunit beta'",
+        "start": 475872,
+        "end": 479639,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0804",
+        "gene": "rpoB",
+        "annotation": "DNA-directed RNA polymerase subunit beta",
+        "start": 479651,
+        "end": 483526,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "CTP synthase",
+    "labelLocusNumber": "0129",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0129",
+        "gene": "pyrG",
+        "annotation": "CTP synthase",
+        "start": 81617,
+        "end": 83215,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Fructose-1,6-bisphosphate aldolase",
+    "labelLocusNumber": "0131",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0131",
+        "gene": "fbaA",
+        "annotation": "Fructose-1,6-bisphosphate aldolase",
+        "start": 83504,
+        "end": 84397,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Toxin-antitoxin AAA ATPase",
+    "labelLocusNumber": "0132",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0132",
+        "gene": "ietA",
+        "annotation": "Toxin-antitoxin AAA ATPase",
+        "start": 84546,
+        "end": 85607,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Toxin-antitoxin serine protease",
+    "labelLocusNumber": "0133",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0133",
+        "gene": "ietS",
+        "annotation": "Toxin-antitoxin serine protease",
+        "start": 85600,
+        "end": 87873,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "50S ribosome",
+    "labelLocusNumber": "0137",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0137",
+        "gene": "rpmE",
+        "annotation": "50S ribosomal protein L31",
+        "start": 88733,
+        "end": 89011,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0198",
+        "gene": "rplT",
+        "annotation": "50S ribosomal protein L20",
+        "start": 124254,
+        "end": 124613,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0199",
+        "gene": "rpmI",
+        "annotation": "50S ribosomal protein L35",
+        "start": 124632,
+        "end": 124823,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0365",
+        "gene": "rplS",
+        "annotation": "50S ribosomal protein L19",
+        "start": 215710,
+        "end": 216093,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0422",
+        "gene": "rpmB",
+        "annotation": "50S ribosomal protein L28",
+        "start": 274322,
+        "end": 274519,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0499",
+        "gene": "rpmA",
+        "annotation": "50S ribosomal protein L27",
+        "start": 316629,
+        "end": 316910,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0501",
+        "gene": "rplU",
+        "annotation": "50S ribosomal protein L21",
+        "start": 317229,
+        "end": 317531,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0526",
+        "gene": "rpmF",
+        "annotation": "50S ribosomal protein L32",
+        "start": 335295,
+        "end": 335474,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0638",
+        "gene": "rplM",
+        "annotation": "50S ribosomal protein L13",
+        "start": 395929,
+        "end": 396384,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0644",
+        "gene": "rplQ",
+        "annotation": "50S ribosomal protein L17",
+        "start": 404769,
+        "end": 405128,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0648",
+        "gene": "rpmJ",
+        "annotation": "50S ribosomal protein L36",
+        "start": 406922,
+        "end": 407035,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0653",
+        "gene": "rplO",
+        "annotation": "50S ribosomal protein L15",
+        "start": 410312,
+        "end": 410749,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0655",
+        "gene": "rplR",
+        "annotation": "50S ribosomal protein L18",
+        "start": 411551,
+        "end": 411901,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0656",
+        "gene": "rplF",
+        "annotation": "50S ribosomal protein L6",
+        "start": 411927,
+        "end": 412469,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0659",
+        "gene": "rplE",
+        "annotation": "50S ribosomal protein L5",
+        "start": 413096,
+        "end": 413638,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0660",
+        "gene": "rplX",
+        "annotation": "50S ribosomal protein L24",
+        "start": 413657,
+        "end": 413983,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0661",
+        "gene": "rplN",
+        "annotation": "50S ribosomal protein L14",
+        "start": 413997,
+        "end": 414365,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0663",
+        "gene": "rpmC",
+        "annotation": "50S ribosomal protein L29",
+        "start": 414638,
+        "end": 415054,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0664",
+        "gene": "rplP",
+        "annotation": "50S ribosomal protein L16",
+        "start": 415054,
+        "end": 415467,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0666",
+        "gene": "rplV",
+        "annotation": "50S ribosomal protein L22",
+        "start": 416189,
+        "end": 416524,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0668",
+        "gene": "rplB",
+        "annotation": "50S ribosomal protein L2",
+        "start": 416836,
+        "end": 417684,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0669",
+        "gene": "rplW",
+        "annotation": "50S ribosomal protein L23",
+        "start": 417739,
+        "end": 418023,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0670",
+        "gene": "rplD",
+        "annotation": "50S ribosomal protein L4",
+        "start": 418023,
+        "end": 418649,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0671",
+        "gene": "rplC",
+        "annotation": "50S ribosomal protein L3",
+        "start": 418662,
+        "end": 419333,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0806",
+        "gene": "rplG",
+        "annotation": "50S ribosomal protein L7/L12",
+        "start": 484862,
+        "end": 485230,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0807",
+        "gene": "rplJ",
+        "annotation": "50S ribosomal protein L10",
+        "start": 485299,
+        "end": 485796,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0809",
+        "gene": "rplA",
+        "annotation": "50S ribosomal protein L1",
+        "start": 486023,
+        "end": 486703,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0810",
+        "gene": "rplK",
+        "annotation": "50S ribosomal protein L11",
+        "start": 486703,
+        "end": 487131,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0833",
+        "gene": "rplI",
+        "annotation": "50S ribosomal protein L9",
+        "start": 508692,
+        "end": 509135,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0930",
+        "gene": "rpmG",
+        "annotation": "50S ribosomal protein L33",
+        "start": 319048,
+        "end": 319191,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0932",
+        "gene": "rpmG",
+        "annotation": "50S ribosomal protein L33",
+        "start": 515027,
+        "end": 515188,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0138",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0138",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 89084,
+        "end": 90982,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "NanoRNAse",
+    "labelLocusNumber": "0139",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0139",
+        "gene": "ytqI; orn",
+        "annotation": "NanoRNAse",
+        "start": 90992,
+        "end": 91942,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Thymidine kinase",
+    "labelLocusNumber": "0140",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0140",
+        "gene": "tdk",
+        "annotation": "Thymidine kinase",
+        "start": 91944,
+        "end": 92573,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Peptide chain release factor 1",
+    "labelLocusNumber": "0141",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0141",
+        "gene": "prfA",
+        "annotation": "Peptide chain release factor 1",
+        "start": 92576,
+        "end": 93670,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Protein-(glutamine-N5) methyltransferase",
+    "labelLocusNumber": "0142",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0142",
+        "gene": "prmC",
+        "annotation": "Protein-(glutamine-N5) methyltransferase, release factor-specific",
+        "start": 93663,
+        "end": 94511,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0143",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0143",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 94520,
+        "end": 95992,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized acetyltransferase",
+    "labelLocusNumber": "0145",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0145",
+        "gene": null,
+        "annotation": "Uncharacterized acetyltransferase",
+        "start": 96616,
+        "end": 97530,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0146",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0146",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 97759,
+        "end": 98466,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Cardiolipin synthase",
+    "labelLocusNumber": "0147",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0147",
+        "gene": "clsA",
+        "annotation": "Cardiolipin synthase",
+        "start": 98466,
+        "end": 99995,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Translation elongation factor G",
+    "labelLocusNumber": "0150",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0150",
+        "gene": null,
+        "annotation": "Translation elongation factor G",
+        "start": 101117,
+        "end": 103186,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Translation elongation factor Tu",
+    "labelLocusNumber": "0151",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0151",
+        "gene": null,
+        "annotation": "Translation elongation factor Tu",
+        "start": 103318,
+        "end": 104505,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized peptidase",
+    "labelLocusNumber": "0154",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0154",
+        "gene": null,
+        "annotation": "Uncharacterized peptidase",
+        "start": 311816,
+        "end": 313171,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Alanine--tRNA ligase",
+    "labelLocusNumber": "0163",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0163",
+        "gene": "alaRS",
+        "annotation": "Alanine--tRNA ligase",
+        "start": 105431,
+        "end": 108121,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "oligopeptide ABC transporter",
+    "labelLocusNumber": "0165",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0165",
+        "gene": "amiC",
+        "annotation": "Oligopeptide ABC transporter permease",
+        "start": 108907,
+        "end": 110151,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0166",
+        "gene": null,
+        "annotation": "Oligopeptide ABC transporter permease",
+        "start": 110167,
+        "end": 111177,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0167",
+        "gene": "amiE",
+        "annotation": "Oligopeptide ABC transporter ATP-binding protein",
+        "start": 111191,
+        "end": 112891,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0168",
+        "gene": "amiF",
+        "annotation": "Oligopeptide ABC transporter ATP-binding protein",
+        "start": 112893,
+        "end": 114761,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Oligopeptide ABC transporter substrate-binding",
+    "labelLocusNumber": "0169",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0169",
+        "gene": "amiA",
+        "annotation": "Oligopeptide ABC transporter substrate-binding protein",
+        "start": 114778,
+        "end": 117879,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Spermidine/putrescine ABC transporter",
+    "labelLocusNumber": "0195",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0195",
+        "gene": "potC",
+        "annotation": "Spermidine/putrescine ABC transporter permease",
+        "start": 118738,
+        "end": 121848,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0196",
+        "gene": "potB",
+        "annotation": "Spermidine/putrescine ABC transporter permease",
+        "start": 121833,
+        "end": 122825,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0197",
+        "gene": "potA",
+        "annotation": "Spermidine/putrescine ABC transporter ATP-binding protein",
+        "start": 122825,
+        "end": 123880,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Translation initiation factor IF-3",
+    "labelLocusNumber": "0200",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0200",
+        "gene": "infC",
+        "annotation": "Translation initiation factor IF-3",
+        "start": 124849,
+        "end": 125394,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Peptide deformylase",
+    "labelLocusNumber": "0201",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0201",
+        "gene": "def",
+        "annotation": "Peptide deformylase",
+        "start": 125583,
+        "end": 126185,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "16S rRNA (guanine(966)-N(2))-methyltransferase",
+    "labelLocusNumber": "0202",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0202",
+        "gene": "rsmD",
+        "annotation": "16S rRNA (guanine(966)-N(2))-methyltransferase",
+        "start": 126259,
+        "end": 126816,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Guanylate kinase",
+    "labelLocusNumber": "0203",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0203",
+        "gene": "gmk",
+        "annotation": "Guanylate kinase",
+        "start": 126819,
+        "end": 127712,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Phosphopyruvate hydratase",
+    "labelLocusNumber": "0213",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0213",
+        "gene": "eno",
+        "annotation": "Phosphopyruvate hydratase",
+        "start": 127920,
+        "end": 129275,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Phosphatidylglycerophosphatase",
+    "labelLocusNumber": "0214",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0214",
+        "gene": "pgpA",
+        "annotation": "Phosphatidylglycerophosphatase",
+        "start": 129342,
+        "end": 130163,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Putative pre-16S rRNA nuclease",
+    "labelLocusNumber": "0215",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0215",
+        "gene": "yrrK; yqgF",
+        "annotation": "Putative pre-16S rRNA nuclease",
+        "start": 130165,
+        "end": 130596,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Hypoxanthine phosphoribosyltransferase",
+    "labelLocusNumber": "0216",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0216",
+        "gene": "hptA",
+        "annotation": "Hypoxanthine phosphoribosyltransferase",
+        "start": 130602,
+        "end": 131174,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Glycerol kinase",
+    "labelLocusNumber": "0218",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0218",
+        "gene": "glpK",
+        "annotation": "Glycerol kinase",
+        "start": 131274,
+        "end": 132791,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "6-Phosphofructokinase",
+    "labelLocusNumber": "0220",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0220",
+        "gene": "pfkA",
+        "annotation": "6-Phosphofructokinase",
+        "start": 133142,
+        "end": 134122,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Pyruvate kinase",
+    "labelLocusNumber": "0221",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0221",
+        "gene": "pyk",
+        "annotation": "Pyruvate kinase",
+        "start": 134193,
+        "end": 135629,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Threonine--tRNA ligase",
+    "labelLocusNumber": "0222",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0222",
+        "gene": "thrRS",
+        "annotation": "Threonine--tRNA ligase",
+        "start": 135894,
+        "end": 137813,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Pyruvate dehydrogenase complex",
+    "labelLocusNumber": "0227",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0227",
+        "gene": "pdhC",
+        "annotation": "Branched-chain alpha-keto acid dehydrogenase subunit E2",
+        "start": 138324,
+        "end": 139649,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0228",
+        "gene": "lpdA",
+        "annotation": "Dihydrolipoyl dehydrogenase",
+        "start": 139668,
+        "end": 141557,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Phosphate acetyltransferase",
+    "labelLocusNumber": "0229",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0229",
+        "gene": "pta",
+        "annotation": "Phosphate acetyltransferase",
+        "start": 141579,
+        "end": 142547,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Acetate kinase",
+    "labelLocusNumber": "0230",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0230",
+        "gene": "ackA",
+        "annotation": "Acetate kinase",
+        "start": 142560,
+        "end": 143741,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "PTS system",
+    "labelLocusNumber": "0233",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0233",
+        "gene": "ptsI",
+        "annotation": "Phosphoenolpyruvate--protein phosphotransferase",
+        "start": 143903,
+        "end": 145624,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0234",
+        "gene": "crr",
+        "annotation": "PTS glucose transporter subunit IIA",
+        "start": 145706,
+        "end": 146170,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0694",
+        "gene": "ptsH",
+        "annotation": "Phosphocarrier protein",
+        "start": 433466,
+        "end": 433735,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0779",
+        "gene": "ptsG",
+        "annotation": "PTS sugar transporter",
+        "start": 460467,
+        "end": 462704,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0239",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0239",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 147459,
+        "end": 149246,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "tRNA 4-thiouridine(8) synthase",
+    "labelLocusNumber": "0240",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0240",
+        "gene": "thiI",
+        "annotation": "tRNA 4-thiouridine(8) synthase",
+        "start": 149254,
+        "end": 150441,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribosome biogenesis GTP-binding protein",
+    "labelLocusNumber": "0247",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0247",
+        "gene": "ysxC; yihA",
+        "annotation": "Ribosome biogenesis GTP-binding protein",
+        "start": 150614,
+        "end": 151204,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0248",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0248",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 151198,
+        "end": 151758,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0249",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0249",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 151760,
+        "end": 152338,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0250",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0250",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 152341,
+        "end": 153030,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Transcription elongation factor greA",
+    "labelLocusNumber": "0253",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0253",
+        "gene": "greA",
+        "annotation": "Transcription elongation factor",
+        "start": 153156,
+        "end": 153629,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "uvrAB repair complex",
+    "labelLocusNumber": "0254",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0254",
+        "gene": "uvrC",
+        "annotation": "Excinuclease ABC subunit C",
+        "start": 153752,
+        "end": 155506,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0824",
+        "gene": "uvrA",
+        "annotation": "Excinuclease ABC subunit A",
+        "start": 498183,
+        "end": 501023,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0825",
+        "gene": "uvrB",
+        "annotation": "Excinuclease ABC subunit B",
+        "start": 501032,
+        "end": 503029,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "RNase J family beta-CASP ribonuclease",
+    "labelLocusNumber": "0257",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0257",
+        "gene": "rnjB",
+        "annotation": "RNase J family beta-CASP ribonuclease",
+        "start": 155628,
+        "end": 157379,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "NAD(+) kinase",
+    "labelLocusNumber": "0259",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0259",
+        "gene": "nadK",
+        "annotation": "NAD(+) kinase",
+        "start": 157516,
+        "end": 158313,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Valine--tRNA ligase",
+    "labelLocusNumber": "0260",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0260",
+        "gene": "valRS",
+        "annotation": "Valine--tRNA ligase",
+        "start": 158424,
+        "end": 161042,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribulose-phosphate 3-epimerase",
+    "labelLocusNumber": "0262",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0262",
+        "gene": "rpe",
+        "annotation": "Ribulose-phosphate 3-epimerase",
+        "start": 161214,
+        "end": 161891,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribosome small subunit-dependent GTPase A",
+    "labelLocusNumber": "0263",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0263",
+        "gene": null,
+        "annotation": "Ribosome small subunit-dependent GTPase A",
+        "start": 161893,
+        "end": 162795,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized serine/threonine protein kinase",
+    "labelLocusNumber": "0264",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0264",
+        "gene": null,
+        "annotation": "Uncharacterized serine/threonine protein kinase",
+        "start": 162805,
+        "end": 163920,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0281",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0281",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 165787,
+        "end": 166467,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Proline--tRNA ligase",
+    "labelLocusNumber": "0282",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0282",
+        "gene": "proRS",
+        "annotation": "Proline--tRNA ligase",
+        "start": 166448,
+        "end": 167872,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Double-stranded RNA binding RNase HI",
+    "labelLocusNumber": "0283",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0283",
+        "gene": "rnhA",
+        "annotation": "Double-stranded RNA binding RNase HI",
+        "start": 167885,
+        "end": 168502,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Elongation factor 4",
+    "labelLocusNumber": "0285",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0285",
+        "gene": "lepA; EF4",
+        "annotation": "Elongation factor 4",
+        "start": 168527,
+        "end": 170329,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0286",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0286",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 170355,
+        "end": 171161,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Aspartate--tRNA ligase",
+    "labelLocusNumber": "0287",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0287",
+        "gene": "aspRS",
+        "annotation": "Aspartate--tRNA ligase",
+        "start": 171178,
+        "end": 172902,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Histidine--tRNA ligase",
+    "labelLocusNumber": "0288",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0288",
+        "gene": "hisRS",
+        "annotation": "Histidine--tRNA ligase",
+        "start": 172911,
+        "end": 174155,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribosome-binding factor A",
+    "labelLocusNumber": "0289",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0289",
+        "gene": "rbfA",
+        "annotation": "Ribosome-binding factor A",
+        "start": 174340,
+        "end": 174693,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "tRNA pseudouridine(55) synthase",
+    "labelLocusNumber": "0290",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0290",
+        "gene": "truB",
+        "annotation": "tRNA pseudouridine(55) synthase",
+        "start": 174743,
+        "end": 175621,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "FAD synthetase",
+    "labelLocusNumber": "0291",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0291",
+        "gene": "ribF",
+        "annotation": "FAD synthetase",
+        "start": 175608,
+        "end": 176162,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0296",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0296",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 176894,
+        "end": 177538,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Translation initiation factor IF-2",
+    "labelLocusNumber": "0297",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0297",
+        "gene": "infB",
+        "annotation": "Translation initiation factor IF-2",
+        "start": 177557,
+        "end": 179419,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized L7Ae family protein",
+    "labelLocusNumber": "0298",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0298",
+        "gene": null,
+        "annotation": "Uncharacterized L7Ae family protein",
+        "start": 179441,
+        "end": 179740,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0299",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0299",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 179727,
+        "end": 180008,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Transcription termination/antitermination nusA",
+    "labelLocusNumber": "0300",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0300",
+        "gene": "nusA",
+        "annotation": "Transcription termination/antitermination protein NusA",
+        "start": 179989,
+        "end": 181743,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribosome assembly cofactor rimP",
+    "labelLocusNumber": "0301",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0301",
+        "gene": "rimP",
+        "annotation": "Ribosome assembly cofactor",
+        "start": 181752,
+        "end": 182246,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Flavin reductase",
+    "labelLocusNumber": "0302",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0302",
+        "gene": "fre",
+        "annotation": "Flavin reductase",
+        "start": 182359,
+        "end": 183009,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Phosphatidate cytidylyltransferase",
+    "labelLocusNumber": "0304",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0304",
+        "gene": "cdsA",
+        "annotation": "Phosphatidate cytidylyltransferase",
+        "start": 187479,
+        "end": 188507,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized metallopeptidase",
+    "labelLocusNumber": "0305",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0305",
+        "gene": null,
+        "annotation": "Uncharacterized metallopeptidase",
+        "start": 188706,
+        "end": 189782,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Tryptophan--tRNA ligase",
+    "labelLocusNumber": "0308",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0308",
+        "gene": "trpRS",
+        "annotation": "Tryptophan--tRNA ligase",
+        "start": 190227,
+        "end": 191237,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized ECF transporter S component",
+    "labelLocusNumber": "0314",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0314",
+        "gene": "ecfS",
+        "annotation": "Uncharacterized ECF transporter S component",
+        "start": 191373,
+        "end": 192107,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0315",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0315",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 192229,
+        "end": 192381,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Transketolase",
+    "labelLocusNumber": "0316",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0316",
+        "gene": "tkt",
+        "annotation": "Transketolase",
+        "start": 192440,
+        "end": 194410,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0317",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0317",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 194426,
+        "end": 194671,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0325",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0325",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 196094,
+        "end": 197593,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0326",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0326",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 197611,
+        "end": 198372,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Structural maintenance of chromosomes complex",
+    "labelLocusNumber": "0327",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0327",
+        "gene": "scpA",
+        "annotation": "Chromosome segregation protein A",
+        "start": 198382,
+        "end": 199218,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0328",
+        "gene": "scpB",
+        "annotation": "Chromosome segregation protein B",
+        "start": 199202,
+        "end": 199831,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0415",
+        "gene": "smc",
+        "annotation": "Chromosome segregation protein",
+        "start": 266643,
+        "end": 269609,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized pseudouridine synthase",
+    "labelLocusNumber": "0329",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0329",
+        "gene": "rluB",
+        "annotation": "Uncharacterized pseudouridine synthase",
+        "start": 199899,
+        "end": 200657,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Deoxyguanosine kinase",
+    "labelLocusNumber": "0330",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0330",
+        "gene": "dgk",
+        "annotation": "Deoxyguanosine kinase",
+        "start": 200667,
+        "end": 201284,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0332",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0332",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 201395,
+        "end": 202222,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized lipoprotein",
+    "labelLocusNumber": "0338",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0338",
+        "gene": null,
+        "annotation": "Uncharacterized lipoprotein",
+        "start": 202897,
+        "end": 203616,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Inorganic diphosphatase",
+    "labelLocusNumber": "0344",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0344",
+        "gene": "ppa",
+        "annotation": "Inorganic diphosphatase",
+        "start": 204074,
+        "end": 204634,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized ECF transporter S component",
+    "labelLocusNumber": "0345",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0345",
+        "gene": "ecfS",
+        "annotation": "Uncharacterized ECF transporter S component",
+        "start": 204773,
+        "end": 205663,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Cytidylate kinase",
+    "labelLocusNumber": "0347",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0347",
+        "gene": "cmk",
+        "annotation": "Cytidylate kinase",
+        "start": 206433,
+        "end": 207095,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribosome biogenesis GTPase",
+    "labelLocusNumber": "0348",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0348",
+        "gene": "engA",
+        "annotation": "Ribosome biogenesis GTPase",
+        "start": 207102,
+        "end": 208409,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "DNA-binding protein HU",
+    "labelLocusNumber": "0350",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0350",
+        "gene": "hupA",
+        "annotation": "DNA-binding protein",
+        "start": 208464,
+        "end": 208736,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0352",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0352",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 208791,
+        "end": 209339,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0353",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0353",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 209403,
+        "end": 209780,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribonuclease Y",
+    "labelLocusNumber": "0359",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0359",
+        "gene": null,
+        "annotation": "Ribonuclease Y",
+        "start": 210712,
+        "end": 212241,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Signal recognition particle",
+    "labelLocusNumber": "0360",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0360",
+        "gene": "ffh",
+        "annotation": "Signal recognition particle protein",
+        "start": 212275,
+        "end": 213618,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0429",
+        "gene": "ftsY",
+        "annotation": "Signal recognition particle-docking protein",
+        "start": 280106,
+        "end": 281335,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "23S rRNA",
+    "labelLocusNumber": "0361",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0361",
+        "gene": "rlmH",
+        "annotation": "23S rRNA (pseudouridine(1915)-N3)-methyltransferase",
+        "start": 213622,
+        "end": 214089,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "16S rRNA processing protein",
+    "labelLocusNumber": "0363",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0363",
+        "gene": "rimM",
+        "annotation": "16S rRNA processing protein",
+        "start": 214490,
+        "end": 214984,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "tRNA (guanosine(37)-N1)-methyltransferase",
+    "labelLocusNumber": "0364",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0364",
+        "gene": "trmD",
+        "annotation": "tRNA (guanosine(37)-N1)-methyltransferase",
+        "start": 214986,
+        "end": 215708,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "L16-binding dependent 50S subunit-maturation",
+    "labelLocusNumber": "0366",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0366",
+        "gene": "ylqF; rbgA",
+        "annotation": "L16-binding dependent 50S subunit-maturation GTPase",
+        "start": 216192,
+        "end": 217142,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Flippase",
+    "labelLocusNumber": "0371",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0371",
+        "gene": "ywjA",
+        "annotation": "Flippase A",
+        "start": 217523,
+        "end": 219394,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0372",
+        "gene": "ywjA",
+        "annotation": "Flippase B",
+        "start": 219410,
+        "end": 221263,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0373",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0373",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 221297,
+        "end": 222904,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0375",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0375",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 223090,
+        "end": 223830,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0376",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0376",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 223802,
+        "end": 224146,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribosome GTPase",
+    "labelLocusNumber": "0377",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0377",
+        "gene": "obgE",
+        "annotation": "Ribosome GTPase",
+        "start": 224217,
+        "end": 225518,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "NAD(+) synthase",
+    "labelLocusNumber": "0378",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0378",
+        "gene": "nadE",
+        "annotation": "NAD(+) synthase",
+        "start": 225520,
+        "end": 226257,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Nicotinate (nicotinamide) nucleotide adenylyltransferase",
+    "labelLocusNumber": "0380",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0380",
+        "gene": "nadD",
+        "annotation": "Nicotinate (nicotinamide) nucleotide adenylyltransferase",
+        "start": 226570,
+        "end": 227667,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "5'-Methylthioadenosine nucleosidase",
+    "labelLocusNumber": "0381",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0381",
+        "gene": "mtnN",
+        "annotation": "5'-Methylthioadenosine nucleosidase",
+        "start": 227672,
+        "end": 228331,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Deoxynucleoside kinase",
+    "labelLocusNumber": "0382",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0382",
+        "gene": "dnk",
+        "annotation": "Deoxynucleoside kinase",
+        "start": 228341,
+        "end": 228979,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "tRNA 2-thiouridine(34) synthase",
+    "labelLocusNumber": "0387",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0387",
+        "gene": "mnmA",
+        "annotation": "tRNA 2-thiouridine(34) synthase",
+        "start": 229208,
+        "end": 230335,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0389",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0389",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 231075,
+        "end": 233219,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Methionyl-tRNA formyltransferase",
+    "labelLocusNumber": "0390",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0390",
+        "gene": "fmt",
+        "annotation": "Methionyl-tRNA formyltransferase",
+        "start": 233209,
+        "end": 234162,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Elongation factor P",
+    "labelLocusNumber": "0391",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0391",
+        "gene": "efp",
+        "annotation": "Elongation factor P",
+        "start": 234249,
+        "end": 234803,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0392",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0392",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 234821,
+        "end": 235123,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Endopeptidase La",
+    "labelLocusNumber": "0394",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0394",
+        "gene": "lon",
+        "annotation": "Endopeptidase La",
+        "start": 235262,
+        "end": 237622,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized lipoprotein",
+    "labelLocusNumber": "0398",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0398",
+        "gene": null,
+        "annotation": "Uncharacterized lipoprotein",
+        "start": 237760,
+        "end": 240222,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protease",
+    "labelLocusNumber": "0400",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0400",
+        "gene": null,
+        "annotation": "Uncharacterized protease",
+        "start": 245681,
+        "end": 246232,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized peptidase",
+    "labelLocusNumber": "0401",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0401",
+        "gene": null,
+        "annotation": "Uncharacterized peptidase",
+        "start": 246267,
+        "end": 248114,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "rRNA maturation RNase",
+    "labelLocusNumber": "0402",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0402",
+        "gene": "ybeY",
+        "annotation": "rRNA maturation RNase",
+        "start": 248119,
+        "end": 248613,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribosome GTPase",
+    "labelLocusNumber": "0403",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0403",
+        "gene": "era",
+        "annotation": "Ribosome GTPase",
+        "start": 248617,
+        "end": 249522,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "DNA repair protein recO",
+    "labelLocusNumber": "0404",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0404",
+        "gene": "recO",
+        "annotation": "DNA repair protein",
+        "start": 249522,
+        "end": 250271,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Glycine--tRNA ligase",
+    "labelLocusNumber": "0405",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0405",
+        "gene": "glyRS",
+        "annotation": "Glycine--tRNA ligase",
+        "start": 250335,
+        "end": 251705,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized methyltransferase",
+    "labelLocusNumber": "0408",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0408",
+        "gene": "trmK; yqfN",
+        "annotation": "Uncharacterized methyltransferase",
+        "start": 255101,
+        "end": 255778,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0409",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0409",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 255765,
+        "end": 256541,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized helicase",
+    "labelLocusNumber": "0410",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0410",
+        "gene": null,
+        "annotation": "Uncharacterized helicase",
+        "start": 256550,
+        "end": 257911,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0411",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0411",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 257951,
+        "end": 259465,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Adenine phosphoribosyltransferase",
+    "labelLocusNumber": "0413",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0413",
+        "gene": "apt",
+        "annotation": "Adenine phosphoribosyltransferase",
+        "start": 263747,
+        "end": 264259,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase",
+    "labelLocusNumber": "0414",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0414",
+        "gene": "relA",
+        "annotation": "Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase",
+        "start": 264342,
+        "end": 266606,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0416",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0416",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 269915,
+        "end": 270304,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribonuclease III",
+    "labelLocusNumber": "0418",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0418",
+        "gene": null,
+        "annotation": "Ribonuclease III",
+        "start": 270449,
+        "end": 271147,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Phosphate acyltransferase",
+    "labelLocusNumber": "0419",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0419",
+        "gene": "plsX",
+        "annotation": "Phosphate acyltransferase",
+        "start": 271137,
+        "end": 272141,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Fatty acid kinase subunit A",
+    "labelLocusNumber": "0420",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0420",
+        "gene": "fakA",
+        "annotation": "Fatty acid kinase subunit A",
+        "start": 272174,
+        "end": 273817,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0421",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0421",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 273842,
+        "end": 274153,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0424",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0424",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 274750,
+        "end": 275193,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Phosphate ABC transporter",
+    "labelLocusNumber": "0425",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0425",
+        "gene": "pstS",
+        "annotation": "Phosphate ABC transporter substrate-binding protein",
+        "start": 275282,
+        "end": 276412,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0426",
+        "gene": "pstA",
+        "annotation": "Phosphate ABC transporter permease",
+        "start": 276464,
+        "end": 278554,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0427",
+        "gene": "pstB",
+        "annotation": "Phosphate ABC transporter ATP-binding protein",
+        "start": 278547,
+        "end": 279356,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Phosphate transport system regulatory protein",
+    "labelLocusNumber": "0428",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0428",
+        "gene": "phoU",
+        "annotation": "Phosphate transport system regulatory protein",
+        "start": 279365,
+        "end": 280039,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized DNA-binding protein",
+    "labelLocusNumber": "0430",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0430",
+        "gene": null,
+        "annotation": "Uncharacterized DNA-binding protein",
+        "start": 281319,
+        "end": 281660,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized metallophosphoesterase",
+    "labelLocusNumber": "0431",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0431",
+        "gene": null,
+        "annotation": "Uncharacterized metallophosphoesterase",
+        "start": 281648,
+        "end": 282421,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Methionine adenosyltransferase",
+    "labelLocusNumber": "0432",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0432",
+        "gene": "metK",
+        "annotation": "Methionine adenosyltransferase",
+        "start": 282631,
+        "end": 283794,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0433",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0433",
+        "gene": "cutC",
+        "annotation": "Uncharacterized protein",
+        "start": 283785,
+        "end": 284468,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Mannose-6-phosphate isomerase",
+    "labelLocusNumber": "0435",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0435",
+        "gene": "manA",
+        "annotation": "Mannose-6-phosphate isomerase",
+        "start": 285803,
+        "end": 286732,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Putative 3'-5' exoribonuclease",
+    "labelLocusNumber": "0437",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0437",
+        "gene": "yhaM",
+        "annotation": "Putative 3'-5' exoribonuclease",
+        "start": 286805,
+        "end": 287785,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0438",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0438",
+        "gene": "hinT",
+        "annotation": "Uncharacterized protein",
+        "start": 287816,
+        "end": 288214,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized lipoprotein",
+    "labelLocusNumber": "0439",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0439",
+        "gene": null,
+        "annotation": "Uncharacterized lipoprotein",
+        "start": 288217,
+        "end": 290373,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized lipoprotein",
+    "labelLocusNumber": "0440",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0440",
+        "gene": null,
+        "annotation": "Uncharacterized lipoprotein",
+        "start": 290373,
+        "end": 293309,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Cysteine desulfurase",
+    "labelLocusNumber": "0441",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0441",
+        "gene": "iscS",
+        "annotation": "Cysteine desulfurase",
+        "start": 293512,
+        "end": 294750,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Iron-sulfur cluster assembly scaffold protein",
+    "labelLocusNumber": "0442",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0442",
+        "gene": "iscU",
+        "annotation": "Iron-sulfur cluster assembly scaffold protein",
+        "start": 294753,
+        "end": 295190,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "5-Formyltetrahydrofolate cyclo-ligase",
+    "labelLocusNumber": "0443",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0443",
+        "gene": "yggN",
+        "annotation": "5-Formyltetrahydrofolate cyclo-ligase",
+        "start": 295183,
+        "end": 295746,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized peptidase",
+    "labelLocusNumber": "0444",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0444",
+        "gene": null,
+        "annotation": "Uncharacterized peptidase",
+        "start": 295767,
+        "end": 297662,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Glucose-6-phosphate isomerase",
+    "labelLocusNumber": "0445",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0445",
+        "gene": "pgi",
+        "annotation": "Glucose-6-phosphate isomerase",
+        "start": 297882,
+        "end": 299165,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "dUTP diphosphatase",
+    "labelLocusNumber": "0447",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0447",
+        "gene": "dut",
+        "annotation": "dUTP diphosphatase",
+        "start": 299198,
+        "end": 299701,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized rRNA methyltransferase",
+    "labelLocusNumber": "0448",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0448",
+        "gene": null,
+        "annotation": "Uncharacterized rRNA methyltransferase",
+        "start": 299718,
+        "end": 300485,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Glyceraldehyde-3-phosphate dehydrogenase",
+    "labelLocusNumber": "0451",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0451",
+        "gene": "gapdh",
+        "annotation": "Glyceraldehyde-3-phosphate dehydrogenase",
+        "start": 300656,
+        "end": 302071,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "DNA topoisomerase IV",
+    "labelLocusNumber": "0452",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0452",
+        "gene": "parE",
+        "annotation": "DNA topoisomerase IV subunit B",
+        "start": 302258,
+        "end": 304189,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0453",
+        "gene": "parC",
+        "annotation": "DNA topoisomerase IV subunit A",
+        "start": 304191,
+        "end": 306887,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "L-lactate dehydrogenase",
+    "labelLocusNumber": "0475",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0475",
+        "gene": "ldh",
+        "annotation": "L-lactate dehydrogenase",
+        "start": 307123,
+        "end": 308079,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0478",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0478",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 308182,
+        "end": 308766,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized peptidase",
+    "labelLocusNumber": "0479",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0479",
+        "gene": null,
+        "annotation": "Uncharacterized peptidase",
+        "start": 308771,
+        "end": 310417,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized lipoprotein",
+    "labelLocusNumber": "0481",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0481",
+        "gene": null,
+        "annotation": "Uncharacterized lipoprotein",
+        "start": 310640,
+        "end": 311077,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized peptidase",
+    "labelLocusNumber": "0493",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0493",
+        "gene": null,
+        "annotation": "Uncharacterized peptidase",
+        "start": 313335,
+        "end": 314684,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "N-acetylmannosamine-6-phosphate 2-epimerase",
+    "labelLocusNumber": "0494",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0494",
+        "gene": "nanE",
+        "annotation": "N-acetylmannosamine-6-phosphate 2-epimerase",
+        "start": 314840,
+        "end": 315520,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized kinase",
+    "labelLocusNumber": "0495",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0495",
+        "gene": null,
+        "annotation": "Uncharacterized kinase",
+        "start": 315579,
+        "end": 316454,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Maturation protease for ribosomal protein L27",
+    "labelLocusNumber": "0500",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0500",
+        "gene": "prp;ysxB",
+        "annotation": "Maturation protease for ribosomal protein L27",
+        "start": 316912,
+        "end": 317226,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0503",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0503",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 317677,
+        "end": 318078,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "16S rRNA (cytidine(1402)-2'-O)-methyltransferase",
+    "labelLocusNumber": "0504",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0504",
+        "gene": "rsmI",
+        "annotation": "16S rRNA (cytidine(1402)-2'-O)-methyltransferase",
+        "start": 318101,
+        "end": 318988,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized lipoprotein",
+    "labelLocusNumber": "0505",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0505",
+        "gene": null,
+        "annotation": "Uncharacterized lipoprotein",
+        "start": 319364,
+        "end": 320437,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0511",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0511",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 321082,
+        "end": 321705,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Acyl-phosphate glycerol 3-phosphate acyltransferase",
+    "labelLocusNumber": "0512",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0512",
+        "gene": "plsC",
+        "annotation": "Acyl-phosphate glycerol 3-phosphate acyltransferase",
+        "start": 321754,
+        "end": 322701,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "ACP synthase",
+    "labelLocusNumber": "0513",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0513",
+        "gene": "acpS",
+        "annotation": "ACP synthase",
+        "start": 322858,
+        "end": 323190,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Cytidine deaminase",
+    "labelLocusNumber": "0515",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0515",
+        "gene": "dctD",
+        "annotation": "Cytidine deaminase",
+        "start": 323250,
+        "end": 323732,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0516",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0516",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 323735,
+        "end": 325036,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized RNA pseudouridine synthase",
+    "labelLocusNumber": "0517",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0517",
+        "gene": "rluD",
+        "annotation": "Uncharacterized RNA pseudouridine synthase",
+        "start": 325029,
+        "end": 325961,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Lipoprotein signal peptidase",
+    "labelLocusNumber": "0518",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0518",
+        "gene": "lspA",
+        "annotation": "Lipoprotein signal peptidase",
+        "start": 325942,
+        "end": 326550,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Isoleucine--tRNA ligase",
+    "labelLocusNumber": "0519",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0519",
+        "gene": "ileRS",
+        "annotation": "Isoleucine--tRNA ligase",
+        "start": 326541,
+        "end": 329288,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized hydrolase *",
+    "labelLocusNumber": "0520",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0520",
+        "gene": null,
+        "annotation": "Uncharacterized hydrolase",
+        "start": 329981,
+        "end": 330970,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Cell division protein sepF *",
+    "labelLocusNumber": "0521",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0521",
+        "gene": "sepF",
+        "annotation": "Cell division protein",
+        "start": 330983,
+        "end": 331399,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Cell division protein ftsZ *",
+    "labelLocusNumber": "0522",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0522",
+        "gene": "ftsZ",
+        "annotation": "Cell division protein",
+        "start": 331411,
+        "end": 332568,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Cell division protein ftsA",
+    "labelLocusNumber": "0523",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0523",
+        "gene": "ftsA",
+        "annotation": "Cell division protein",
+        "start": 332683,
+        "end": 333843,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "16S rRNA (cytosine(1402)-N(4))-methyltransferase",
+    "labelLocusNumber": "0524",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0524",
+        "gene": "rsmH; mraW",
+        "annotation": "16S rRNA (cytosine(1402)-N(4))-methyltransferase",
+        "start": 333852,
+        "end": 334778,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Cell division/cell wall cluster transcriptional repressor",
+    "labelLocusNumber": "0525",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0525",
+        "gene": "mraZ",
+        "annotation": "Cell division/cell wall cluster transcriptional repressor",
+        "start": 334787,
+        "end": 335188,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein *",
+    "labelLocusNumber": "0527",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0527",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 335489,
+        "end": 336007,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Phenylalanine--tRNA ligase",
+    "labelLocusNumber": "0528",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0528",
+        "gene": "pheRS",
+        "annotation": "Phenylalanine--tRNA ligase subunit beta",
+        "start": 336007,
+        "end": 338391,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0529",
+        "gene": "pheS",
+        "annotation": "Phenylalanine--tRNA ligase subunit alpha",
+        "start": 338400,
+        "end": 339452,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0530",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0530",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 339482,
+        "end": 340090,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Arginine--tRNA ligase",
+    "labelLocusNumber": "0535",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0535",
+        "gene": "argRS",
+        "annotation": "Arginine--tRNA ligase",
+        "start": 345258,
+        "end": 346922,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribosome recycling factor",
+    "labelLocusNumber": "0536",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0536",
+        "gene": "frr",
+        "annotation": "Ribosome recycling factor",
+        "start": 346924,
+        "end": 347472,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "UMP kinase",
+    "labelLocusNumber": "0537",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0537",
+        "gene": "pyrH",
+        "annotation": "UMP kinase",
+        "start": 347483,
+        "end": 348196,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein *",
+    "labelLocusNumber": "0538",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0538",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 348330,
+        "end": 348935,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Translation elongation factor Ts",
+    "labelLocusNumber": "0539",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0539",
+        "gene": "tsf",
+        "annotation": "Translation elongation factor Ts",
+        "start": 348935,
+        "end": 349822,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Molecular chaperone dnaJ",
+    "labelLocusNumber": "0541",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0541",
+        "gene": "dnaJ",
+        "annotation": "Molecular chaperone",
+        "start": 350920,
+        "end": 352038,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Molecular chaperone dnaK",
+    "labelLocusNumber": "0542",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0542",
+        "gene": "dnaK",
+        "annotation": "Molecular chaperone",
+        "start": 352102,
+        "end": 353877,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Nucleotide exchange factor grpE",
+    "labelLocusNumber": "0543",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0543",
+        "gene": "grpE",
+        "annotation": "Nucleotide exchange factor",
+        "start": 353936,
+        "end": 354538,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Heat-inducible transcription repressor",
+    "labelLocusNumber": "0544",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0544",
+        "gene": "hrcA",
+        "annotation": "Heat-inducible transcription repressor",
+        "start": 354540,
+        "end": 355562,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "ATP-dependent Clp protease subunit B",
+    "labelLocusNumber": "0545",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0545",
+        "gene": "clpB",
+        "annotation": "ATP-dependent Clp protease subunit B",
+        "start": 355567,
+        "end": 357708,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "tRNA (cytidine(34)-2'-O)-methyltransferase *",
+    "labelLocusNumber": "0548",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0548",
+        "gene": null,
+        "annotation": "tRNA (cytidine(34)-2'-O)-methyltransferase",
+        "start": 358736,
+        "end": 359281,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Non-canonical purine NTP pyrophosphatase *",
+    "labelLocusNumber": "0549",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0549",
+        "gene": "rgdB",
+        "annotation": "Non-canonical purine NTP pyrophosphatase",
+        "start": 359294,
+        "end": 359896,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein *",
+    "labelLocusNumber": "0592",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0592",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 361575,
+        "end": 362774,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein *",
+    "labelLocusNumber": "0593",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0593",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 363271,
+        "end": 363549,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribonuclease J",
+    "labelLocusNumber": "0600",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0600",
+        "gene": "rnjA",
+        "annotation": "Ribonuclease J",
+        "start": 364772,
+        "end": 366604,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0601",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0601",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 366679,
+        "end": 367623,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein *",
+    "labelLocusNumber": "0604",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0604",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 369520,
+        "end": 370188,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein *",
+    "labelLocusNumber": "0605",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0605",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 370371,
+        "end": 370679,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Phosphoglycerate kinase",
+    "labelLocusNumber": "0606",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0606",
+        "gene": "pgk",
+        "annotation": "Phosphoglycerate kinase",
+        "start": 370946,
+        "end": 372160,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Type I glyceraldehyde-3-phosphate dehydrogenase",
+    "labelLocusNumber": "0607",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0607",
+        "gene": "gapDH",
+        "annotation": "Type I glyceraldehyde-3-phosphate dehydrogenase",
+        "start": 372272,
+        "end": 373288,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "DNA-formamidopyrimidine glycosylase *",
+    "labelLocusNumber": "0610",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0610",
+        "gene": "mutM",
+        "annotation": "DNA-formamidopyrimidine glycosylase",
+        "start": 375678,
+        "end": 376502,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "DNA polymerase I",
+    "labelLocusNumber": "0611",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0611",
+        "gene": "polA",
+        "annotation": "DNA polymerase I",
+        "start": 376513,
+        "end": 379248,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Tyrosine--tRNA ligase",
+    "labelLocusNumber": "0613",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0613",
+        "gene": "tyrRS",
+        "annotation": "Tyrosine--tRNA ligase",
+        "start": 382415,
+        "end": 383659,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Nicotinate phosphoribosyltransferase",
+    "labelLocusNumber": "0614",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0614",
+        "gene": "pncB",
+        "annotation": "Nicotinate phosphoribosyltransferase",
+        "start": 383668,
+        "end": 384729,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0615",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0615",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 384707,
+        "end": 385315,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Fatty acid binding protein",
+    "labelLocusNumber": "0616",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0616",
+        "gene": "fakB",
+        "annotation": "Fatty acid binding protein",
+        "start": 385390,
+        "end": 386229,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Fatty acid binding protein",
+    "labelLocusNumber": "0617",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0617",
+        "gene": "fakB",
+        "annotation": "Fatty acid binding protein",
+        "start": 386240,
+        "end": 387091,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized transcriptional regulator",
+    "labelLocusNumber": "0620",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0620",
+        "gene": null,
+        "annotation": "Uncharacterized transcriptional regulator",
+        "start": 387390,
+        "end": 387854,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Acyl carrier protein",
+    "labelLocusNumber": "0621",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0621",
+        "gene": "acpA",
+        "annotation": "Acyl carrier protein",
+        "start": 387855,
+        "end": 388076,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized lipoprotein *",
+    "labelLocusNumber": "0622",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0622",
+        "gene": null,
+        "annotation": "Uncharacterized lipoprotein",
+        "start": 388100,
+        "end": 388462,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein *",
+    "labelLocusNumber": "0623",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0623",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 388449,
+        "end": 389519,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Leucine--tRNA ligase",
+    "labelLocusNumber": "0634",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0634",
+        "gene": "leuRS",
+        "annotation": "Leucine--tRNA ligase",
+        "start": 389882,
+        "end": 392296,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized lipoprotein",
+    "labelLocusNumber": "0636",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0636",
+        "gene": null,
+        "annotation": "Uncharacterized lipoprotein",
+        "start": 392583,
+        "end": 395372,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "tRNA pseudouridine(38-40) synthase",
+    "labelLocusNumber": "0640",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0640",
+        "gene": "truA",
+        "annotation": "tRNA pseudouridine(38-40) synthase",
+        "start": 400754,
+        "end": 401509,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "ECF transporter",
+    "labelLocusNumber": "0641",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0641",
+        "gene": "ecfT",
+        "annotation": "ECF transporter T component",
+        "start": 401512,
+        "end": 402522,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0642",
+        "gene": "ecfA",
+        "annotation": "ECF transporter ATPase",
+        "start": 402536,
+        "end": 403447,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0643",
+        "gene": "ecfA",
+        "annotation": "ECF transporter ATPase",
+        "start": 403435,
+        "end": 404661,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Translation initiation factor IF-1",
+    "labelLocusNumber": "0649",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0649",
+        "gene": "infA",
+        "annotation": "Translation initiation factor IF-1",
+        "start": 407104,
+        "end": 407328,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Type I methionyl aminopeptidase",
+    "labelLocusNumber": "0650",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0650",
+        "gene": "map",
+        "annotation": "Type I methionyl aminopeptidase",
+        "start": 407340,
+        "end": 408095,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Adenylate kinase",
+    "labelLocusNumber": "0651",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0651",
+        "gene": "adk",
+        "annotation": "Adenylate kinase",
+        "start": 408095,
+        "end": 408736,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Preprotein translocase/insertase",
+    "labelLocusNumber": "0652",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0652",
+        "gene": "secY",
+        "annotation": "Preprotein translocase subunit",
+        "start": 408864,
+        "end": 410312,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0774",
+        "gene": "secG",
+        "annotation": "Preprotein translocase subunit",
+        "start": 456670,
+        "end": 456954,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0839",
+        "gene": "secE",
+        "annotation": "Preprotein translocase subunit",
+        "start": 515188,
+        "end": 515511,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0908",
+        "gene": "yidC",
+        "annotation": "Membrane protein insertase",
+        "start": 541408,
+        "end": 542598,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "5,10-Methylene-tetrahydrofolate dehydrogenase/cyclohydrolase",
+    "labelLocusNumber": "0684",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0684",
+        "gene": "folD",
+        "annotation": "Bifunctional 5,10-methylene-tetrahydrofolate dehydrogenase/5,10-methylene-tetrahydrofolate cyclohydrolase",
+        "start": 420991,
+        "end": 421857,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Ion transporter",
+    "labelLocusNumber": "0685",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0685",
+        "gene": "natA",
+        "annotation": "Sodium transporter",
+        "start": 421866,
+        "end": 423467,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Ion transporter",
+    "labelLocusNumber": "0685",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0685",
+        "gene": "natA",
+        "annotation": "Sodium transporter",
+        "start": 421866,
+        "end": 423467,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Glutamyl-tRNA amidotransferase",
+    "labelLocusNumber": "0687",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0687",
+        "gene": "gatB",
+        "annotation": "Glutamyl-tRNA amidotransferase subunit B",
+        "start": 424301,
+        "end": 425740,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0688",
+        "gene": "gatA",
+        "annotation": "Glutamyl-tRNA amidotransferase subunit A",
+        "start": 425742,
+        "end": 427199,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0689",
+        "gene": "gatC",
+        "annotation": "Glutamyl-tRNA amidotransferase subunit C",
+        "start": 427199,
+        "end": 427495,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "DNA ligase",
+    "labelLocusNumber": "0690",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0690",
+        "gene": "ligA",
+        "annotation": "DNA ligase (NAD(+))",
+        "start": 427497,
+        "end": 429503,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0691",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0691",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 429507,
+        "end": 431528,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized pseudouridine synthase",
+    "labelLocusNumber": "0692",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0692",
+        "gene": null,
+        "annotation": "Uncharacterized pseudouridine synthase",
+        "start": 431531,
+        "end": 432439,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protease",
+    "labelLocusNumber": "0693",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0693",
+        "gene": null,
+        "annotation": "Uncharacterized protease",
+        "start": 432442,
+        "end": 433410,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized transporter",
+    "labelLocusNumber": "0696",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0696",
+        "gene": null,
+        "annotation": "Uncharacterized transporter",
+        "start": 435985,
+        "end": 436740,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized glycosyl transferase",
+    "labelLocusNumber": "0697",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0697",
+        "gene": null,
+        "annotation": "Uncharacterized glycosyl transferase",
+        "start": 436740,
+        "end": 437696,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Thiamine ABC transporter",
+    "labelLocusNumber": "0706",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0706",
+        "gene": "thiB",
+        "annotation": "Thiamine ABC transporter permease",
+        "start": 438118,
+        "end": 439866,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0707",
+        "gene": "thiQ",
+        "annotation": "Thiamine ABC transporter ATP-binding protein",
+        "start": 439830,
+        "end": 440579,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0708",
+        "gene": "thiB",
+        "annotation": "Thiamine ABC transporter substrate-binding protein",
+        "start": 440593,
+        "end": 442056,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized hydrolase",
+    "labelLocusNumber": "0710",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0710",
+        "gene": null,
+        "annotation": "Uncharacterized hydrolase",
+        "start": 442279,
+        "end": 443142,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Glucosamine-6-phosphate deaminase",
+    "labelLocusNumber": "0726",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0726",
+        "gene": "nagB",
+        "annotation": "Glucosamine-6-phosphate deaminase",
+        "start": 444438,
+        "end": 445172,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Triose-phosphate isomerase",
+    "labelLocusNumber": "0727",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0727",
+        "gene": "tpiA",
+        "annotation": "Triose-phosphate isomerase",
+        "start": 445270,
+        "end": 446016,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized hydrolase",
+    "labelLocusNumber": "0728",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0728",
+        "gene": null,
+        "annotation": "Uncharacterized hydrolase",
+        "start": 446009,
+        "end": 446845,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Phosphoglycerate mutase",
+    "labelLocusNumber": "0729",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0729",
+        "gene": "pgm",
+        "annotation": "Phosphoglycerate mutase (2,3-diphosphoglycerate-independent)",
+        "start": 446848,
+        "end": 448443,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0730",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0730",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 448543,
+        "end": 449142,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Deoxyribose-phosphate aldolase",
+    "labelLocusNumber": "0732",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0732",
+        "gene": "deoC",
+        "annotation": "Deoxyribose-phosphate aldolase",
+        "start": 449195,
+        "end": 449863,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Phosphopentomutase",
+    "labelLocusNumber": "0733",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0733",
+        "gene": "deoB",
+        "annotation": "Phosphopentomutase",
+        "start": 449875,
+        "end": 451551,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Purine-nucleoside phosphorylase",
+    "labelLocusNumber": "0747",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0747",
+        "gene": "punA",
+        "annotation": "Purine-nucleoside phosphorylase",
+        "start": 451915,
+        "end": 452568,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribonucleotide-diphosphate reductase",
+    "labelLocusNumber": "0771",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0771",
+        "gene": "nrdE",
+        "annotation": "Ribonucleotide-diphosphate reductase subunit alpha",
+        "start": 452721,
+        "end": 454883,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0772",
+        "gene": "nrdI",
+        "annotation": "Ribonucleotide reductase assembly protein",
+        "start": 454870,
+        "end": 455343,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0773",
+        "gene": "nrdF",
+        "annotation": "Ribonucleoside-diphosphate reductase subunit beta",
+        "start": 455352,
+        "end": 456371,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribonuclease R",
+    "labelLocusNumber": "0775",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0775",
+        "gene": "rnr",
+        "annotation": "Ribonuclease R",
+        "start": 456990,
+        "end": 459104,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "SsrA-binding protein/tmRNA",
+    "labelLocusNumber": "0776",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0776",
+        "gene": "smpB",
+        "annotation": "SsrA-binding protein",
+        "start": 459114,
+        "end": 459560,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Magnesium-translocating P-type ATPase",
+    "labelLocusNumber": "0787",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0787",
+        "gene": "mgtA",
+        "annotation": "Magnesium-translocating P-type ATPase",
+        "start": 463042,
+        "end": 465870,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "F0F1 ATP synthase",
+    "labelLocusNumber": "0789",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0789",
+        "gene": "atpC",
+        "annotation": "F0F1 ATP synthase subunit delta/epsilon",
+        "start": 466288,
+        "end": 466587,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0790",
+        "gene": "atpD",
+        "annotation": "F0F1 ATP synthase subunit beta",
+        "start": 466587,
+        "end": 468014,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0791",
+        "gene": "atpG",
+        "annotation": "F0F1 ATP synthase subunit gamma",
+        "start": 468023,
+        "end": 468865,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0792",
+        "gene": "atpA",
+        "annotation": "F0F1 ATP synthase subunit alpha",
+        "start": 468867,
+        "end": 470444,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0793",
+        "gene": "atpD",
+        "annotation": "F0F1 ATP synthase subunit delta",
+        "start": 470456,
+        "end": 471001,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0794",
+        "gene": "atpF",
+        "annotation": "F0F1 ATP synthase subunit B",
+        "start": 471003,
+        "end": 471548,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0795",
+        "gene": "atpE",
+        "annotation": "F0F1 ATP synthase subunit C",
+        "start": 471577,
+        "end": 471882,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0796",
+        "gene": "atpB",
+        "annotation": "F0F1 ATP synthase subunit A",
+        "start": 471912,
+        "end": 472775,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uracil phosphoribosyltransferase",
+    "labelLocusNumber": "0798",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0798",
+        "gene": "upp",
+        "annotation": "Uracil phosphoribosyltransferase",
+        "start": 473313,
+        "end": 473936,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Serine hydroxymethyltransferase",
+    "labelLocusNumber": "0799",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0799",
+        "gene": "glyA",
+        "annotation": "Serine hydroxymethyltransferase",
+        "start": 474036,
+        "end": 475277,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribose 5-phosphate isomerase B",
+    "labelLocusNumber": "0800",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0800",
+        "gene": "rpiB",
+        "annotation": "Ribose 5-phosphate isomerase B",
+        "start": 475261,
+        "end": 475704,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0805",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0805",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 483516,
+        "end": 484691,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "UDP-glucose 4-epimerase GalE",
+    "labelLocusNumber": "0813",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0813",
+        "gene": "galE",
+        "annotation": "UDP-glucose 4-epimerase GalE",
+        "start": 487642,
+        "end": 488640,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "UDP-galactopyranose mutase",
+    "labelLocusNumber": "0814",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0814",
+        "gene": "glf",
+        "annotation": "UDP-galactopyranose mutase",
+        "start": 488654,
+        "end": 489841,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized DNA-binding protein",
+    "labelLocusNumber": "0817",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0817",
+        "gene": "whiA",
+        "annotation": "Uncharacterized DNA-binding protein",
+        "start": 490471,
+        "end": 491400,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Diacylglyceryl transferase",
+    "labelLocusNumber": "0818",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0818",
+        "gene": "lgt",
+        "annotation": "Diacylglyceryl transferase",
+        "start": 491413,
+        "end": 492843,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Thioredoxin-disulfide reductase",
+    "labelLocusNumber": "0819",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0819",
+        "gene": "trx",
+        "annotation": "Thioredoxin-disulfide reductase",
+        "start": 492852,
+        "end": 493784,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Diacylglyceryl transferase",
+    "labelLocusNumber": "0820",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0820",
+        "gene": "lgt",
+        "annotation": "Diacylglyceryl transferase",
+        "start": 493768,
+        "end": 495348,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "HPr(Ser) kinase/phosphatase",
+    "labelLocusNumber": "0821",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0821",
+        "gene": "hpr; ptsH",
+        "annotation": "HPr(Ser) kinase/phosphatase",
+        "start": 495359,
+        "end": 496300,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Dihydrofolate synthase",
+    "labelLocusNumber": "0823",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0823",
+        "gene": "folC",
+        "annotation": "Dihydrofolate synthase",
+        "start": 497075,
+        "end": 498190,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0827",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0827",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 504267,
+        "end": 505733,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Phosphoribosylpyrophosphate synthetase",
+    "labelLocusNumber": "0831",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0831",
+        "gene": "prs",
+        "annotation": "Phosphoribosylpyrophosphate synthetase",
+        "start": 506551,
+        "end": 507585,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Aminoacyl-tRNA hydrolase",
+    "labelLocusNumber": "0832",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0832",
+        "gene": "pth",
+        "annotation": "Aminoacyl-tRNA hydrolase",
+        "start": 508011,
+        "end": 508571,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized lipoprotein",
+    "labelLocusNumber": "0835",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0835",
+        "gene": null,
+        "annotation": "Uncharacterized lipoprotein",
+        "start": 510521,
+        "end": 511828,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Cysteine--tRNA ligase",
+    "labelLocusNumber": "0837",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0837",
+        "gene": "cysRS",
+        "annotation": "Cysteine--tRNA ligase",
+        "start": 512905,
+        "end": 514230,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "23S rRNA (guanosine(2251)-2'-O)-methyltransferase",
+    "labelLocusNumber": "0838",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0838",
+        "gene": "rlmB",
+        "annotation": "23S rRNA (guanosine(2251)-2'-O)-methyltransferase",
+        "start": 514232,
+        "end": 514966,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Antitermination protein nusG",
+    "labelLocusNumber": "0840",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0840",
+        "gene": "nusG",
+        "annotation": "Antitermination protein",
+        "start": 515528,
+        "end": 516169,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0853",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0853",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 517243,
+        "end": 517962,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "DNA topoisomerase I",
+    "labelLocusNumber": "0859",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0859",
+        "gene": "topA",
+        "annotation": "DNA topoisomerase I",
+        "start": 518165,
+        "end": 520126,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized C4-dicarboxylate ABC transporter",
+    "labelLocusNumber": "0870",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0870",
+        "gene": null,
+        "annotation": "Uncharacterized C4-dicarboxylate ABC transporter",
+        "start": 520382,
+        "end": 522148,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized ATPase",
+    "labelLocusNumber": "0872",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0872",
+        "gene": "ychF",
+        "annotation": "Uncharacterized ATPase",
+        "start": 522217,
+        "end": 523311,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0873",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0873",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 523347,
+        "end": 523547,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "16S rRNA (guanine(527)-N(7))-methyltransferase",
+    "labelLocusNumber": "0874",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0874",
+        "gene": "rsmG",
+        "annotation": "16S rRNA (guanine(527)-N(7))-methyltransferase",
+        "start": 523549,
+        "end": 524244,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "CDP-diacylglycerol--glycerol-3-phosphate",
+    "labelLocusNumber": "0875",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0875",
+        "gene": "pgsA",
+        "annotation": "CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase",
+        "start": 524244,
+        "end": 524840,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized amino acid permease",
+    "labelLocusNumber": "0876",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0876",
+        "gene": null,
+        "annotation": "Uncharacterized amino acid permease",
+        "start": 524942,
+        "end": 526522,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0877",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0877",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 526669,
+        "end": 527349,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized amino acid permease",
+    "labelLocusNumber": "0878",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0878",
+        "gene": null,
+        "annotation": "Uncharacterized amino acid permease",
+        "start": 527321,
+        "end": 528859,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Magnesium transporter",
+    "labelLocusNumber": "0879",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0879",
+        "gene": "corA",
+        "annotation": "Magnesium transporter",
+        "start": 528917,
+        "end": 531574,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized MFS transporter",
+    "labelLocusNumber": "0881",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0881",
+        "gene": null,
+        "annotation": "Uncharacterized MFS transporter",
+        "start": 531973,
+        "end": 533400,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "tRNA uridine(34) 5-carboxymethylaminomethyl synthesis enzyme",
+    "labelLocusNumber": "0885",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0885",
+        "gene": "mnmG; gidA",
+        "annotation": "tRNA uridine(34) 5-carboxymethylaminomethyl synthesis enzyme",
+        "start": 533864,
+        "end": 535753,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Proton-glutamate symporter",
+    "labelLocusNumber": "0886",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0886",
+        "gene": "gltP",
+        "annotation": "Proton-glutamate symporter",
+        "start": 535901,
+        "end": 537478,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Coenzyme A disulfide reductase",
+    "labelLocusNumber": "0887",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0887",
+        "gene": "cdr",
+        "annotation": "Coenzyme A Disulfide Reductase",
+        "start": 537498,
+        "end": 538841,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein",
+    "labelLocusNumber": "0906",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0906",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 539821,
+        "end": 540537,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized hydrolase",
+    "labelLocusNumber": "0907",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0907",
+        "gene": null,
+        "annotation": "Uncharacterized hydrolase",
+        "start": 540537,
+        "end": 541331,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Ribonuclease P protein component",
+    "labelLocusNumber": "0909",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0909",
+        "gene": "rnpA",
+        "annotation": "Ribonuclease P protein component",
+        "start": 542616,
+        "end": 542945,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Tetracycline resistance ribosomal protection",
+    "labelLocusNumber": "0913",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0913",
+        "gene": "tetM",
+        "annotation": "Tetracycline resistance ribosomal protection protein",
+        "start": 20416,
+        "end": 22335,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Imidazoleglycerol-phosphate dehydratase",
+    "labelLocusNumber": "0918",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0918",
+        "gene": null,
+        "annotation": "Imidazoleglycerol-phosphate dehydratase",
+        "start": 18716,
+        "end": 19378,
+        "strand": "-"
+      }
+    ]
+  },
+  {
+    "displayName": "Adenylyl-sulfate kinase",
+    "labelLocusNumber": "0931",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0931",
+        "gene": "met14p",
+        "annotation": "Adenylyl-sulfate kinase",
+        "start": 360403,
+        "end": 361011,
+        "strand": "+"
+      }
+    ]
+  },
+  {
+    "displayName": "Uncharacterized protein, not shown",
+    "labelLocusNumber": "0005",
+    "loci": [
+      {
+        "locusTag": "JCVISYN3A_0005",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 4064,
+        "end": 5155,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0116",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 76936,
+        "end": 77376,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0164",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 108195,
+        "end": 108689,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0235",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 146279,
+        "end": 146461,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0346",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 205729,
+        "end": 206424,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0379",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 226274,
+        "end": 226552,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0388",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 230382,
+        "end": 230999,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0599",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 363818,
+        "end": 363958,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0777",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 459560,
+        "end": 460045,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0778",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 460165,
+        "end": 460416,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0797",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 472775,
+        "end": 473173,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0830",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 506111,
+        "end": 506371,
+        "strand": "+"
+      },
+      {
+        "locusTag": "JCVISYN3A_0851",
+        "gene": null,
+        "annotation": "Uncharacterized lipoprotein",
+        "start": 516675,
+        "end": 516857,
+        "strand": "-"
+      },
+      {
+        "locusTag": "JCVISYN3A_0852",
+        "gene": null,
+        "annotation": "Uncharacterized protein",
+        "start": 517023,
+        "end": 517253,
+        "strand": "-"
+      }
+    ]
+  }
+]

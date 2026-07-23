@@ -1,0 +1,4466 @@
+{
+ "JCVISYN3A_0001": {
+  "locusTag": "JCVISYN3A_0001",
+  "gene": "dnaA",
+  "product": "Chromosomal replication initiator protein",
+  "start": 1,
+  "end": 1353,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0002": {
+  "locusTag": "JCVISYN3A_0002",
+  "gene": "dnaN",
+  "product": "DNA polymerase III subunit beta",
+  "start": 1511,
+  "end": 2638,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0003": {
+  "locusTag": "JCVISYN3A_0003",
+  "gene": "rnmV",
+  "product": "Ribonuclease M5",
+  "start": 2675,
+  "end": 3217,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0004": {
+  "locusTag": "JCVISYN3A_0004",
+  "gene": "ksgA",
+  "product": "16S rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))- dimethyltransferase",
+  "start": 3207,
+  "end": 4007,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0005": {
+  "locusTag": "JCVISYN3A_0005",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 4064,
+  "end": 5155,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0006": {
+  "locusTag": "JCVISYN3A_0006",
+  "gene": "gyrB",
+  "product": "DNA gyrase subunit B",
+  "start": 5515,
+  "end": 7419,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0007": {
+  "locusTag": "JCVISYN3A_0007",
+  "gene": "gyrA",
+  "product": "DNA gyrase subunit A",
+  "start": 7435,
+  "end": 9939,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0008": {
+  "locusTag": "JCVISYN3A_0008",
+  "gene": "rnsD; uptD",
+  "product": "Nucleoside ABC transporter permease",
+  "start": 9991,
+  "end": 10968,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0009": {
+  "locusTag": "JCVISYN3A_0009",
+  "gene": "rnsC; uptD",
+  "product": "Nucleoside ABC transporter permease",
+  "start": 10968,
+  "end": 13535,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0010": {
+  "locusTag": "JCVISYN3A_0010",
+  "gene": "rnsA; uptA",
+  "product": "Nucleoside ABC transporter ATP-binding protein",
+  "start": 13525,
+  "end": 15141,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0011": {
+  "locusTag": "JCVISYN3A_0011",
+  "gene": "rnsB; uptB",
+  "product": "Nucleoside ABC transporter substrate-binding protein",
+  "start": 15153,
+  "end": 16799,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0012": {
+  "locusTag": "JCVISYN3A_0012",
+  "gene": "metRS",
+  "product": "Methionine--tRNA ligase",
+  "start": 16986,
+  "end": 18515,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0918": {
+  "locusTag": "JCVISYN3A_0918",
+  "gene": null,
+  "product": "Imidazoleglycerol-phosphate dehydratase",
+  "start": 18716,
+  "end": 19378,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0913": {
+  "locusTag": "JCVISYN3A_0913",
+  "gene": "tetM",
+  "product": "Tetracycline resistance ribosomal protection protein",
+  "start": 20416,
+  "end": 22335,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0025": {
+  "locusTag": "JCVISYN3A_0025",
+  "gene": "rpsR",
+  "product": "30S ribosomal protein S18",
+  "start": 22769,
+  "end": 22996,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0026": {
+  "locusTag": "JCVISYN3A_0026",
+  "gene": "priB",
+  "product": "Single-stranded DNA-binding protein",
+  "start": 23016,
+  "end": 23456,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0027": {
+  "locusTag": "JCVISYN3A_0027",
+  "gene": "rpsF",
+  "product": "30S ribosomal protein S6",
+  "start": 23468,
+  "end": 23881,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0029": {
+  "locusTag": "JCVISYN3A_0029",
+  "gene": null,
+  "product": "Uncharacterized FMN-dependent NADH-azoreductase",
+  "start": 24273,
+  "end": 24872,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0030": {
+  "locusTag": "JCVISYN3A_0030",
+  "gene": null,
+  "product": "Uncharacterized ABC transporter ATP-binding protein",
+  "start": 24909,
+  "end": 25943,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0033": {
+  "locusTag": "JCVISYN3A_0033",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 26204,
+  "end": 29362,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0034": {
+  "locusTag": "JCVISYN3A_0034",
+  "gene": null,
+  "product": "Uncharacterized efflux ABC transporter permease",
+  "start": 29509,
+  "end": 34896,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0039": {
+  "locusTag": "JCVISYN3A_0039",
+  "gene": "ftsH",
+  "product": "Membrane anchored AAA+ protease",
+  "start": 35062,
+  "end": 37008,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0040": {
+  "locusTag": "JCVISYN3A_0040",
+  "gene": "tilS",
+  "product": "tRNA lysidine(34) synthetase",
+  "start": 37240,
+  "end": 38445,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0042": {
+  "locusTag": "JCVISYN3A_0042",
+  "gene": null,
+  "product": "Uncharacterized transcriptional regulator",
+  "start": 38448,
+  "end": 39275,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0043": {
+  "locusTag": "JCVISYN3A_0043",
+  "gene": "yabD",
+  "product": "Uncharacterized methyltransferase",
+  "start": 39327,
+  "end": 40049,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0044": {
+  "locusTag": "JCVISYN3A_0044",
+  "gene": "holA",
+  "product": "DNA polymerase III subunit delta",
+  "start": 40049,
+  "end": 40789,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0045": {
+  "locusTag": "JCVISYN3A_0045",
+  "gene": "tmk",
+  "product": "dTMP kinase",
+  "start": 40767,
+  "end": 41408,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0046": {
+  "locusTag": "JCVISYN3A_0046",
+  "gene": "recR",
+  "product": "Recombination protein",
+  "start": 41411,
+  "end": 42001,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0047": {
+  "locusTag": "JCVISYN3A_0047",
+  "gene": "dnaX",
+  "product": "DNA polymerase III subunit gamma and tau",
+  "start": 42003,
+  "end": 44009,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0049": {
+  "locusTag": "JCVISYN3A_0049",
+  "gene": "ffs",
+  "product": "Signal recognition particle sRNA small type",
+  "start": 44178,
+  "end": 44273,
+  "strand": "-",
+  "type": "ncRNA"
+ },
+ "JCVISYN3A_0051": {
+  "locusTag": "JCVISYN3A_0051",
+  "gene": null,
+  "product": null,
+  "start": 44397,
+  "end": 45011,
+  "strand": "-",
+  "type": "gene"
+ },
+ "JCVISYN3A_0054": {
+  "locusTag": "JCVISYN3A_0054",
+  "gene": "ahpC",
+  "product": "Uncharacterized peroxiredoxin",
+  "start": 45293,
+  "end": 45742,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0060": {
+  "locusTag": "JCVISYN3A_0060",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 46274,
+  "end": 47098,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0061": {
+  "locusTag": "JCVISYN3A_0061",
+  "gene": "serRS",
+  "product": "Serine--tRNA ligase",
+  "start": 47181,
+  "end": 48449,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0063": {
+  "locusTag": "JCVISYN3A_0063",
+  "gene": "dusB",
+  "product": "Uncharacterized tRNA dihydrouridine synthase",
+  "start": 48559,
+  "end": 49533,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0064": {
+  "locusTag": "JCVISYN3A_0064",
+  "gene": "lysRS",
+  "product": "Lysine--tRNA ligase",
+  "start": 49536,
+  "end": 51038,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0065": {
+  "locusTag": "JCVISYN3A_0065",
+  "gene": "trxA",
+  "product": "Thioredoxin",
+  "start": 51128,
+  "end": 51436,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0066": {
+  "locusTag": "JCVISYN3A_0066",
+  "gene": null,
+  "product": "Low specificity hydrolase",
+  "start": 51447,
+  "end": 52289,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0067": {
+  "locusTag": "JCVISYN3A_0067",
+  "gene": "rrfA",
+  "product": "5S ribosomal RNA",
+  "start": 52410,
+  "end": 52518,
+  "strand": "-",
+  "type": "rRNA"
+ },
+ "JCVISYN3A_0068": {
+  "locusTag": "JCVISYN3A_0068",
+  "gene": "rrlA",
+  "product": "23S ribosomal RNA",
+  "start": 52580,
+  "end": 55493,
+  "strand": "-",
+  "type": "rRNA"
+ },
+ "JCVISYN3A_0069": {
+  "locusTag": "JCVISYN3A_0069",
+  "gene": "rrsA",
+  "product": "16S ribosomal RNA",
+  "start": 55713,
+  "end": 57247,
+  "strand": "-",
+  "type": "rRNA"
+ },
+ "JCVISYN3A_0070": {
+  "locusTag": "JCVISYN3A_0070",
+  "gene": "tRNA-Leu",
+  "product": "tRNA-Leu",
+  "start": 57525,
+  "end": 57608,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0071": {
+  "locusTag": "JCVISYN3A_0071",
+  "gene": "tRNA-Lys",
+  "product": "tRNA-Lys",
+  "start": 57611,
+  "end": 57686,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0076": {
+  "locusTag": "JCVISYN3A_0076",
+  "gene": "asnRS",
+  "product": "Asparagine--tRNA ligase",
+  "start": 58156,
+  "end": 59520,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0077": {
+  "locusTag": "JCVISYN3A_0077",
+  "gene": null,
+  "product": "Uncharacterized hydrolase",
+  "start": 59529,
+  "end": 60368,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0079": {
+  "locusTag": "JCVISYN3A_0079",
+  "gene": "tsaD",
+  "product": "tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex transferase subunit D",
+  "start": 60404,
+  "end": 61360,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0080": {
+  "locusTag": "JCVISYN3A_0080",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 61455,
+  "end": 61676,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0081": {
+  "locusTag": "JCVISYN3A_0081",
+  "gene": "mnmE; trmE",
+  "product": "tRNA uridine(34) 5-carboxymethylaminomethyl synthesis GTPase",
+  "start": 61876,
+  "end": 63234,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0082": {
+  "locusTag": "JCVISYN3A_0082",
+  "gene": "rpsT",
+  "product": "30S ribosomal protein S20",
+  "start": 63285,
+  "end": 63530,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0094": {
+  "locusTag": "JCVISYN3A_0094",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 63664,
+  "end": 64380,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0095": {
+  "locusTag": "JCVISYN3A_0095",
+  "gene": "secA",
+  "product": "Preprotein translocase subunit A",
+  "start": 64495,
+  "end": 67329,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0097": {
+  "locusTag": "JCVISYN3A_0097",
+  "gene": "yycJ",
+  "product": "Uncharacterized 5'-3' exonuclease",
+  "start": 67494,
+  "end": 68405,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0105": {
+  "locusTag": "JCVISYN3A_0105",
+  "gene": "xseB",
+  "product": "Exodeoxyribonuclease VII small subunit",
+  "start": 68809,
+  "end": 69024,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0106": {
+  "locusTag": "JCVISYN3A_0106",
+  "gene": "xseA",
+  "product": "Exodeoxyribonuclease VII large subunit",
+  "start": 69014,
+  "end": 70423,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0107": {
+  "locusTag": "JCVISYN3A_0107",
+  "gene": "nusB",
+  "product": "Transcription antitermination factor",
+  "start": 70425,
+  "end": 70823,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0108": {
+  "locusTag": "JCVISYN3A_0108",
+  "gene": null,
+  "product": "Uncharacterized lipoprotein",
+  "start": 70835,
+  "end": 71947,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0109": {
+  "locusTag": "JCVISYN3A_0109",
+  "gene": null,
+  "product": "Deoxyribonuclease IV",
+  "start": 71973,
+  "end": 72842,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0113": {
+  "locusTag": "JCVISYN3A_0113",
+  "gene": "bcsA",
+  "product": "Glycolipid synthase A",
+  "start": 73088,
+  "end": 74437,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0114": {
+  "locusTag": "JCVISYN3A_0114",
+  "gene": "bcsB; cps",
+  "product": "Glycolipid synthase B",
+  "start": 74511,
+  "end": 75431,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0115": {
+  "locusTag": "JCVISYN3A_0115",
+  "gene": "galU; gtaB",
+  "product": "UTP--glucose-1-phosphate uridylyltransferase",
+  "start": 75879,
+  "end": 76751,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0116": {
+  "locusTag": "JCVISYN3A_0116",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 76936,
+  "end": 77376,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0117": {
+  "locusTag": "JCVISYN3A_0117",
+  "gene": "plsY",
+  "product": "Acyl-phosphate glycerol 3-phosphate acyltransferase",
+  "start": 77446,
+  "end": 78207,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0126": {
+  "locusTag": "JCVISYN3A_0126",
+  "gene": "gluRS",
+  "product": "Glutamate--tRNA ligase",
+  "start": 78403,
+  "end": 79854,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0127": {
+  "locusTag": "JCVISYN3A_0127",
+  "gene": null,
+  "product": "Uncharacterized phosphohydrolase",
+  "start": 79857,
+  "end": 81071,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0128": {
+  "locusTag": "JCVISYN3A_0128",
+  "gene": "rpoE",
+  "product": "DNA-directed RNA polymerase subunit delta",
+  "start": 81097,
+  "end": 81525,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0129": {
+  "locusTag": "JCVISYN3A_0129",
+  "gene": "pyrG",
+  "product": "CTP synthase",
+  "start": 81617,
+  "end": 83215,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0131": {
+  "locusTag": "JCVISYN3A_0131",
+  "gene": "fbaA",
+  "product": "Fructose-1,6-bisphosphate aldolase",
+  "start": 83504,
+  "end": 84397,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0132": {
+  "locusTag": "JCVISYN3A_0132",
+  "gene": "ietA",
+  "product": "Toxin-antitoxin AAA ATPase",
+  "start": 84546,
+  "end": 85607,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0133": {
+  "locusTag": "JCVISYN3A_0133",
+  "gene": "ietS",
+  "product": "Toxin-antitoxin serine protease",
+  "start": 85600,
+  "end": 87873,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0137": {
+  "locusTag": "JCVISYN3A_0137",
+  "gene": "rpmE",
+  "product": "50S ribosomal protein L31",
+  "start": 88733,
+  "end": 89011,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0138": {
+  "locusTag": "JCVISYN3A_0138",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 89084,
+  "end": 90982,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0139": {
+  "locusTag": "JCVISYN3A_0139",
+  "gene": "ytqI; orn",
+  "product": "NanoRNAse",
+  "start": 90992,
+  "end": 91942,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0140": {
+  "locusTag": "JCVISYN3A_0140",
+  "gene": "tdk",
+  "product": "Thymidine kinase",
+  "start": 91944,
+  "end": 92573,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0141": {
+  "locusTag": "JCVISYN3A_0141",
+  "gene": "prfA",
+  "product": "Peptide chain release factor 1",
+  "start": 92576,
+  "end": 93670,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0142": {
+  "locusTag": "JCVISYN3A_0142",
+  "gene": "prmC",
+  "product": "Protein-(glutamine-N5) methyltransferase, release factor-specific",
+  "start": 93663,
+  "end": 94511,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0143": {
+  "locusTag": "JCVISYN3A_0143",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 94520,
+  "end": 95992,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0144": {
+  "locusTag": "JCVISYN3A_0144",
+  "gene": "tsaC",
+  "product": "tRNA (adenosine(37)-N6)-threonylcarbamoyltransferase complex transferase subunit",
+  "start": 96001,
+  "end": 96501,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0145": {
+  "locusTag": "JCVISYN3A_0145",
+  "gene": null,
+  "product": "Uncharacterized acetyltransferase",
+  "start": 96616,
+  "end": 97530,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0146": {
+  "locusTag": "JCVISYN3A_0146",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 97759,
+  "end": 98466,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0147": {
+  "locusTag": "JCVISYN3A_0147",
+  "gene": "clsA",
+  "product": "Cardiolipin synthase",
+  "start": 98466,
+  "end": 99995,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0148": {
+  "locusTag": "JCVISYN3A_0148",
+  "gene": "rpsL",
+  "product": "30S ribosomal protein S12",
+  "start": 100119,
+  "end": 100538,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0149": {
+  "locusTag": "JCVISYN3A_0149",
+  "gene": "rpsG",
+  "product": "30S ribosomal protein S7",
+  "start": 100625,
+  "end": 101092,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0150": {
+  "locusTag": "JCVISYN3A_0150",
+  "gene": null,
+  "product": "Translation elongation factor G",
+  "start": 101117,
+  "end": 103186,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0151": {
+  "locusTag": "JCVISYN3A_0151",
+  "gene": null,
+  "product": "Translation elongation factor Tu",
+  "start": 103318,
+  "end": 104505,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0158": {
+  "locusTag": "JCVISYN3A_0158",
+  "gene": "ssrA",
+  "product": "Transfer-messenger RNA",
+  "start": 104782,
+  "end": 105192,
+  "strand": "+",
+  "type": "tmRNA"
+ },
+ "JCVISYN3A_0163": {
+  "locusTag": "JCVISYN3A_0163",
+  "gene": "alaRS",
+  "product": "Alanine--tRNA ligase",
+  "start": 105431,
+  "end": 108121,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0164": {
+  "locusTag": "JCVISYN3A_0164",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 108195,
+  "end": 108689,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0165": {
+  "locusTag": "JCVISYN3A_0165",
+  "gene": "amiC",
+  "product": "Oligopeptide ABC transporter permease",
+  "start": 108907,
+  "end": 110151,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0166": {
+  "locusTag": "JCVISYN3A_0166",
+  "gene": null,
+  "product": "Oligopeptide ABC transporter permease",
+  "start": 110167,
+  "end": 111177,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0167": {
+  "locusTag": "JCVISYN3A_0167",
+  "gene": "amiE",
+  "product": "Oligopeptide ABC transporter ATP-binding protein",
+  "start": 111191,
+  "end": 112891,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0168": {
+  "locusTag": "JCVISYN3A_0168",
+  "gene": "amiF",
+  "product": "Oligopeptide ABC transporter ATP-binding protein",
+  "start": 112893,
+  "end": 114761,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0169": {
+  "locusTag": "JCVISYN3A_0169",
+  "gene": "amiA",
+  "product": "Oligopeptide ABC transporter substrate-binding protein",
+  "start": 114778,
+  "end": 117879,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0195": {
+  "locusTag": "JCVISYN3A_0195",
+  "gene": "potC",
+  "product": "Spermidine/putrescine ABC transporter permease",
+  "start": 118738,
+  "end": 121848,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0196": {
+  "locusTag": "JCVISYN3A_0196",
+  "gene": "potB",
+  "product": "Spermidine/putrescine ABC transporter permease",
+  "start": 121833,
+  "end": 122825,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0197": {
+  "locusTag": "JCVISYN3A_0197",
+  "gene": "potA",
+  "product": "Spermidine/putrescine ABC transporter ATP-binding protein",
+  "start": 122825,
+  "end": 123880,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0198": {
+  "locusTag": "JCVISYN3A_0198",
+  "gene": "rplT",
+  "product": "50S ribosomal protein L20",
+  "start": 124254,
+  "end": 124613,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0199": {
+  "locusTag": "JCVISYN3A_0199",
+  "gene": "rpmI",
+  "product": "50S ribosomal protein L35",
+  "start": 124632,
+  "end": 124823,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0200": {
+  "locusTag": "JCVISYN3A_0200",
+  "gene": "infC",
+  "product": "Translation initiation factor IF-3",
+  "start": 124849,
+  "end": 125394,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0201": {
+  "locusTag": "JCVISYN3A_0201",
+  "gene": "def",
+  "product": "Peptide deformylase",
+  "start": 125583,
+  "end": 126185,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0202": {
+  "locusTag": "JCVISYN3A_0202",
+  "gene": "rsmD",
+  "product": "16S rRNA (guanine(966)-N(2))-methyltransferase",
+  "start": 126259,
+  "end": 126816,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0203": {
+  "locusTag": "JCVISYN3A_0203",
+  "gene": "gmk",
+  "product": "Guanylate kinase",
+  "start": 126819,
+  "end": 127712,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0213": {
+  "locusTag": "JCVISYN3A_0213",
+  "gene": "eno",
+  "product": "Phosphopyruvate hydratase",
+  "start": 127920,
+  "end": 129275,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0214": {
+  "locusTag": "JCVISYN3A_0214",
+  "gene": "pgpA",
+  "product": "Phosphatidylglycerophosphatase",
+  "start": 129342,
+  "end": 130163,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0215": {
+  "locusTag": "JCVISYN3A_0215",
+  "gene": "yrrK; yqgF",
+  "product": "Putative pre-16S rRNA nuclease",
+  "start": 130165,
+  "end": 130596,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0216": {
+  "locusTag": "JCVISYN3A_0216",
+  "gene": "hptA",
+  "product": "Hypoxanthine phosphoribosyltransferase",
+  "start": 130602,
+  "end": 131174,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0218": {
+  "locusTag": "JCVISYN3A_0218",
+  "gene": "glpK",
+  "product": "Glycerol kinase",
+  "start": 131274,
+  "end": 132791,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0220": {
+  "locusTag": "JCVISYN3A_0220",
+  "gene": "pfkA",
+  "product": "6-Phosphofructokinase",
+  "start": 133142,
+  "end": 134122,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0221": {
+  "locusTag": "JCVISYN3A_0221",
+  "gene": "pyk",
+  "product": "Pyruvate kinase",
+  "start": 134193,
+  "end": 135629,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0222": {
+  "locusTag": "JCVISYN3A_0222",
+  "gene": "thrRS",
+  "product": "Threonine--tRNA ligase",
+  "start": 135894,
+  "end": 137813,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0227": {
+  "locusTag": "JCVISYN3A_0227",
+  "gene": "pdhC",
+  "product": "Branched-chain alpha-keto acid dehydrogenase subunit E2",
+  "start": 138324,
+  "end": 139649,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0228": {
+  "locusTag": "JCVISYN3A_0228",
+  "gene": "lpdA",
+  "product": "Dihydrolipoyl dehydrogenase",
+  "start": 139668,
+  "end": 141557,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0229": {
+  "locusTag": "JCVISYN3A_0229",
+  "gene": "pta",
+  "product": "Phosphate acetyltransferase",
+  "start": 141579,
+  "end": 142547,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0230": {
+  "locusTag": "JCVISYN3A_0230",
+  "gene": "ackA",
+  "product": "Acetate kinase",
+  "start": 142560,
+  "end": 143741,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0233": {
+  "locusTag": "JCVISYN3A_0233",
+  "gene": "ptsI",
+  "product": "Phosphoenolpyruvate--protein phosphotransferase",
+  "start": 143903,
+  "end": 145624,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0234": {
+  "locusTag": "JCVISYN3A_0234",
+  "gene": "crr",
+  "product": "PTS glucose transporter subunit IIA",
+  "start": 145706,
+  "end": 146170,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0235": {
+  "locusTag": "JCVISYN3A_0235",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 146279,
+  "end": 146461,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0238": {
+  "locusTag": "JCVISYN3A_0238",
+  "gene": "rpsD",
+  "product": "30S ribosomal protein S4",
+  "start": 146578,
+  "end": 147204,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0239": {
+  "locusTag": "JCVISYN3A_0239",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 147459,
+  "end": 149246,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0240": {
+  "locusTag": "JCVISYN3A_0240",
+  "gene": "thiI",
+  "product": "tRNA 4-thiouridine(8) synthase",
+  "start": 149254,
+  "end": 150441,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0247": {
+  "locusTag": "JCVISYN3A_0247",
+  "gene": "ysxC; yihA",
+  "product": "Ribosome biogenesis GTP-binding protein",
+  "start": 150614,
+  "end": 151204,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0248": {
+  "locusTag": "JCVISYN3A_0248",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 151198,
+  "end": 151758,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0249": {
+  "locusTag": "JCVISYN3A_0249",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 151760,
+  "end": 152338,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0250": {
+  "locusTag": "JCVISYN3A_0250",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 152341,
+  "end": 153030,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0253": {
+  "locusTag": "JCVISYN3A_0253",
+  "gene": "greA",
+  "product": "Transcription elongation factor",
+  "start": 153156,
+  "end": 153629,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0254": {
+  "locusTag": "JCVISYN3A_0254",
+  "gene": "uvrC",
+  "product": "Excinuclease ABC subunit C",
+  "start": 153752,
+  "end": 155506,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0257": {
+  "locusTag": "JCVISYN3A_0257",
+  "gene": "rnjB",
+  "product": "RNase J family beta-CASP ribonuclease",
+  "start": 155628,
+  "end": 157379,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0259": {
+  "locusTag": "JCVISYN3A_0259",
+  "gene": "nadK",
+  "product": "NAD(+) kinase",
+  "start": 157516,
+  "end": 158313,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0260": {
+  "locusTag": "JCVISYN3A_0260",
+  "gene": "valRS",
+  "product": "Valine--tRNA ligase",
+  "start": 158424,
+  "end": 161042,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0262": {
+  "locusTag": "JCVISYN3A_0262",
+  "gene": "rpe",
+  "product": "Ribulose-phosphate 3-epimerase",
+  "start": 161214,
+  "end": 161891,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0263": {
+  "locusTag": "JCVISYN3A_0263",
+  "gene": null,
+  "product": "Ribosome small subunit-dependent GTPase A",
+  "start": 161893,
+  "end": 162795,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0264": {
+  "locusTag": "JCVISYN3A_0264",
+  "gene": null,
+  "product": "Uncharacterized serine/threonine protein kinase",
+  "start": 162805,
+  "end": 163920,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0270": {
+  "locusTag": "JCVISYN3A_0270",
+  "gene": "tsaE; yjeE",
+  "product": "tRNA (N6-adenosine(37)-N6)-threonylcarbamoyltransferase complex ATPase",
+  "start": 164055,
+  "end": 164471,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0271": {
+  "locusTag": "JCVISYN3A_0271",
+  "gene": "tsaB; yeaZ",
+  "product": "tRNA N6-adenosine(37)-N6-threonylcarbamoyltransferase complex dimerization subunit",
+  "start": 164473,
+  "end": 165036,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0280": {
+  "locusTag": "JCVISYN3A_0280",
+  "gene": "tRNA-Ser",
+  "product": "tRNA-Ser",
+  "start": 165578,
+  "end": 165667,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0281": {
+  "locusTag": "JCVISYN3A_0281",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 165787,
+  "end": 166467,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0282": {
+  "locusTag": "JCVISYN3A_0282",
+  "gene": "proRS",
+  "product": "Proline--tRNA ligase",
+  "start": 166448,
+  "end": 167872,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0283": {
+  "locusTag": "JCVISYN3A_0283",
+  "gene": "rnhA",
+  "product": "Double-stranded RNA binding RNase HI",
+  "start": 167885,
+  "end": 168502,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0285": {
+  "locusTag": "JCVISYN3A_0285",
+  "gene": "lepA; EF4",
+  "product": "Elongation factor 4",
+  "start": 168527,
+  "end": 170329,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0286": {
+  "locusTag": "JCVISYN3A_0286",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 170355,
+  "end": 171161,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0287": {
+  "locusTag": "JCVISYN3A_0287",
+  "gene": "aspRS",
+  "product": "Aspartate--tRNA ligase",
+  "start": 171178,
+  "end": 172902,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0288": {
+  "locusTag": "JCVISYN3A_0288",
+  "gene": "hisRS",
+  "product": "Histidine--tRNA ligase",
+  "start": 172911,
+  "end": 174155,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0289": {
+  "locusTag": "JCVISYN3A_0289",
+  "gene": "rbfA",
+  "product": "Ribosome-binding factor A",
+  "start": 174340,
+  "end": 174693,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0290": {
+  "locusTag": "JCVISYN3A_0290",
+  "gene": "truB",
+  "product": "tRNA pseudouridine(55) synthase",
+  "start": 174743,
+  "end": 175621,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0291": {
+  "locusTag": "JCVISYN3A_0291",
+  "gene": "ribF",
+  "product": "FAD synthetase",
+  "start": 175608,
+  "end": 176162,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0294": {
+  "locusTag": "JCVISYN3A_0294",
+  "gene": "rpsO",
+  "product": "30S ribosomal protein S15",
+  "start": 176397,
+  "end": 176663,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0295": {
+  "locusTag": "JCVISYN3A_0295",
+  "gene": "tRNA-Gly",
+  "product": "tRNA-Gly",
+  "start": 176723,
+  "end": 176796,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0296": {
+  "locusTag": "JCVISYN3A_0296",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 176894,
+  "end": 177538,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0297": {
+  "locusTag": "JCVISYN3A_0297",
+  "gene": "infB",
+  "product": "Translation initiation factor IF-2",
+  "start": 177557,
+  "end": 179419,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0298": {
+  "locusTag": "JCVISYN3A_0298",
+  "gene": null,
+  "product": "Uncharacterized L7Ae family protein",
+  "start": 179441,
+  "end": 179740,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0299": {
+  "locusTag": "JCVISYN3A_0299",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 179727,
+  "end": 180008,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0300": {
+  "locusTag": "JCVISYN3A_0300",
+  "gene": "nusA",
+  "product": "Transcription termination/antitermination protein NusA",
+  "start": 179989,
+  "end": 181743,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0301": {
+  "locusTag": "JCVISYN3A_0301",
+  "gene": "rimP",
+  "product": "Ribosome assembly cofactor",
+  "start": 181752,
+  "end": 182246,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0302": {
+  "locusTag": "JCVISYN3A_0302",
+  "gene": "fre",
+  "product": "Flavin reductase",
+  "start": 182359,
+  "end": 183009,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0303": {
+  "locusTag": "JCVISYN3A_0303",
+  "gene": "polC",
+  "product": "PolC-type DNA polymerase III",
+  "start": 183022,
+  "end": 187470,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0304": {
+  "locusTag": "JCVISYN3A_0304",
+  "gene": "cdsA",
+  "product": "Phosphatidate cytidylyltransferase",
+  "start": 187479,
+  "end": 188507,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0305": {
+  "locusTag": "JCVISYN3A_0305",
+  "gene": null,
+  "product": "Uncharacterized metallopeptidase",
+  "start": 188706,
+  "end": 189782,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0308": {
+  "locusTag": "JCVISYN3A_0308",
+  "gene": "trpRS",
+  "product": "Tryptophan--tRNA ligase",
+  "start": 190227,
+  "end": 191237,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0314": {
+  "locusTag": "JCVISYN3A_0314",
+  "gene": "ecfS",
+  "product": "Uncharacterized ECF transporter S component",
+  "start": 191373,
+  "end": 192107,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0315": {
+  "locusTag": "JCVISYN3A_0315",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 192229,
+  "end": 192381,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0316": {
+  "locusTag": "JCVISYN3A_0316",
+  "gene": "tkt",
+  "product": "Transketolase",
+  "start": 192440,
+  "end": 194410,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0317": {
+  "locusTag": "JCVISYN3A_0317",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 194426,
+  "end": 194671,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0325": {
+  "locusTag": "JCVISYN3A_0325",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 196094,
+  "end": 197593,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0326": {
+  "locusTag": "JCVISYN3A_0326",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 197611,
+  "end": 198372,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0327": {
+  "locusTag": "JCVISYN3A_0327",
+  "gene": "scpA",
+  "product": "Chromosome segregation protein A",
+  "start": 198382,
+  "end": 199218,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0328": {
+  "locusTag": "JCVISYN3A_0328",
+  "gene": "scpB",
+  "product": "Chromosome segregation protein B",
+  "start": 199202,
+  "end": 199831,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0329": {
+  "locusTag": "JCVISYN3A_0329",
+  "gene": "rluB",
+  "product": "Uncharacterized pseudouridine synthase",
+  "start": 199899,
+  "end": 200657,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0330": {
+  "locusTag": "JCVISYN3A_0330",
+  "gene": "dgk",
+  "product": "Deoxyguanosine kinase",
+  "start": 200667,
+  "end": 201284,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0332": {
+  "locusTag": "JCVISYN3A_0332",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 201395,
+  "end": 202222,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0338": {
+  "locusTag": "JCVISYN3A_0338",
+  "gene": null,
+  "product": "Uncharacterized lipoprotein",
+  "start": 202897,
+  "end": 203616,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0344": {
+  "locusTag": "JCVISYN3A_0344",
+  "gene": "ppa",
+  "product": "Inorganic diphosphatase",
+  "start": 204074,
+  "end": 204634,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0345": {
+  "locusTag": "JCVISYN3A_0345",
+  "gene": "ecfS",
+  "product": "Uncharacterized ECF transporter S component",
+  "start": 204773,
+  "end": 205663,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0346": {
+  "locusTag": "JCVISYN3A_0346",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 205729,
+  "end": 206424,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0347": {
+  "locusTag": "JCVISYN3A_0347",
+  "gene": "cmk",
+  "product": "Cytidylate kinase",
+  "start": 206433,
+  "end": 207095,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0348": {
+  "locusTag": "JCVISYN3A_0348",
+  "gene": "engA",
+  "product": "Ribosome biogenesis GTPase",
+  "start": 207102,
+  "end": 208409,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0350": {
+  "locusTag": "JCVISYN3A_0350",
+  "gene": "hupA",
+  "product": "DNA-binding protein",
+  "start": 208464,
+  "end": 208736,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0352": {
+  "locusTag": "JCVISYN3A_0352",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 208791,
+  "end": 209339,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0353": {
+  "locusTag": "JCVISYN3A_0353",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 209403,
+  "end": 209780,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0356": {
+  "locusTag": "JCVISYN3A_0356",
+  "gene": "rnpB",
+  "product": "RNase P RNA component class B",
+  "start": 210198,
+  "end": 210537,
+  "strand": "+",
+  "type": "ncRNA"
+ },
+ "JCVISYN3A_0359": {
+  "locusTag": "JCVISYN3A_0359",
+  "gene": null,
+  "product": "Ribonuclease Y",
+  "start": 210712,
+  "end": 212241,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0360": {
+  "locusTag": "JCVISYN3A_0360",
+  "gene": "ffh",
+  "product": "Signal recognition particle protein",
+  "start": 212275,
+  "end": 213618,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0361": {
+  "locusTag": "JCVISYN3A_0361",
+  "gene": "rlmH",
+  "product": "23S rRNA (pseudouridine(1915)-N3)-methyltransferase",
+  "start": 213622,
+  "end": 214089,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0362": {
+  "locusTag": "JCVISYN3A_0362",
+  "gene": "rpsP",
+  "product": "30S ribosomal protein S16",
+  "start": 214180,
+  "end": 214458,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0363": {
+  "locusTag": "JCVISYN3A_0363",
+  "gene": "rimM",
+  "product": "16S rRNA processing protein",
+  "start": 214490,
+  "end": 214984,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0364": {
+  "locusTag": "JCVISYN3A_0364",
+  "gene": "trmD",
+  "product": "tRNA (guanosine(37)-N1)-methyltransferase",
+  "start": 214986,
+  "end": 215708,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0365": {
+  "locusTag": "JCVISYN3A_0365",
+  "gene": "rplS",
+  "product": "50S ribosomal protein L19",
+  "start": 215710,
+  "end": 216093,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0366": {
+  "locusTag": "JCVISYN3A_0366",
+  "gene": "ylqF; rbgA",
+  "product": "L16-binding dependent 50S subunit-maturation GTPase",
+  "start": 216192,
+  "end": 217142,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0371": {
+  "locusTag": "JCVISYN3A_0371",
+  "gene": "ywjA",
+  "product": "Flippase A",
+  "start": 217523,
+  "end": 219394,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0372": {
+  "locusTag": "JCVISYN3A_0372",
+  "gene": "ywjA",
+  "product": "Flippase B",
+  "start": 219410,
+  "end": 221263,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0373": {
+  "locusTag": "JCVISYN3A_0373",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 221297,
+  "end": 222904,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0374": {
+  "locusTag": "JCVISYN3A_0374",
+  "gene": "tRNA-Arg",
+  "product": "tRNA-Arg",
+  "start": 222960,
+  "end": 223036,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0375": {
+  "locusTag": "JCVISYN3A_0375",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 223090,
+  "end": 223830,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0376": {
+  "locusTag": "JCVISYN3A_0376",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 223802,
+  "end": 224146,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0377": {
+  "locusTag": "JCVISYN3A_0377",
+  "gene": "obgE",
+  "product": "Ribosome GTPase",
+  "start": 224217,
+  "end": 225518,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0378": {
+  "locusTag": "JCVISYN3A_0378",
+  "gene": "nadE",
+  "product": "NAD(+) synthase",
+  "start": 225520,
+  "end": 226257,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0379": {
+  "locusTag": "JCVISYN3A_0379",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 226274,
+  "end": 226552,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0380": {
+  "locusTag": "JCVISYN3A_0380",
+  "gene": "nadD",
+  "product": "Nicotinate (nicotinamide) nucleotide adenylyltransferase",
+  "start": 226570,
+  "end": 227667,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0381": {
+  "locusTag": "JCVISYN3A_0381",
+  "gene": "mtnN",
+  "product": "5'-Methylthioadenosine nucleosidase",
+  "start": 227672,
+  "end": 228331,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0382": {
+  "locusTag": "JCVISYN3A_0382",
+  "gene": "dnk",
+  "product": "Deoxynucleoside kinase",
+  "start": 228341,
+  "end": 228979,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0387": {
+  "locusTag": "JCVISYN3A_0387",
+  "gene": "mnmA",
+  "product": "tRNA 2-thiouridine(34) synthase",
+  "start": 229208,
+  "end": 230335,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0388": {
+  "locusTag": "JCVISYN3A_0388",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 230382,
+  "end": 230999,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0389": {
+  "locusTag": "JCVISYN3A_0389",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 231075,
+  "end": 233219,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0390": {
+  "locusTag": "JCVISYN3A_0390",
+  "gene": "fmt",
+  "product": "Methionyl-tRNA formyltransferase",
+  "start": 233209,
+  "end": 234162,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0391": {
+  "locusTag": "JCVISYN3A_0391",
+  "gene": "efp",
+  "product": "Elongation factor P",
+  "start": 234249,
+  "end": 234803,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0392": {
+  "locusTag": "JCVISYN3A_0392",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 234821,
+  "end": 235123,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0394": {
+  "locusTag": "JCVISYN3A_0394",
+  "gene": "lon",
+  "product": "Endopeptidase La",
+  "start": 235262,
+  "end": 237622,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0398": {
+  "locusTag": "JCVISYN3A_0398",
+  "gene": null,
+  "product": "Uncharacterized lipoprotein",
+  "start": 237760,
+  "end": 240222,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0399": {
+  "locusTag": "JCVISYN3A_0399",
+  "gene": null,
+  "product": "Uncharacterized efflux ABC transporter permease",
+  "start": 240372,
+  "end": 245633,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0400": {
+  "locusTag": "JCVISYN3A_0400",
+  "gene": null,
+  "product": "Uncharacterized protease",
+  "start": 245681,
+  "end": 246232,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0401": {
+  "locusTag": "JCVISYN3A_0401",
+  "gene": null,
+  "product": "Uncharacterized peptidase",
+  "start": 246267,
+  "end": 248114,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0402": {
+  "locusTag": "JCVISYN3A_0402",
+  "gene": "ybeY",
+  "product": "rRNA maturation RNase",
+  "start": 248119,
+  "end": 248613,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0403": {
+  "locusTag": "JCVISYN3A_0403",
+  "gene": "era",
+  "product": "Ribosome GTPase",
+  "start": 248617,
+  "end": 249522,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0404": {
+  "locusTag": "JCVISYN3A_0404",
+  "gene": "recO",
+  "product": "DNA repair protein",
+  "start": 249522,
+  "end": 250271,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0405": {
+  "locusTag": "JCVISYN3A_0405",
+  "gene": "glyRS",
+  "product": "Glycine--tRNA ligase",
+  "start": 250335,
+  "end": 251705,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0406": {
+  "locusTag": "JCVISYN3A_0406",
+  "gene": "dnaG",
+  "product": "DNA primase",
+  "start": 251740,
+  "end": 253578,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0407": {
+  "locusTag": "JCVISYN3A_0407",
+  "gene": "rpoD",
+  "product": "RNA polymerase subunit sigma",
+  "start": 253581,
+  "end": 255101,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0408": {
+  "locusTag": "JCVISYN3A_0408",
+  "gene": "trmK; yqfN",
+  "product": "Uncharacterized methyltransferase",
+  "start": 255101,
+  "end": 255778,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0409": {
+  "locusTag": "JCVISYN3A_0409",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 255765,
+  "end": 256541,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0410": {
+  "locusTag": "JCVISYN3A_0410",
+  "gene": null,
+  "product": "Uncharacterized helicase",
+  "start": 256550,
+  "end": 257911,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0411": {
+  "locusTag": "JCVISYN3A_0411",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 257951,
+  "end": 259465,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0412": {
+  "locusTag": "JCVISYN3A_0412",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 259581,
+  "end": 263735,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0413": {
+  "locusTag": "JCVISYN3A_0413",
+  "gene": "apt",
+  "product": "Adenine phosphoribosyltransferase",
+  "start": 263747,
+  "end": 264259,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0414": {
+  "locusTag": "JCVISYN3A_0414",
+  "gene": "relA",
+  "product": "Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase",
+  "start": 264342,
+  "end": 266606,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0415": {
+  "locusTag": "JCVISYN3A_0415",
+  "gene": "smc",
+  "product": "Chromosome segregation protein",
+  "start": 266643,
+  "end": 269609,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0416": {
+  "locusTag": "JCVISYN3A_0416",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 269915,
+  "end": 270304,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0418": {
+  "locusTag": "JCVISYN3A_0418",
+  "gene": null,
+  "product": "Ribonuclease III",
+  "start": 270449,
+  "end": 271147,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0419": {
+  "locusTag": "JCVISYN3A_0419",
+  "gene": "plsX",
+  "product": "Phosphate acyltransferase",
+  "start": 271137,
+  "end": 272141,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0420": {
+  "locusTag": "JCVISYN3A_0420",
+  "gene": "fakA",
+  "product": "Fatty acid kinase subunit A",
+  "start": 272174,
+  "end": 273817,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0421": {
+  "locusTag": "JCVISYN3A_0421",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 273842,
+  "end": 274153,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0422": {
+  "locusTag": "JCVISYN3A_0422",
+  "gene": "rpmB",
+  "product": "50S ribosomal protein L28",
+  "start": 274322,
+  "end": 274519,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0423": {
+  "locusTag": "JCVISYN3A_0423",
+  "gene": "tRNA-Leu",
+  "product": "tRNA-Leu",
+  "start": 274583,
+  "end": 274667,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0424": {
+  "locusTag": "JCVISYN3A_0424",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 274750,
+  "end": 275193,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0425": {
+  "locusTag": "JCVISYN3A_0425",
+  "gene": "pstS",
+  "product": "Phosphate ABC transporter substrate-binding protein",
+  "start": 275282,
+  "end": 276412,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0426": {
+  "locusTag": "JCVISYN3A_0426",
+  "gene": "pstA",
+  "product": "Phosphate ABC transporter permease",
+  "start": 276464,
+  "end": 278554,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0427": {
+  "locusTag": "JCVISYN3A_0427",
+  "gene": "pstB",
+  "product": "Phosphate ABC transporter ATP-binding protein",
+  "start": 278547,
+  "end": 279356,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0428": {
+  "locusTag": "JCVISYN3A_0428",
+  "gene": "phoU",
+  "product": "Phosphate transport system regulatory protein",
+  "start": 279365,
+  "end": 280039,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0429": {
+  "locusTag": "JCVISYN3A_0429",
+  "gene": "ftsY",
+  "product": "Signal recognition particle-docking protein",
+  "start": 280106,
+  "end": 281335,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0430": {
+  "locusTag": "JCVISYN3A_0430",
+  "gene": null,
+  "product": "Uncharacterized DNA-binding protein",
+  "start": 281319,
+  "end": 281660,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0431": {
+  "locusTag": "JCVISYN3A_0431",
+  "gene": null,
+  "product": "Uncharacterized metallophosphoesterase",
+  "start": 281648,
+  "end": 282421,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0432": {
+  "locusTag": "JCVISYN3A_0432",
+  "gene": "metK",
+  "product": "Methionine adenosyltransferase",
+  "start": 282631,
+  "end": 283794,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0433": {
+  "locusTag": "JCVISYN3A_0433",
+  "gene": "cutC",
+  "product": "Uncharacterized protein",
+  "start": 283785,
+  "end": 284468,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0434": {
+  "locusTag": "JCVISYN3A_0434",
+  "gene": "rlmFO",
+  "product": "23S rRNA (uridine(1939)-m5)-methyltransferase",
+  "start": 284461,
+  "end": 285777,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0435": {
+  "locusTag": "JCVISYN3A_0435",
+  "gene": "manA",
+  "product": "Mannose-6-phosphate isomerase",
+  "start": 285803,
+  "end": 286732,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0437": {
+  "locusTag": "JCVISYN3A_0437",
+  "gene": "yhaM",
+  "product": "Putative 3'-5' exoribonuclease",
+  "start": 286805,
+  "end": 287785,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0438": {
+  "locusTag": "JCVISYN3A_0438",
+  "gene": "hinT",
+  "product": "Uncharacterized protein",
+  "start": 287816,
+  "end": 288214,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0439": {
+  "locusTag": "JCVISYN3A_0439",
+  "gene": null,
+  "product": "Uncharacterized lipoprotein",
+  "start": 288217,
+  "end": 290373,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0440": {
+  "locusTag": "JCVISYN3A_0440",
+  "gene": null,
+  "product": "Uncharacterized lipoprotein",
+  "start": 290373,
+  "end": 293309,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0441": {
+  "locusTag": "JCVISYN3A_0441",
+  "gene": "iscS",
+  "product": "Cysteine desulfurase",
+  "start": 293512,
+  "end": 294750,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0442": {
+  "locusTag": "JCVISYN3A_0442",
+  "gene": "iscU",
+  "product": "Iron-sulfur cluster assembly scaffold protein",
+  "start": 294753,
+  "end": 295190,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0443": {
+  "locusTag": "JCVISYN3A_0443",
+  "gene": "yggN",
+  "product": "5-Formyltetrahydrofolate cyclo-ligase",
+  "start": 295183,
+  "end": 295746,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0444": {
+  "locusTag": "JCVISYN3A_0444",
+  "gene": null,
+  "product": "Uncharacterized peptidase",
+  "start": 295767,
+  "end": 297662,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0445": {
+  "locusTag": "JCVISYN3A_0445",
+  "gene": "pgi",
+  "product": "Glucose-6-phosphate isomerase",
+  "start": 297882,
+  "end": 299165,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0447": {
+  "locusTag": "JCVISYN3A_0447",
+  "gene": "dut",
+  "product": "dUTP diphosphatase",
+  "start": 299198,
+  "end": 299701,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0448": {
+  "locusTag": "JCVISYN3A_0448",
+  "gene": null,
+  "product": "Uncharacterized rRNA methyltransferase",
+  "start": 299718,
+  "end": 300485,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0451": {
+  "locusTag": "JCVISYN3A_0451",
+  "gene": "gapdh",
+  "product": "Glyceraldehyde-3-phosphate dehydrogenase",
+  "start": 300656,
+  "end": 302071,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0452": {
+  "locusTag": "JCVISYN3A_0452",
+  "gene": "parE",
+  "product": "DNA topoisomerase IV subunit B",
+  "start": 302258,
+  "end": 304189,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0453": {
+  "locusTag": "JCVISYN3A_0453",
+  "gene": "parC",
+  "product": "DNA topoisomerase IV subunit A",
+  "start": 304191,
+  "end": 306887,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0475": {
+  "locusTag": "JCVISYN3A_0475",
+  "gene": "ldh",
+  "product": "L-lactate dehydrogenase",
+  "start": 307123,
+  "end": 308079,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0478": {
+  "locusTag": "JCVISYN3A_0478",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 308182,
+  "end": 308766,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0479": {
+  "locusTag": "JCVISYN3A_0479",
+  "gene": null,
+  "product": "Uncharacterized peptidase",
+  "start": 308771,
+  "end": 310417,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0481": {
+  "locusTag": "JCVISYN3A_0481",
+  "gene": null,
+  "product": "Uncharacterized lipoprotein",
+  "start": 310640,
+  "end": 311077,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0482": {
+  "locusTag": "JCVISYN3A_0482",
+  "gene": "rpsU",
+  "product": "30S ribosomal protein S21",
+  "start": 311391,
+  "end": 311555,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0154": {
+  "locusTag": "JCVISYN3A_0154",
+  "gene": null,
+  "product": "Uncharacterized peptidase",
+  "start": 311816,
+  "end": 313171,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0493": {
+  "locusTag": "JCVISYN3A_0493",
+  "gene": null,
+  "product": "Uncharacterized peptidase",
+  "start": 313335,
+  "end": 314684,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0494": {
+  "locusTag": "JCVISYN3A_0494",
+  "gene": "nanE",
+  "product": "N-acetylmannosamine-6-phosphate 2-epimerase",
+  "start": 314840,
+  "end": 315520,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0495": {
+  "locusTag": "JCVISYN3A_0495",
+  "gene": null,
+  "product": "Uncharacterized kinase",
+  "start": 315579,
+  "end": 316454,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0499": {
+  "locusTag": "JCVISYN3A_0499",
+  "gene": "rpmA",
+  "product": "50S ribosomal protein L27",
+  "start": 316629,
+  "end": 316910,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0500": {
+  "locusTag": "JCVISYN3A_0500",
+  "gene": "prp;ysxB",
+  "product": "Maturation protease for ribosomal protein L27",
+  "start": 316912,
+  "end": 317226,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0501": {
+  "locusTag": "JCVISYN3A_0501",
+  "gene": "rplU",
+  "product": "50S ribosomal protein L21",
+  "start": 317229,
+  "end": 317531,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0503": {
+  "locusTag": "JCVISYN3A_0503",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 317677,
+  "end": 318078,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0504": {
+  "locusTag": "JCVISYN3A_0504",
+  "gene": "rsmI",
+  "product": "16S rRNA (cytidine(1402)-2'-O)-methyltransferase",
+  "start": 318101,
+  "end": 318988,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0930": {
+  "locusTag": "JCVISYN3A_0930",
+  "gene": "rpmG",
+  "product": "50S ribosomal protein L33",
+  "start": 319048,
+  "end": 319191,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0505": {
+  "locusTag": "JCVISYN3A_0505",
+  "gene": null,
+  "product": "Uncharacterized lipoprotein",
+  "start": 319364,
+  "end": 320437,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0506": {
+  "locusTag": "JCVISYN3A_0506",
+  "gene": "tRNA-Leu",
+  "product": "tRNA-Leu",
+  "start": 320530,
+  "end": 320618,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0507": {
+  "locusTag": "JCVISYN3A_0507",
+  "gene": "tRNA-Lys",
+  "product": "tRNA-Lys",
+  "start": 320629,
+  "end": 320704,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0508": {
+  "locusTag": "JCVISYN3A_0508",
+  "gene": "tRNA-Gln",
+  "product": "tRNA-Gln",
+  "start": 320709,
+  "end": 320783,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0509": {
+  "locusTag": "JCVISYN3A_0509",
+  "gene": "tRNA-Tyr",
+  "product": "tRNA-Tyr",
+  "start": 320790,
+  "end": 320873,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0510": {
+  "locusTag": "JCVISYN3A_0510",
+  "gene": "tRNA-Thr",
+  "product": "tRNA-Thr",
+  "start": 320880,
+  "end": 320955,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0511": {
+  "locusTag": "JCVISYN3A_0511",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 321082,
+  "end": 321705,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0512": {
+  "locusTag": "JCVISYN3A_0512",
+  "gene": "plsC",
+  "product": "Acyl-phosphate glycerol 3-phosphate acyltransferase",
+  "start": 321754,
+  "end": 322701,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0513": {
+  "locusTag": "JCVISYN3A_0513",
+  "gene": "acpS",
+  "product": "ACP synthase",
+  "start": 322858,
+  "end": 323190,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0515": {
+  "locusTag": "JCVISYN3A_0515",
+  "gene": "dctD",
+  "product": "Cytidine deaminase",
+  "start": 323250,
+  "end": 323732,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0516": {
+  "locusTag": "JCVISYN3A_0516",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 323735,
+  "end": 325036,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0517": {
+  "locusTag": "JCVISYN3A_0517",
+  "gene": "rluD",
+  "product": "Uncharacterized RNA pseudouridine synthase",
+  "start": 325029,
+  "end": 325961,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0518": {
+  "locusTag": "JCVISYN3A_0518",
+  "gene": "lspA",
+  "product": "Lipoprotein signal peptidase",
+  "start": 325942,
+  "end": 326550,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0519": {
+  "locusTag": "JCVISYN3A_0519",
+  "gene": "ileRS",
+  "product": "Isoleucine--tRNA ligase",
+  "start": 326541,
+  "end": 329288,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0520": {
+  "locusTag": "JCVISYN3A_0520",
+  "gene": null,
+  "product": "Uncharacterized hydrolase",
+  "start": 329981,
+  "end": 330970,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0521": {
+  "locusTag": "JCVISYN3A_0521",
+  "gene": "sepF",
+  "product": "Cell division protein",
+  "start": 330983,
+  "end": 331399,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0522": {
+  "locusTag": "JCVISYN3A_0522",
+  "gene": "ftsZ",
+  "product": "Cell division protein",
+  "start": 331411,
+  "end": 332568,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0523": {
+  "locusTag": "JCVISYN3A_0523",
+  "gene": "ftsA",
+  "product": "Cell division protein",
+  "start": 332683,
+  "end": 333843,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0524": {
+  "locusTag": "JCVISYN3A_0524",
+  "gene": "rsmH; mraW",
+  "product": "16S rRNA (cytosine(1402)-N(4))-methyltransferase",
+  "start": 333852,
+  "end": 334778,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0525": {
+  "locusTag": "JCVISYN3A_0525",
+  "gene": "mraZ",
+  "product": "Cell division/cell wall cluster transcriptional repressor",
+  "start": 334787,
+  "end": 335188,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0526": {
+  "locusTag": "JCVISYN3A_0526",
+  "gene": "rpmF",
+  "product": "50S ribosomal protein L32",
+  "start": 335295,
+  "end": 335474,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0527": {
+  "locusTag": "JCVISYN3A_0527",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 335489,
+  "end": 336007,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0528": {
+  "locusTag": "JCVISYN3A_0528",
+  "gene": "pheRS",
+  "product": "Phenylalanine--tRNA ligase subunit beta",
+  "start": 336007,
+  "end": 338391,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0529": {
+  "locusTag": "JCVISYN3A_0529",
+  "gene": "pheS",
+  "product": "Phenylalanine--tRNA ligase subunit alpha",
+  "start": 338400,
+  "end": 339452,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0530": {
+  "locusTag": "JCVISYN3A_0530",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 339482,
+  "end": 340090,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0532": {
+  "locusTag": "JCVISYN3A_0532",
+  "gene": "rrfB",
+  "product": "5S ribosomal RNA",
+  "start": 340214,
+  "end": 340322,
+  "strand": "-",
+  "type": "rRNA"
+ },
+ "JCVISYN3A_0533": {
+  "locusTag": "JCVISYN3A_0533",
+  "gene": "rrlB",
+  "product": "23S ribosomal RNA",
+  "start": 340384,
+  "end": 343297,
+  "strand": "-",
+  "type": "rRNA"
+ },
+ "JCVISYN3A_0534": {
+  "locusTag": "JCVISYN3A_0534",
+  "gene": "rrsB",
+  "product": "16S ribosomal RNA",
+  "start": 343517,
+  "end": 345051,
+  "strand": "-",
+  "type": "rRNA"
+ },
+ "JCVISYN3A_0535": {
+  "locusTag": "JCVISYN3A_0535",
+  "gene": "argRS",
+  "product": "Arginine--tRNA ligase",
+  "start": 345258,
+  "end": 346922,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0536": {
+  "locusTag": "JCVISYN3A_0536",
+  "gene": "frr",
+  "product": "Ribosome recycling factor",
+  "start": 346924,
+  "end": 347472,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0537": {
+  "locusTag": "JCVISYN3A_0537",
+  "gene": "pyrH",
+  "product": "UMP kinase",
+  "start": 347483,
+  "end": 348196,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0538": {
+  "locusTag": "JCVISYN3A_0538",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 348330,
+  "end": 348935,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0539": {
+  "locusTag": "JCVISYN3A_0539",
+  "gene": "tsf",
+  "product": "Translation elongation factor Ts",
+  "start": 348935,
+  "end": 349822,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0540": {
+  "locusTag": "JCVISYN3A_0540",
+  "gene": "rpsB",
+  "product": "30S ribosomal protein S2",
+  "start": 349834,
+  "end": 350712,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0541": {
+  "locusTag": "JCVISYN3A_0541",
+  "gene": "dnaJ",
+  "product": "Molecular chaperone",
+  "start": 350920,
+  "end": 352038,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0542": {
+  "locusTag": "JCVISYN3A_0542",
+  "gene": "dnaK",
+  "product": "Molecular chaperone",
+  "start": 352102,
+  "end": 353877,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0543": {
+  "locusTag": "JCVISYN3A_0543",
+  "gene": "grpE",
+  "product": "Nucleotide exchange factor",
+  "start": 353936,
+  "end": 354538,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0544": {
+  "locusTag": "JCVISYN3A_0544",
+  "gene": "hrcA",
+  "product": "Heat-inducible transcription repressor",
+  "start": 354540,
+  "end": 355562,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0545": {
+  "locusTag": "JCVISYN3A_0545",
+  "gene": "clpB",
+  "product": "ATP-dependent Clp protease subunit B",
+  "start": 355567,
+  "end": 357708,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0546": {
+  "locusTag": "JCVISYN3A_0546",
+  "gene": null,
+  "product": null,
+  "start": 357871,
+  "end": 358736,
+  "strand": "-",
+  "type": "gene"
+ },
+ "JCVISYN3A_0548": {
+  "locusTag": "JCVISYN3A_0548",
+  "gene": null,
+  "product": "tRNA (cytidine(34)-2'-O)-methyltransferase",
+  "start": 358736,
+  "end": 359281,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0549": {
+  "locusTag": "JCVISYN3A_0549",
+  "gene": "rgdB",
+  "product": "Non-canonical purine NTP pyrophosphatase",
+  "start": 359294,
+  "end": 359896,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0931": {
+  "locusTag": "JCVISYN3A_0931",
+  "gene": "met14p",
+  "product": "Adenylyl-sulfate kinase",
+  "start": 360403,
+  "end": 361011,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0592": {
+  "locusTag": "JCVISYN3A_0592",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 361575,
+  "end": 362774,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0593": {
+  "locusTag": "JCVISYN3A_0593",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 363271,
+  "end": 363549,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0599": {
+  "locusTag": "JCVISYN3A_0599",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 363818,
+  "end": 363958,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0600": {
+  "locusTag": "JCVISYN3A_0600",
+  "gene": "rnjA",
+  "product": "Ribonuclease J",
+  "start": 364772,
+  "end": 366604,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0601": {
+  "locusTag": "JCVISYN3A_0601",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 366679,
+  "end": 367623,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0602": {
+  "locusTag": "JCVISYN3A_0602",
+  "gene": null,
+  "product": null,
+  "start": 367755,
+  "end": 369517,
+  "strand": "+",
+  "type": "gene"
+ },
+ "JCVISYN3A_0604": {
+  "locusTag": "JCVISYN3A_0604",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 369520,
+  "end": 370188,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0605": {
+  "locusTag": "JCVISYN3A_0605",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 370371,
+  "end": 370679,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0606": {
+  "locusTag": "JCVISYN3A_0606",
+  "gene": "pgk",
+  "product": "Phosphoglycerate kinase",
+  "start": 370946,
+  "end": 372160,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0607": {
+  "locusTag": "JCVISYN3A_0607",
+  "gene": "gapDH",
+  "product": "Type I glyceraldehyde-3-phosphate dehydrogenase",
+  "start": 372272,
+  "end": 373288,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0608": {
+  "locusTag": "JCVISYN3A_0608",
+  "gene": "dnaI",
+  "product": "Primosomal protein",
+  "start": 373389,
+  "end": 374327,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0609": {
+  "locusTag": "JCVISYN3A_0609",
+  "gene": "dnaB",
+  "product": "Chromosome replication initiation protein",
+  "start": 374337,
+  "end": 375521,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0610": {
+  "locusTag": "JCVISYN3A_0610",
+  "gene": "mutM",
+  "product": "DNA-formamidopyrimidine glycosylase",
+  "start": 375678,
+  "end": 376502,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0611": {
+  "locusTag": "JCVISYN3A_0611",
+  "gene": "polA",
+  "product": "DNA polymerase I",
+  "start": 376513,
+  "end": 379248,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0612": {
+  "locusTag": "JCVISYN3A_0612",
+  "gene": "dnaE",
+  "product": "DNA polymerase III subunit alpha",
+  "start": 379257,
+  "end": 382220,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0613": {
+  "locusTag": "JCVISYN3A_0613",
+  "gene": "tyrRS",
+  "product": "Tyrosine--tRNA ligase",
+  "start": 382415,
+  "end": 383659,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0614": {
+  "locusTag": "JCVISYN3A_0614",
+  "gene": "pncB",
+  "product": "Nicotinate phosphoribosyltransferase",
+  "start": 383668,
+  "end": 384729,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0615": {
+  "locusTag": "JCVISYN3A_0615",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 384707,
+  "end": 385315,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0616": {
+  "locusTag": "JCVISYN3A_0616",
+  "gene": "fakB",
+  "product": "Fatty acid binding protein",
+  "start": 385390,
+  "end": 386229,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0617": {
+  "locusTag": "JCVISYN3A_0617",
+  "gene": "fakB",
+  "product": "Fatty acid binding protein",
+  "start": 386240,
+  "end": 387091,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0618": {
+  "locusTag": "JCVISYN3A_0618",
+  "gene": "tRNA-Trp",
+  "product": "tRNA-Trp",
+  "start": 387127,
+  "end": 387201,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0619": {
+  "locusTag": "JCVISYN3A_0619",
+  "gene": "tRNA-Trp",
+  "product": "tRNA-Trp",
+  "start": 387239,
+  "end": 387314,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0620": {
+  "locusTag": "JCVISYN3A_0620",
+  "gene": null,
+  "product": "Uncharacterized transcriptional regulator",
+  "start": 387390,
+  "end": 387854,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0621": {
+  "locusTag": "JCVISYN3A_0621",
+  "gene": "acpA",
+  "product": "Acyl carrier protein",
+  "start": 387855,
+  "end": 388076,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0622": {
+  "locusTag": "JCVISYN3A_0622",
+  "gene": null,
+  "product": "Uncharacterized lipoprotein",
+  "start": 388100,
+  "end": 388462,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0623": {
+  "locusTag": "JCVISYN3A_0623",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 388449,
+  "end": 389519,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0624": {
+  "locusTag": "JCVISYN3A_0624",
+  "gene": "tRNA-His",
+  "product": "tRNA-His",
+  "start": 389620,
+  "end": 389695,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0634": {
+  "locusTag": "JCVISYN3A_0634",
+  "gene": "leuRS",
+  "product": "Leucine--tRNA ligase",
+  "start": 389882,
+  "end": 392296,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0635": {
+  "locusTag": "JCVISYN3A_0635",
+  "gene": "tRNA-Ile",
+  "product": "tRNA-Ile",
+  "start": 392434,
+  "end": 392510,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0636": {
+  "locusTag": "JCVISYN3A_0636",
+  "gene": null,
+  "product": "Uncharacterized lipoprotein",
+  "start": 392583,
+  "end": 395372,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0637": {
+  "locusTag": "JCVISYN3A_0637",
+  "gene": "rpsI",
+  "product": "30S ribosomal protein S9",
+  "start": 395531,
+  "end": 395929,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0638": {
+  "locusTag": "JCVISYN3A_0638",
+  "gene": "rplM",
+  "product": "50S ribosomal protein L13",
+  "start": 395929,
+  "end": 396384,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0639": {
+  "locusTag": "JCVISYN3A_0639",
+  "gene": null,
+  "product": "Uncharacterized efflux ABC transporter permease",
+  "start": 396514,
+  "end": 400659,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0640": {
+  "locusTag": "JCVISYN3A_0640",
+  "gene": "truA",
+  "product": "tRNA pseudouridine(38-40) synthase",
+  "start": 400754,
+  "end": 401509,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0641": {
+  "locusTag": "JCVISYN3A_0641",
+  "gene": "ecfT",
+  "product": "ECF transporter T component",
+  "start": 401512,
+  "end": 402522,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0642": {
+  "locusTag": "JCVISYN3A_0642",
+  "gene": "ecfA",
+  "product": "ECF transporter ATPase",
+  "start": 402536,
+  "end": 403447,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0643": {
+  "locusTag": "JCVISYN3A_0643",
+  "gene": "ecfA",
+  "product": "ECF transporter ATPase",
+  "start": 403435,
+  "end": 404661,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0644": {
+  "locusTag": "JCVISYN3A_0644",
+  "gene": "rplQ",
+  "product": "50S ribosomal protein L17",
+  "start": 404769,
+  "end": 405128,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0645": {
+  "locusTag": "JCVISYN3A_0645",
+  "gene": "rpoA",
+  "product": "DNA-directed RNA polymerase subunit alpha",
+  "start": 405148,
+  "end": 406101,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0646": {
+  "locusTag": "JCVISYN3A_0646",
+  "gene": "rpsK",
+  "product": "30S ribosomal protein S11",
+  "start": 406105,
+  "end": 406494,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0647": {
+  "locusTag": "JCVISYN3A_0647",
+  "gene": "rpsM",
+  "product": "30S ribosomal protein S13",
+  "start": 406520,
+  "end": 406885,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0648": {
+  "locusTag": "JCVISYN3A_0648",
+  "gene": "rpmJ",
+  "product": "50S ribosomal protein L36",
+  "start": 406922,
+  "end": 407035,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0649": {
+  "locusTag": "JCVISYN3A_0649",
+  "gene": "infA",
+  "product": "Translation initiation factor IF-1",
+  "start": 407104,
+  "end": 407328,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0650": {
+  "locusTag": "JCVISYN3A_0650",
+  "gene": "map",
+  "product": "Type I methionyl aminopeptidase",
+  "start": 407340,
+  "end": 408095,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0651": {
+  "locusTag": "JCVISYN3A_0651",
+  "gene": "adk",
+  "product": "Adenylate kinase",
+  "start": 408095,
+  "end": 408736,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0652": {
+  "locusTag": "JCVISYN3A_0652",
+  "gene": "secY",
+  "product": "Preprotein translocase subunit",
+  "start": 408864,
+  "end": 410312,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0653": {
+  "locusTag": "JCVISYN3A_0653",
+  "gene": "rplO",
+  "product": "50S ribosomal protein L15",
+  "start": 410312,
+  "end": 410749,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0654": {
+  "locusTag": "JCVISYN3A_0654",
+  "gene": "rpsE",
+  "product": "30S ribosomal protein S5",
+  "start": 410768,
+  "end": 411532,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0655": {
+  "locusTag": "JCVISYN3A_0655",
+  "gene": "rplR",
+  "product": "50S ribosomal protein L18",
+  "start": 411551,
+  "end": 411901,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0656": {
+  "locusTag": "JCVISYN3A_0656",
+  "gene": "rplF",
+  "product": "50S ribosomal protein L6",
+  "start": 411927,
+  "end": 412469,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0657": {
+  "locusTag": "JCVISYN3A_0657",
+  "gene": "rpsH",
+  "product": "30S ribosomal protein S8",
+  "start": 412483,
+  "end": 412872,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0658": {
+  "locusTag": "JCVISYN3A_0658",
+  "gene": "rpsN",
+  "product": "30S ribosomal protein S14",
+  "start": 412892,
+  "end": 413077,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0659": {
+  "locusTag": "JCVISYN3A_0659",
+  "gene": "rplE",
+  "product": "50S ribosomal protein L5",
+  "start": 413096,
+  "end": 413638,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0660": {
+  "locusTag": "JCVISYN3A_0660",
+  "gene": "rplX",
+  "product": "50S ribosomal protein L24",
+  "start": 413657,
+  "end": 413983,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0661": {
+  "locusTag": "JCVISYN3A_0661",
+  "gene": "rplN",
+  "product": "50S ribosomal protein L14",
+  "start": 413997,
+  "end": 414365,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0662": {
+  "locusTag": "JCVISYN3A_0662",
+  "gene": "rpsQ",
+  "product": "30S ribosomal protein S17",
+  "start": 414381,
+  "end": 414641,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0663": {
+  "locusTag": "JCVISYN3A_0663",
+  "gene": "rpmC",
+  "product": "50S ribosomal protein L29",
+  "start": 414638,
+  "end": 415054,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0664": {
+  "locusTag": "JCVISYN3A_0664",
+  "gene": "rplP",
+  "product": "50S ribosomal protein L16",
+  "start": 415054,
+  "end": 415467,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0665": {
+  "locusTag": "JCVISYN3A_0665",
+  "gene": "rpsC",
+  "product": "30S ribosomal protein S3",
+  "start": 415470,
+  "end": 416171,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0666": {
+  "locusTag": "JCVISYN3A_0666",
+  "gene": "rplV",
+  "product": "50S ribosomal protein L22",
+  "start": 416189,
+  "end": 416524,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0667": {
+  "locusTag": "JCVISYN3A_0667",
+  "gene": "rpsS",
+  "product": "30S ribosomal protein S19",
+  "start": 416548,
+  "end": 416814,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0668": {
+  "locusTag": "JCVISYN3A_0668",
+  "gene": "rplB",
+  "product": "50S ribosomal protein L2",
+  "start": 416836,
+  "end": 417684,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0669": {
+  "locusTag": "JCVISYN3A_0669",
+  "gene": "rplW",
+  "product": "50S ribosomal protein L23",
+  "start": 417739,
+  "end": 418023,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0670": {
+  "locusTag": "JCVISYN3A_0670",
+  "gene": "rplD",
+  "product": "50S ribosomal protein L4",
+  "start": 418023,
+  "end": 418649,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0671": {
+  "locusTag": "JCVISYN3A_0671",
+  "gene": "rplC",
+  "product": "50S ribosomal protein L3",
+  "start": 418662,
+  "end": 419333,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0672": {
+  "locusTag": "JCVISYN3A_0672",
+  "gene": "rpsJ",
+  "product": "30S ribosomal protein S10",
+  "start": 419409,
+  "end": 419717,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0678": {
+  "locusTag": "JCVISYN3A_0678",
+  "gene": "tRNA-Thr",
+  "product": "tRNA-Thr",
+  "start": 420560,
+  "end": 420635,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0679": {
+  "locusTag": "JCVISYN3A_0679",
+  "gene": "tRNA-Val",
+  "product": "tRNA-Val",
+  "start": 420648,
+  "end": 420723,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0680": {
+  "locusTag": "JCVISYN3A_0680",
+  "gene": "tRNA-Glu",
+  "product": "tRNA-Glu",
+  "start": 420731,
+  "end": 420806,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0681": {
+  "locusTag": "JCVISYN3A_0681",
+  "gene": "tRNA-Asn",
+  "product": "tRNA-Asn",
+  "start": 420814,
+  "end": 420889,
+  "strand": "-",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0684": {
+  "locusTag": "JCVISYN3A_0684",
+  "gene": "folD",
+  "product": "Bifunctional 5,10-methylene-tetrahydrofolate dehydrogenase/5,10-methylene-tetrahydrofolate cyclohydrolase",
+  "start": 420991,
+  "end": 421857,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0685": {
+  "locusTag": "JCVISYN3A_0685",
+  "gene": "natA",
+  "product": "Sodium transporter",
+  "start": 421866,
+  "end": 423467,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0686": {
+  "locusTag": "JCVISYN3A_0686",
+  "gene": "trkA",
+  "product": "Potassium transporter",
+  "start": 423546,
+  "end": 424274,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0687": {
+  "locusTag": "JCVISYN3A_0687",
+  "gene": "gatB",
+  "product": "Glutamyl-tRNA amidotransferase subunit B",
+  "start": 424301,
+  "end": 425740,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0688": {
+  "locusTag": "JCVISYN3A_0688",
+  "gene": "gatA",
+  "product": "Glutamyl-tRNA amidotransferase subunit A",
+  "start": 425742,
+  "end": 427199,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0689": {
+  "locusTag": "JCVISYN3A_0689",
+  "gene": "gatC",
+  "product": "Glutamyl-tRNA amidotransferase subunit C",
+  "start": 427199,
+  "end": 427495,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0690": {
+  "locusTag": "JCVISYN3A_0690",
+  "gene": "ligA",
+  "product": "DNA ligase (NAD(+))",
+  "start": 427497,
+  "end": 429503,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0691": {
+  "locusTag": "JCVISYN3A_0691",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 429507,
+  "end": 431528,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0692": {
+  "locusTag": "JCVISYN3A_0692",
+  "gene": null,
+  "product": "Uncharacterized pseudouridine synthase",
+  "start": 431531,
+  "end": 432439,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0693": {
+  "locusTag": "JCVISYN3A_0693",
+  "gene": null,
+  "product": "Uncharacterized protease",
+  "start": 432442,
+  "end": 433410,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0694": {
+  "locusTag": "JCVISYN3A_0694",
+  "gene": "ptsH",
+  "product": "Phosphocarrier protein",
+  "start": 433466,
+  "end": 433735,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0695": {
+  "locusTag": "JCVISYN3A_0695",
+  "gene": "pcrA",
+  "product": "ATP-dependent DNA helicase",
+  "start": 433800,
+  "end": 435968,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0696": {
+  "locusTag": "JCVISYN3A_0696",
+  "gene": null,
+  "product": "Uncharacterized transporter",
+  "start": 435985,
+  "end": 436740,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0697": {
+  "locusTag": "JCVISYN3A_0697",
+  "gene": null,
+  "product": "Uncharacterized glycosyl transferase",
+  "start": 436740,
+  "end": 437696,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0706": {
+  "locusTag": "JCVISYN3A_0706",
+  "gene": "thiB",
+  "product": "Thiamine ABC transporter permease",
+  "start": 438118,
+  "end": 439866,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0707": {
+  "locusTag": "JCVISYN3A_0707",
+  "gene": "thiQ",
+  "product": "Thiamine ABC transporter ATP-binding protein",
+  "start": 439830,
+  "end": 440579,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0708": {
+  "locusTag": "JCVISYN3A_0708",
+  "gene": "thiB",
+  "product": "Thiamine ABC transporter substrate-binding protein",
+  "start": 440593,
+  "end": 442056,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0710": {
+  "locusTag": "JCVISYN3A_0710",
+  "gene": null,
+  "product": "Uncharacterized hydrolase",
+  "start": 442279,
+  "end": 443142,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0717": {
+  "locusTag": "JCVISYN3A_0717",
+  "gene": "tRNA-Arg",
+  "product": "tRNA-Arg",
+  "start": 443479,
+  "end": 443555,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0718": {
+  "locusTag": "JCVISYN3A_0718",
+  "gene": "tRNA-Pro",
+  "product": "tRNA-Pro",
+  "start": 443603,
+  "end": 443679,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0719": {
+  "locusTag": "JCVISYN3A_0719",
+  "gene": "tRNA-Ala",
+  "product": "tRNA-Ala",
+  "start": 443690,
+  "end": 443765,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0720": {
+  "locusTag": "JCVISYN3A_0720",
+  "gene": "tRNA-Met",
+  "product": "tRNA-Met",
+  "start": 443770,
+  "end": 443846,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0721": {
+  "locusTag": "JCVISYN3A_0721",
+  "gene": "tRNA-Met",
+  "product": "tRNA-Met",
+  "start": 443858,
+  "end": 443934,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0722": {
+  "locusTag": "JCVISYN3A_0722",
+  "gene": "tRNA-Ser",
+  "product": "tRNA-Ser",
+  "start": 443977,
+  "end": 444069,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0723": {
+  "locusTag": "JCVISYN3A_0723",
+  "gene": "tRNA-Met",
+  "product": "tRNA-Met",
+  "start": 444092,
+  "end": 444167,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0724": {
+  "locusTag": "JCVISYN3A_0724",
+  "gene": "tRNA-Asp",
+  "product": "tRNA-Asp",
+  "start": 444170,
+  "end": 444246,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0725": {
+  "locusTag": "JCVISYN3A_0725",
+  "gene": "tRNA-Phe",
+  "product": "tRNA-Phe",
+  "start": 444255,
+  "end": 444330,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0726": {
+  "locusTag": "JCVISYN3A_0726",
+  "gene": "nagB",
+  "product": "Glucosamine-6-phosphate deaminase",
+  "start": 444438,
+  "end": 445172,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0727": {
+  "locusTag": "JCVISYN3A_0727",
+  "gene": "tpiA",
+  "product": "Triose-phosphate isomerase",
+  "start": 445270,
+  "end": 446016,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0728": {
+  "locusTag": "JCVISYN3A_0728",
+  "gene": null,
+  "product": "Uncharacterized hydrolase",
+  "start": 446009,
+  "end": 446845,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0729": {
+  "locusTag": "JCVISYN3A_0729",
+  "gene": "pgm",
+  "product": "Phosphoglycerate mutase (2,3-diphosphoglycerate-independent)",
+  "start": 446848,
+  "end": 448443,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0730": {
+  "locusTag": "JCVISYN3A_0730",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 448543,
+  "end": 449142,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0732": {
+  "locusTag": "JCVISYN3A_0732",
+  "gene": "deoC",
+  "product": "Deoxyribose-phosphate aldolase",
+  "start": 449195,
+  "end": 449863,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0733": {
+  "locusTag": "JCVISYN3A_0733",
+  "gene": "deoB",
+  "product": "Phosphopentomutase",
+  "start": 449875,
+  "end": 451551,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0747": {
+  "locusTag": "JCVISYN3A_0747",
+  "gene": "punA",
+  "product": "Purine-nucleoside phosphorylase",
+  "start": 451915,
+  "end": 452568,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0771": {
+  "locusTag": "JCVISYN3A_0771",
+  "gene": "nrdE",
+  "product": "Ribonucleotide-diphosphate reductase subunit alpha",
+  "start": 452721,
+  "end": 454883,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0772": {
+  "locusTag": "JCVISYN3A_0772",
+  "gene": "nrdI",
+  "product": "Ribonucleotide reductase assembly protein",
+  "start": 454870,
+  "end": 455343,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0773": {
+  "locusTag": "JCVISYN3A_0773",
+  "gene": "nrdF",
+  "product": "Ribonucleoside-diphosphate reductase subunit beta",
+  "start": 455352,
+  "end": 456371,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0774": {
+  "locusTag": "JCVISYN3A_0774",
+  "gene": "secG",
+  "product": "Preprotein translocase subunit",
+  "start": 456670,
+  "end": 456954,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0775": {
+  "locusTag": "JCVISYN3A_0775",
+  "gene": "rnr",
+  "product": "Ribonuclease R",
+  "start": 456990,
+  "end": 459104,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0776": {
+  "locusTag": "JCVISYN3A_0776",
+  "gene": "smpB",
+  "product": "SsrA-binding protein",
+  "start": 459114,
+  "end": 459560,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0777": {
+  "locusTag": "JCVISYN3A_0777",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 459560,
+  "end": 460045,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0778": {
+  "locusTag": "JCVISYN3A_0778",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 460165,
+  "end": 460416,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0779": {
+  "locusTag": "JCVISYN3A_0779",
+  "gene": "ptsG",
+  "product": "PTS sugar transporter",
+  "start": 460467,
+  "end": 462704,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0787": {
+  "locusTag": "JCVISYN3A_0787",
+  "gene": "mgtA",
+  "product": "Magnesium-translocating P-type ATPase",
+  "start": 463042,
+  "end": 465870,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0789": {
+  "locusTag": "JCVISYN3A_0789",
+  "gene": "atpC",
+  "product": "F0F1 ATP synthase subunit delta/epsilon",
+  "start": 466288,
+  "end": 466587,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0790": {
+  "locusTag": "JCVISYN3A_0790",
+  "gene": "atpD",
+  "product": "F0F1 ATP synthase subunit beta",
+  "start": 466587,
+  "end": 468014,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0791": {
+  "locusTag": "JCVISYN3A_0791",
+  "gene": "atpG",
+  "product": "F0F1 ATP synthase subunit gamma",
+  "start": 468023,
+  "end": 468865,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0792": {
+  "locusTag": "JCVISYN3A_0792",
+  "gene": "atpA",
+  "product": "F0F1 ATP synthase subunit alpha",
+  "start": 468867,
+  "end": 470444,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0793": {
+  "locusTag": "JCVISYN3A_0793",
+  "gene": "atpD",
+  "product": "F0F1 ATP synthase subunit delta",
+  "start": 470456,
+  "end": 471001,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0794": {
+  "locusTag": "JCVISYN3A_0794",
+  "gene": "atpF",
+  "product": "F0F1 ATP synthase subunit B",
+  "start": 471003,
+  "end": 471548,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0795": {
+  "locusTag": "JCVISYN3A_0795",
+  "gene": "atpE",
+  "product": "F0F1 ATP synthase subunit C",
+  "start": 471577,
+  "end": 471882,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0796": {
+  "locusTag": "JCVISYN3A_0796",
+  "gene": "atpB",
+  "product": "F0F1 ATP synthase subunit A",
+  "start": 471912,
+  "end": 472775,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0797": {
+  "locusTag": "JCVISYN3A_0797",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 472775,
+  "end": 473173,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0798": {
+  "locusTag": "JCVISYN3A_0798",
+  "gene": "upp",
+  "product": "Uracil phosphoribosyltransferase",
+  "start": 473313,
+  "end": 473936,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0799": {
+  "locusTag": "JCVISYN3A_0799",
+  "gene": "glyA",
+  "product": "Serine hydroxymethyltransferase",
+  "start": 474036,
+  "end": 475277,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0800": {
+  "locusTag": "JCVISYN3A_0800",
+  "gene": "rpiB",
+  "product": "Ribose 5-phosphate isomerase B",
+  "start": 475261,
+  "end": 475704,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0803": {
+  "locusTag": "JCVISYN3A_0803",
+  "gene": "rpoC",
+  "product": "DNA-directed RNA polymerase subunit beta'",
+  "start": 475872,
+  "end": 479639,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0804": {
+  "locusTag": "JCVISYN3A_0804",
+  "gene": "rpoB",
+  "product": "DNA-directed RNA polymerase subunit beta",
+  "start": 479651,
+  "end": 483526,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0805": {
+  "locusTag": "JCVISYN3A_0805",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 483516,
+  "end": 484691,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0806": {
+  "locusTag": "JCVISYN3A_0806",
+  "gene": "rplG",
+  "product": "50S ribosomal protein L7/L12",
+  "start": 484862,
+  "end": 485230,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0807": {
+  "locusTag": "JCVISYN3A_0807",
+  "gene": "rplJ",
+  "product": "50S ribosomal protein L10",
+  "start": 485299,
+  "end": 485796,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0809": {
+  "locusTag": "JCVISYN3A_0809",
+  "gene": "rplA",
+  "product": "50S ribosomal protein L1",
+  "start": 486023,
+  "end": 486703,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0810": {
+  "locusTag": "JCVISYN3A_0810",
+  "gene": "rplK",
+  "product": "50S ribosomal protein L11",
+  "start": 486703,
+  "end": 487131,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0813": {
+  "locusTag": "JCVISYN3A_0813",
+  "gene": "galE",
+  "product": "UDP-glucose 4-epimerase GalE",
+  "start": 487642,
+  "end": 488640,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0814": {
+  "locusTag": "JCVISYN3A_0814",
+  "gene": "glf",
+  "product": "UDP-galactopyranose mutase",
+  "start": 488654,
+  "end": 489841,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0817": {
+  "locusTag": "JCVISYN3A_0817",
+  "gene": "whiA",
+  "product": "Uncharacterized DNA-binding protein",
+  "start": 490471,
+  "end": 491400,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0818": {
+  "locusTag": "JCVISYN3A_0818",
+  "gene": "lgt",
+  "product": "Diacylglyceryl transferase",
+  "start": 491413,
+  "end": 492843,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0819": {
+  "locusTag": "JCVISYN3A_0819",
+  "gene": "trx",
+  "product": "Thioredoxin-disulfide reductase",
+  "start": 492852,
+  "end": 493784,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0820": {
+  "locusTag": "JCVISYN3A_0820",
+  "gene": "lgt",
+  "product": "Diacylglyceryl transferase",
+  "start": 493768,
+  "end": 495348,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0821": {
+  "locusTag": "JCVISYN3A_0821",
+  "gene": "hpr; ptsH",
+  "product": "HPr(Ser) kinase/phosphatase",
+  "start": 495359,
+  "end": 496300,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0822": {
+  "locusTag": "JCVISYN3A_0822",
+  "gene": "ecfS",
+  "product": "Uncharacterized ECF transporter S component",
+  "start": 496384,
+  "end": 497058,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0823": {
+  "locusTag": "JCVISYN3A_0823",
+  "gene": "folC",
+  "product": "Dihydrofolate synthase",
+  "start": 497075,
+  "end": 498190,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0824": {
+  "locusTag": "JCVISYN3A_0824",
+  "gene": "uvrA",
+  "product": "Excinuclease ABC subunit A",
+  "start": 498183,
+  "end": 501023,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0825": {
+  "locusTag": "JCVISYN3A_0825",
+  "gene": "uvrB",
+  "product": "Excinuclease ABC subunit B",
+  "start": 501032,
+  "end": 503029,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0826": {
+  "locusTag": "JCVISYN3A_0826",
+  "gene": "yqeN",
+  "product": "DNA polymerase III subunit delta",
+  "start": 503314,
+  "end": 504264,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0827": {
+  "locusTag": "JCVISYN3A_0827",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 504267,
+  "end": 505733,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0828": {
+  "locusTag": "JCVISYN3A_0828",
+  "gene": "tRNA-Cys",
+  "product": "tRNA-Cys",
+  "start": 505899,
+  "end": 505973,
+  "strand": "+",
+  "type": "tRNA"
+ },
+ "JCVISYN3A_0830": {
+  "locusTag": "JCVISYN3A_0830",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 506111,
+  "end": 506371,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0831": {
+  "locusTag": "JCVISYN3A_0831",
+  "gene": "prs",
+  "product": "Phosphoribosylpyrophosphate synthetase",
+  "start": 506551,
+  "end": 507585,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0832": {
+  "locusTag": "JCVISYN3A_0832",
+  "gene": "pth",
+  "product": "Aminoacyl-tRNA hydrolase",
+  "start": 508011,
+  "end": 508571,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0833": {
+  "locusTag": "JCVISYN3A_0833",
+  "gene": "rplI",
+  "product": "50S ribosomal protein L9",
+  "start": 508692,
+  "end": 509135,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0834": {
+  "locusTag": "JCVISYN3A_0834",
+  "gene": "dnaC",
+  "product": "Replicative DNA helicase",
+  "start": 509138,
+  "end": 510454,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0835": {
+  "locusTag": "JCVISYN3A_0835",
+  "gene": null,
+  "product": "Uncharacterized lipoprotein",
+  "start": 510521,
+  "end": 511828,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0836": {
+  "locusTag": "JCVISYN3A_0836",
+  "gene": "ecfS",
+  "product": "Uncharacterized ECF transporter S component",
+  "start": 511970,
+  "end": 512896,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0837": {
+  "locusTag": "JCVISYN3A_0837",
+  "gene": "cysRS",
+  "product": "Cysteine--tRNA ligase",
+  "start": 512905,
+  "end": 514230,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0838": {
+  "locusTag": "JCVISYN3A_0838",
+  "gene": "rlmB",
+  "product": "23S rRNA (guanosine(2251)-2'-O)-methyltransferase",
+  "start": 514232,
+  "end": 514966,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0932": {
+  "locusTag": "JCVISYN3A_0932",
+  "gene": "rpmG",
+  "product": "50S ribosomal protein L33",
+  "start": 515027,
+  "end": 515188,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0839": {
+  "locusTag": "JCVISYN3A_0839",
+  "gene": "secE",
+  "product": "Preprotein translocase subunit",
+  "start": 515188,
+  "end": 515511,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0840": {
+  "locusTag": "JCVISYN3A_0840",
+  "gene": "nusG",
+  "product": "Antitermination protein",
+  "start": 515528,
+  "end": 516169,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0851": {
+  "locusTag": "JCVISYN3A_0851",
+  "gene": null,
+  "product": "Uncharacterized lipoprotein",
+  "start": 516675,
+  "end": 516857,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0852": {
+  "locusTag": "JCVISYN3A_0852",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 517023,
+  "end": 517253,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0853": {
+  "locusTag": "JCVISYN3A_0853",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 517243,
+  "end": 517962,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0859": {
+  "locusTag": "JCVISYN3A_0859",
+  "gene": "topA",
+  "product": "DNA topoisomerase I",
+  "start": 518165,
+  "end": 520126,
+  "strand": "+",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0870": {
+  "locusTag": "JCVISYN3A_0870",
+  "gene": null,
+  "product": "Uncharacterized C4-dicarboxylate ABC transporter",
+  "start": 520382,
+  "end": 522148,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0872": {
+  "locusTag": "JCVISYN3A_0872",
+  "gene": "ychF",
+  "product": "Uncharacterized ATPase",
+  "start": 522217,
+  "end": 523311,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0873": {
+  "locusTag": "JCVISYN3A_0873",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 523347,
+  "end": 523547,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0874": {
+  "locusTag": "JCVISYN3A_0874",
+  "gene": "rsmG",
+  "product": "16S rRNA (guanine(527)-N(7))-methyltransferase",
+  "start": 523549,
+  "end": 524244,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0875": {
+  "locusTag": "JCVISYN3A_0875",
+  "gene": "pgsA",
+  "product": "CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase",
+  "start": 524244,
+  "end": 524840,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0876": {
+  "locusTag": "JCVISYN3A_0876",
+  "gene": null,
+  "product": "Uncharacterized amino acid permease",
+  "start": 524942,
+  "end": 526522,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0877": {
+  "locusTag": "JCVISYN3A_0877",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 526669,
+  "end": 527349,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0878": {
+  "locusTag": "JCVISYN3A_0878",
+  "gene": null,
+  "product": "Uncharacterized amino acid permease",
+  "start": 527321,
+  "end": 528859,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0879": {
+  "locusTag": "JCVISYN3A_0879",
+  "gene": "corA",
+  "product": "Magnesium transporter",
+  "start": 528917,
+  "end": 531574,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0881": {
+  "locusTag": "JCVISYN3A_0881",
+  "gene": null,
+  "product": "Uncharacterized MFS transporter",
+  "start": 531973,
+  "end": 533400,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0885": {
+  "locusTag": "JCVISYN3A_0885",
+  "gene": "mnmG; gidA",
+  "product": "tRNA uridine(34) 5-carboxymethylaminomethyl synthesis enzyme",
+  "start": 533864,
+  "end": 535753,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0886": {
+  "locusTag": "JCVISYN3A_0886",
+  "gene": "gltP",
+  "product": "Proton-glutamate symporter",
+  "start": 535901,
+  "end": 537478,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0887": {
+  "locusTag": "JCVISYN3A_0887",
+  "gene": "cdr",
+  "product": "Coenzyme A Disulfide Reductase",
+  "start": 537498,
+  "end": 538841,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0906": {
+  "locusTag": "JCVISYN3A_0906",
+  "gene": null,
+  "product": "Uncharacterized protein",
+  "start": 539821,
+  "end": 540537,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0907": {
+  "locusTag": "JCVISYN3A_0907",
+  "gene": null,
+  "product": "Uncharacterized hydrolase",
+  "start": 540537,
+  "end": 541331,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0908": {
+  "locusTag": "JCVISYN3A_0908",
+  "gene": "yidC",
+  "product": "Membrane protein insertase",
+  "start": 541408,
+  "end": 542598,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0909": {
+  "locusTag": "JCVISYN3A_0909",
+  "gene": "rnpA",
+  "product": "Ribonuclease P protein component",
+  "start": 542616,
+  "end": 542945,
+  "strand": "-",
+  "type": "CDS"
+ },
+ "JCVISYN3A_0910": {
+  "locusTag": "JCVISYN3A_0910",
+  "gene": "rpmH",
+  "product": "50S ribosomal protein L34",
+  "start": 542952,
+  "end": 543086,
+  "strand": "-",
+  "type": "CDS"
+ }
+}

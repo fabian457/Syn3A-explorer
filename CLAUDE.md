@@ -8,6 +8,8 @@ An interactive web app for exploring the JCVI-syn3A minimal-cell genome through 
 
 Vanilla HTML/CSS/JS, no build step, no dependencies, no test suite.
 
+See [DECISIONS.md](DECISIONS.md) for *why* things are built the way they are (rejected alternatives, rationale) — this file covers current architecture only.
+
 ## Running it
 
 There is no build/lint/test tooling. To view the app, serve the directory over HTTP and open it in a browser:

@@ -13,7 +13,7 @@ where no cutout exists yet), with hover/select instead spotlighting via a
 dim wash over everything *except* the active product.
 
 **Why:** tried the hover-reveals-color version first; it read as less clear
-in practice than seeing the full colored illustration up front. Considered
+in practice than seeing the full colored cutouts up front. Considered
 two alternatives for the hover/select affordance itself (a plain glow with
 no dimming, or no extra effect at all) before landing on the dim-wash
 spotlight.
@@ -27,7 +27,7 @@ it once at init and never regenerates it.
 automatic flood-fill of enclosed transparent gaps in each cutout. The
 in-browser version made the map impossible to inspect or hand-tweak as a
 normal file. Moved to a Python/Pillow/numpy build step instead; flood-fill
-turned out to be unnecessary once cutouts were cleaner.
+turned out to be unnecessary.
 
 ## Genome coordinates come from NCBI GenBank, not manual SynWiki lookups
 

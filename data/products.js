@@ -308,5 +308,283 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0054",
+    displayName: "AhpC",
+    fullName: "Uncharacterized peroxiredoxin",
+    cutout: "cutouts/3A-054.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0054", gene: "ahpC", start: 45293, end: 45742, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0060",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-060.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0060", gene: null, start: 46274, end: 47098, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0061",
+    displayName: "SerRS",
+    fullName: "Serine--tRNA ligase",
+    cutout: "cutouts/3A-061.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0061", gene: "serRS", start: 47181, end: 48449, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0063",
+    displayName: "DusB",
+    fullName: "Uncharacterized tRNA dihydrouridine synthase",
+    cutout: "cutouts/3A-063.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0063", gene: "dusB", start: 48559, end: 49533, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0064",
+    displayName: "LysRS",
+    fullName: "Lysine--tRNA ligase",
+    cutout: "cutouts/3A-064.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0064", gene: "lysRS", start: 49536, end: 51038, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0065",
+    displayName: "TrxA",
+    fullName: "Thioredoxin",
+    cutout: "cutouts/3A-065.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0065", gene: "trxA", start: 51128, end: 51436, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0066",
+    displayName: "Low-Specificity Hydrolase",
+    fullName: "Low specificity hydrolase",
+    cutout: "cutouts/3A-066.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0066", gene: null, start: 51447, end: 52289, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0076",
+    displayName: "AsnRS",
+    fullName: "Asparagine--tRNA ligase",
+    cutout: "cutouts/3A-076.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0076", gene: "asnRS", start: 58156, end: 59520, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0077",
+    displayName: "Uncharacterized Hydrolase",
+    fullName: "Uncharacterized hydrolase",
+    cutout: "cutouts/3A-077.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0077", gene: null, start: 59529, end: 60368, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0079",
+    displayName: "TsaBCDE Complex",
+    fullName: "tRNA N6-adenosine(37)-N6-threonylcarbamoyltransferase complex",
+    cutout: "cutouts/3A-079.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0079", gene: "tsaD", start: 60404, end: 61360, strand: "-" },
+      { locusTag: "JCVISYN3A_0144", gene: "tsaC", start: 96001, end: 96501, strand: "+" },
+      { locusTag: "JCVISYN3A_0270", gene: "tsaE; yjeE", start: 164055, end: 164471, strand: "+" },
+      { locusTag: "JCVISYN3A_0271", gene: "tsaB; yeaZ", start: 164473, end: 165036, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0080",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-080.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0080", gene: null, start: 61455, end: 61676, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0081",
+    displayName: "MnmE / RlmFO",
+    fullName: "tRNA uridine(34) 5-carboxymethylaminomethyl modification enzyme",
+    cutout: "cutouts/3A-081.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0081", gene: "mnmE; trmE", start: 61876, end: 63234, strand: "+" },
+      { locusTag: "JCVISYN3A_0434", gene: "rlmFO", start: 284461, end: 285777, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0094",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-094.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0094", gene: null, start: 63664, end: 64380, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0095",
+    displayName: "SecA",
+    fullName: "Preprotein translocase subunit A",
+    cutout: "cutouts/3A-095.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0095", gene: "secA", start: 64495, end: 67329, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0097",
+    displayName: "YycJ",
+    fullName: "Uncharacterized 5'-3' exonuclease",
+    cutout: "cutouts/3A-097.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0097", gene: "yycJ", start: 67494, end: 68405, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0105",
+    displayName: "Exodeoxyribonuclease VII",
+    fullName: "Exodeoxyribonuclease VII (subunits XseB + XseA)",
+    cutout: "cutouts/3A-105.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0105", gene: "xseB", start: 68809, end: 69024, strand: "-" },
+      { locusTag: "JCVISYN3A_0106", gene: "xseA", start: 69014, end: 70423, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0107",
+    displayName: "NusB",
+    fullName: "Transcription antitermination factor",
+    cutout: "cutouts/3A-107.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0107", gene: "nusB", start: 70425, end: 70823, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0108",
+    displayName: "Uncharacterized Lipoprotein",
+    fullName: "Uncharacterized lipoprotein",
+    cutout: "cutouts/3A-108.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0108", gene: null, start: 70835, end: 71947, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0109",
+    displayName: "Deoxyribonuclease IV",
+    fullName: "Deoxyribonuclease IV",
+    cutout: "cutouts/3A-109.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0109", gene: null, start: 71973, end: 72842, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0202",
+    displayName: "RsmD",
+    fullName: "16S rRNA (guanine(966)-N(2))-methyltransferase",
+    cutout: "cutouts/3A-202.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0202", gene: "rsmD", start: 126259, end: 126816, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0363",
+    displayName: "RimM",
+    fullName: "16S rRNA processing protein",
+    cutout: "cutouts/3A-363.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0363", gene: "rimM", start: 214490, end: 214984, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

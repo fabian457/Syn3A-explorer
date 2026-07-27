@@ -586,5 +586,48 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0137",
+    displayName: "50S Ribosome",
+    fullName: "50S ribosomal subunit",
+    cutout: "cutouts/3A-137.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0137", gene: "rpmE", start: 88733, end: 89011, strand: "+" },
+      { locusTag: "JCVISYN3A_0198", gene: "rplT", start: 124254, end: 124613, strand: "-" },
+      { locusTag: "JCVISYN3A_0199", gene: "rpmI", start: 124632, end: 124823, strand: "-" },
+      { locusTag: "JCVISYN3A_0365", gene: "rplS", start: 215710, end: 216093, strand: "+" },
+      { locusTag: "JCVISYN3A_0422", gene: "rpmB", start: 274322, end: 274519, strand: "+" },
+      { locusTag: "JCVISYN3A_0499", gene: "rpmA", start: 316629, end: 316910, strand: "-" },
+      { locusTag: "JCVISYN3A_0501", gene: "rplU", start: 317229, end: 317531, strand: "-" },
+      { locusTag: "JCVISYN3A_0526", gene: "rpmF", start: 335295, end: 335474, strand: "-" },
+      { locusTag: "JCVISYN3A_0638", gene: "rplM", start: 395929, end: 396384, strand: "-" },
+      { locusTag: "JCVISYN3A_0644", gene: "rplQ", start: 404769, end: 405128, strand: "-" },
+      { locusTag: "JCVISYN3A_0648", gene: "rpmJ", start: 406922, end: 407035, strand: "-" },
+      { locusTag: "JCVISYN3A_0653", gene: "rplO", start: 410312, end: 410749, strand: "-" },
+      { locusTag: "JCVISYN3A_0655", gene: "rplR", start: 411551, end: 411901, strand: "-" },
+      { locusTag: "JCVISYN3A_0656", gene: "rplF", start: 411927, end: 412469, strand: "-" },
+      { locusTag: "JCVISYN3A_0659", gene: "rplE", start: 413096, end: 413638, strand: "-" },
+      { locusTag: "JCVISYN3A_0660", gene: "rplX", start: 413657, end: 413983, strand: "-" },
+      { locusTag: "JCVISYN3A_0661", gene: "rplN", start: 413997, end: 414365, strand: "-" },
+      { locusTag: "JCVISYN3A_0663", gene: "rpmC", start: 414638, end: 415054, strand: "-" },
+      { locusTag: "JCVISYN3A_0664", gene: "rplP", start: 415054, end: 415467, strand: "-" },
+      { locusTag: "JCVISYN3A_0666", gene: "rplV", start: 416189, end: 416524, strand: "-" },
+      { locusTag: "JCVISYN3A_0668", gene: "rplB", start: 416836, end: 417684, strand: "-" },
+      { locusTag: "JCVISYN3A_0669", gene: "rplW", start: 417739, end: 418023, strand: "-" },
+      { locusTag: "JCVISYN3A_0670", gene: "rplD", start: 418023, end: 418649, strand: "-" },
+      { locusTag: "JCVISYN3A_0671", gene: "rplC", start: 418662, end: 419333, strand: "-" },
+      { locusTag: "JCVISYN3A_0806", gene: "rplG", start: 484862, end: 485230, strand: "-" },
+      { locusTag: "JCVISYN3A_0807", gene: "rplJ", start: 485299, end: 485796, strand: "-" },
+      { locusTag: "JCVISYN3A_0809", gene: "rplA", start: 486023, end: 486703, strand: "-" },
+      { locusTag: "JCVISYN3A_0810", gene: "rplK", start: 486703, end: 487131, strand: "-" },
+      { locusTag: "JCVISYN3A_0833", gene: "rplI", start: 508692, end: 509135, strand: "+" },
+      { locusTag: "JCVISYN3A_0930", gene: "rpmG", start: 319048, end: 319191, strand: "-" },
+      { locusTag: "JCVISYN3A_0932", gene: "rpmG", start: 515027, end: 515188, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

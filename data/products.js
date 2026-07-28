@@ -629,5 +629,123 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0117",
+    displayName: "PlsY",
+    fullName: "Acyl-phosphate glycerol 3-phosphate acyltransferase",
+    cutout: "cutouts/3A-117.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0117", gene: "plsY", start: 77446, end: 78207, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0139",
+    displayName: "NanoRNAse",
+    fullName: "NanoRNAse",
+    cutout: "cutouts/3A-139.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0139", gene: "ytqI; orn", start: 90992, end: 91942, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0218",
+    displayName: "GlpK",
+    fullName: "Glycerol kinase",
+    cutout: "cutouts/3A-218.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0218", gene: "glpK", start: 131274, end: 132791, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0227",
+    displayName: "Pyruvate Dehydrogenase Complex",
+    fullName: "Pyruvate dehydrogenase complex",
+    cutout: "cutouts/3A-227.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0227", gene: "pdhC", start: 138324, end: 139649, strand: "+" },
+      { locusTag: "JCVISYN3A_0228", gene: "lpdA", start: 139668, end: 141557, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0419",
+    displayName: "PlsX",
+    fullName: "Phosphate acyltransferase",
+    cutout: "cutouts/3A-419.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0419", gene: "plsX", start: 271137, end: 272141, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0420",
+    displayName: "FakA",
+    fullName: "Fatty acid kinase subunit A",
+    cutout: "cutouts/3A-420.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0420", gene: "fakA", start: 272174, end: 273817, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0513",
+    displayName: "AcpS",
+    fullName: "ACP synthase",
+    cutout: "cutouts/3A-513.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0513", gene: "acpS", start: 322858, end: 323190, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0616",
+    displayName: "FakB1",
+    fullName: "Fatty acid binding protein",
+    cutout: "cutouts/3A-616.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0616", gene: "fakB", start: 385390, end: 386229, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0617",
+    displayName: "FakB2",
+    fullName: "Fatty acid binding protein",
+    cutout: "cutouts/3A-617.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0617", gene: "fakB", start: 386240, end: 387091, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

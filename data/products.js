@@ -747,5 +747,18 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0621",
+    displayName: "AcpA",
+    fullName: "Acyl carrier protein",
+    cutout: "cutouts/3A-621.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0621", gene: "acpA", start: 387855, end: 388076, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

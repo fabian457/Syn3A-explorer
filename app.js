@@ -4,12 +4,10 @@
   const MIN_SEGMENT_WIDTH = 3; // viewBox units
   const TRACK_VIEWBOX_WIDTH = 2000;
   const TRACK_VIEWBOX_HEIGHT = 60;
-  const SWATCH_SAMPLE_STRIDE = 4; // sample every 4th pixel when averaging cutout color
   const DIM_WASH_RGB = "10, 10, 14"; // spotlight wash color (r,g,b)
   const DIM_WASH_OPACITY = 0.65;
 
   const stageEl = document.getElementById("illustration-stage");
-  const colorCanvas = document.getElementById("colorCanvas");
   const dimCanvas = document.getElementById("dimCanvas");
   const selectionCanvas = document.getElementById("selectionCanvas");
   const tooltipEl = document.getElementById("tooltip");
@@ -22,7 +20,6 @@
   const detailClose = document.getElementById("detail-close");
   const trackSvg = document.getElementById("genome-track");
 
-  const colorCtx = colorCanvas.getContext("2d");
   const dimCtx = dimCanvas.getContext("2d");
   const selectionCtx = selectionCanvas.getContext("2d");
 
@@ -35,6 +32,7 @@
   let selectedProductId = null;
 
   const cutoutImages = {};
+  const cutoutLoadPromises = {};
 
   function getProduct(id) {
     return PRODUCTS.find((p) => p.id === id) || null;
@@ -49,20 +47,23 @@
     });
   }
 
-  function computeSwatchColor(imageData) {
-    const data = imageData.data;
-    const stride = 4 * SWATCH_SAMPLE_STRIDE;
-    let r = 0, g = 0, b = 0, n = 0;
-    for (let i = 0; i < data.length; i += stride) {
-      if (data[i + 3] > 0) {
-        r += data[i];
-        g += data[i + 1];
-        b += data[i + 2];
-        n++;
+  // Loads a product's cutout on first hover/select rather than all of them
+  // eagerly at init — most of the 42+ cutouts are never needed in a given
+  // visit, and this keeps them off the initial-load critical path entirely.
+  // updateDimOverlay()/redrawSelectionLayer() already no-op safely if the
+  // image isn't loaded yet, so this just needs to kick off the load and,
+  // once it arrives, redraw if this product is still the active one.
+  function ensureCutoutLoaded(id) {
+    if (!id || cutoutImages[id] || cutoutLoadPromises[id]) return;
+    const product = getProduct(id);
+    if (!product) return;
+    cutoutLoadPromises[id] = loadImage(product.cutout).then((img) => {
+      cutoutImages[id] = img;
+      if (id === hoveredProductId || id === selectedProductId) {
+        updateDimOverlay();
+        if (id === selectedProductId) redrawSelectionLayer();
       }
-    }
-    if (n === 0) return "#999999";
-    return `rgb(${Math.round(r / n)}, ${Math.round(g / n)}, ${Math.round(b / n)})`;
+    });
   }
 
   // Hit-testing is driven entirely by assets/id-map.png: a reference image, the
@@ -76,22 +77,6 @@
     return loadImage("assets/id-map.png").then((img) => {
       idMapCtx.clearRect(0, 0, IMAGE_WIDTH, IMAGE_HEIGHT);
       idMapCtx.drawImage(img, 0, 0);
-    });
-  }
-
-  function computeSwatchColors() {
-    const scratch = document.createElement("canvas");
-    scratch.width = IMAGE_WIDTH;
-    scratch.height = IMAGE_HEIGHT;
-    const scratchCtx = scratch.getContext("2d", { willReadFrequently: true });
-
-    PRODUCTS.forEach((product) => {
-      const img = cutoutImages[product.id];
-      scratchCtx.clearRect(0, 0, IMAGE_WIDTH, IMAGE_HEIGHT);
-      scratchCtx.drawImage(img, 0, 0);
-      product.swatchColor = computeSwatchColor(
-        scratchCtx.getImageData(0, 0, IMAGE_WIDTH, IMAGE_HEIGHT)
-      );
     });
   }
 
@@ -119,20 +104,9 @@
     if (img) ctx.drawImage(img, 0, 0);
   }
 
-  // Composited once at init: every defined product's cutout drawn in its real
-  // color, permanently, so the illustration shows all clickable products by
-  // default rather than needing hover to reveal them one at a time.
-  function buildColorLayer() {
-    colorCtx.clearRect(0, 0, IMAGE_WIDTH, IMAGE_HEIGHT);
-    PRODUCTS.forEach((product) => {
-      const img = cutoutImages[product.id];
-      if (img) colorCtx.drawImage(img, 0, 0);
-    });
-  }
-
   // Redrawn only when the active (hover-or-selection) product changes: washes
   // the whole canvas, then punches a transparent hole exactly over that
-  // product's own silhouette, revealing colorCanvas beneath it undimmed while
+  // product's own silhouette, revealing #colorImg beneath it undimmed while
   // everything else visible stays washed out — the "spotlight" effect.
   function updateDimOverlay() {
     dimCtx.clearRect(0, 0, IMAGE_WIDTH, IMAGE_HEIGHT);
@@ -157,6 +131,7 @@
   function setHovered(id) {
     if (id === hoveredProductId) return;
     hoveredProductId = id;
+    ensureCutoutLoaded(id);
     updateDimOverlay();
     updateTrackEmphasis();
     updateDetailPanel();
@@ -164,6 +139,7 @@
 
   function selectProduct(id) {
     selectedProductId = id;
+    ensureCutoutLoaded(id);
     redrawSelectionLayer();
     updateDimOverlay();
     updateTrackEmphasis();
@@ -372,15 +348,16 @@
   }
 
   async function init() {
-    await Promise.all([
-      loadIdMap(),
-      ...PRODUCTS.map(async (product) => {
-        cutoutImages[product.id] = await loadImage(product.cutout);
-      }),
-    ]);
+    await loadIdMap(); // hit-testing needs this before mousemove/click can resolve a product
 
-    computeSwatchColors();
-    buildColorLayer();
+    // #baseImg and #colorImg load and paint on their own via normal <img>
+    // loading, independent of this async chain. Individual per-product
+    // cutouts (needed only for the hover/selection spotlight effects) load
+    // lazily on demand via ensureCutoutLoaded(), not here.
+    PRODUCTS.forEach((product) => {
+      product.swatchColor = SWATCH_COLORS[product.id] || "#999999";
+    });
+
     buildGenomeTrack();
     attachEventListeners();
 

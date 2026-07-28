@@ -29,7 +29,8 @@ A matching launch config already exists at `.claude/launch.json` (name `syn3a-st
 - `styles.css` — all styling
 - `app.js` — single IIFE, all logic (state, rendering, event handling)
 - `data/products.js` — plain scripts (not ES modules) defining `GENOME_LENGTH_BP` and the `PRODUCTS` array; loaded via `<script>` tag before `app.js`
-- `assets/` — the base illustration (`syn3A-grey.png`, always shown), the full-color original (`syn3A.png`/`.webp`, not used at runtime), and `id-map.png` (see below)
+- `data/swatch-colors.js` — generated, not hand-edited (see "Product data" below): `SWATCH_COLORS`, each defined product's average cutout color keyed by id
+- `assets/` — the base illustration (`syn3A-grey.webp`, always shown; `syn3A-grey.png` kept as the master), the full-color original (`syn3A.png`/`.webp`, not used at runtime), `color-composite.webp` (see below), and `id-map.png` (see below)
 - `cutouts/3A-0XXX.png` — one transparent-background cutout PNG per depicted product, named after its locus number
 - `relevant files/` — source material used when adding new products (see "Adding a new product" below)
 
@@ -37,30 +38,32 @@ A matching launch config already exists at `.claude/launch.json` (name `syn3a-st
 
 ```html
 <img id="baseImg">        <!-- always-grey base, always visible -->
-<canvas id="colorCanvas">  <!-- every defined product's cutout, composited once at init -->
+<img id="colorImg">        <!-- precomputed composite of every defined product's cutout -->
 <canvas id="dimCanvas">     <!-- dark wash with a hole punched over the active product -->
 <canvas id="selectionCanvas"> <!-- selected product's cutout + CSS glow outline -->
 ```
 
-All currently-defined products show in their real color by default (`buildColorLayer()`, run once in `init()`); the grey background shows through only where no cutout exists. Hovering/selecting a product doesn't reveal color (it's already visible) — it spotlights: `updateDimOverlay()` fills `dimCanvas` with a translucent dark wash, then uses `globalCompositeOperation = "destination-out"` with the active product's own cutout to erase a hole exactly over its silhouette, dimming everything else. `selectionCanvas` sits above the dim overlay so a persisted selection stays undimmed even while hovering something else elsewhere.
+All currently-defined products show in their real color by default via `#colorImg` (`assets/color-composite.webp`, precomputed offline — see "Derived assets" below); the grey background shows through only where no cutout exists. Hovering/selecting a product doesn't reveal color (it's already visible) — it spotlights: `updateDimOverlay()` fills `dimCanvas` with a translucent dark wash, then uses `globalCompositeOperation = "destination-out"` with the active product's own cutout to erase a hole exactly over its silhouette, dimming everything else. `selectionCanvas` sits above the dim overlay so a persisted selection stays undimmed even while hovering something else elsewhere.
 
-### Hit-testing: `assets/id-map.png`
+The active product's own cutout (needed only for the two effects above) isn't loaded until the product is first hovered or selected (`ensureCutoutLoaded()`) — not eagerly at init — since most of the 40+ cutouts are never touched in a given visit. `updateDimOverlay()`/`redrawSelectionLayer()` already no-op safely if that image hasn't arrived yet, so `ensureCutoutLoaded()` just kicks off the load and re-applies the effect once it resolves, if the product in question is still active.
 
-A reference PNG, same 5612×3748 dimensions as the illustration, encoding which product owns each pixel:
-- Product at 1-based array index `N` in `PRODUCTS` is filled with `rgb(N & 0xff, N >> 8, 0)` (product 1 = `#010000`, product 2 = `#020000`, ...; R is the low byte, G is the overflow byte past 255).
-- Everywhere else is transparent (alpha 0 = no product).
+### Derived assets: `tools/build-assets.py`
 
-`app.js` just loads this file into an offscreen canvas at init (`loadIdMap()`) and does a single `getImageData(x, y, 1, 1)` read per mousemove (`getProductAtPixel`) — O(1) regardless of product count. **This file is generated from the cutouts, then hand-edited as needed — it is not regenerated at runtime.**
+Three files are generated from the cutouts by one script, `python3 tools/build-assets.py` (requires `pip install pillow numpy`), rather than computed live in-browser:
 
-Regenerate it with `python3 tools/build-idmap.py` (requires `pip install pillow numpy`) any time a cutout is added, replaced, or resized. The script reads product order and cutout paths directly out of `data/products.js` (a regex scan, not a real JS parser — it just needs every product object's `id`/`cutout` fields to keep their current one-per-line shape), so it never needs its own separate list kept in sync.
+- **`assets/id-map.png`** — hit-testing. A reference PNG, same 5612×3748 dimensions as the illustration, encoding which product owns each pixel: product at 1-based array index `N` in `PRODUCTS` is filled with `rgb(N & 0xff, N >> 8, 0)` (product 1 = `#010000`, product 2 = `#020000`, ...; R is the low byte, G is the overflow byte past 255); everywhere else is transparent (alpha 0 = no product). `app.js` loads this into an offscreen canvas at init (`loadIdMap()`) and does a single `getImageData(x, y, 1, 1)` read per mousemove (`getProductAtPixel`) — O(1) regardless of product count. **This file is then hand-edited as needed — it is not regenerated at runtime.**
+- **`assets/color-composite.webp`** — every cutout alpha-composited together in `PRODUCTS` order (later on top, lossy WebP), the static image `#colorImg` displays. Previously this was rebuilt on every page load by drawing all 40+ full-res cutouts onto a `<canvas>` (`buildColorLayer()`, ~1.3s); now it's one precomputed file the browser loads like any other `<img>`.
+- **`data/swatch-colors.js`** — each product's alpha-weighted average cutout color, keyed by id (`SWATCH_COLORS["0001"]`), used for genome-track segment fill and the detail panel's accent color. Previously computed at runtime (`computeSwatchColors()`) by drawing each cutout onto a full 5612×3748 canvas and reading the pixel data back — by far the single biggest cost in `init()` (~5.8s across 40+ products, dwarfing image decode itself, because `getImageData` over a 21-megapixel canvas is expensive however you slice it). Now a synchronous object lookup.
 
-**Critical gotcha:** `PRODUCTS` array order and `id-map.png`'s encoding must stay in lockstep. Reordering/inserting into the array without regenerating the id-map will make hover/click resolve to the wrong product. When two cutouts legitimately overlap (e.g. a subunit that also appears as a free-floating copy elsewhere), whichever product is later in the array wins the overlapping pixels — put the more specific product later if that matters.
+The script reads product order and cutout paths directly out of `data/products.js` (a regex scan, not a real JS parser — it just needs every product object's `id`/`cutout` fields to keep their current one-per-line shape), so it never needs its own separate list kept in sync.
+
+**Critical gotcha:** `PRODUCTS` array order and `id-map.png`'s encoding must stay in lockstep. Reordering/inserting into the array without regenerating these assets will make hover/click resolve to the wrong product and the composite/swatches go stale. When two cutouts legitimately overlap (e.g. a subunit that also appears as a free-floating copy elsewhere), whichever product is later in the array wins the overlapping pixels (both for id-map ownership and composite z-order) — put the more specific product later if that matters.
 
 ### Data validation: `tools/validate-products.py`
 
-Sanity-checks `data/products.js` independent of id-map generation: every `cutout` path exists, opens, is exactly 5612×3748, and isn't blank; no duplicate `id` or `cutout` values; every locus's `start`/`end` fall within `[1, GENOME_LENGTH_BP]` with `start < end`; `strand` is `+`, `-`, or `null`. A locus tag appearing under two different products is reported as a warning, not an error — that's the legitimate free-floating-copy case above, not necessarily a mistake.
+Sanity-checks `data/products.js` independent of the derived-asset generation above: every `cutout` path exists, opens, is exactly 5612×3748, and isn't blank; no duplicate `id` or `cutout` values; every locus's `start`/`end` fall within `[1, GENOME_LENGTH_BP]` with `start < end`; `strand` is `+`, `-`, or `null`. A locus tag appearing under two different products is reported as a warning, not an error — that's the legitimate free-floating-copy case above, not necessarily a mistake.
 
-Unlike `build-idmap.py`'s regex scan, this reads `data/products.js` by actually evaluating it as JavaScript — `tools/parse-products.js` runs it in a Node `vm` context and prints `PRODUCTS`/`GENOME_LENGTH_BP` as JSON, which `validate-products.py` shells out to and consumes. (Requires a `node` binary on `PATH`, in addition to the `pillow`/`numpy` `build-idmap.py` already needs.) Run it after every edit to `products.js`, alongside `build-idmap.py`.
+Unlike `build-assets.py`'s regex scan, this reads `data/products.js` by actually evaluating it as JavaScript — `tools/parse-products.js` runs it in a Node `vm` context and prints `PRODUCTS`/`GENOME_LENGTH_BP` as JSON, which `validate-products.py` shells out to and consumes. (Requires a `node` binary on `PATH`, in addition to the `pillow`/`numpy` `build-assets.py` already needs.) Run it after every edit to `products.js`, alongside `build-assets.py`.
 
 ### State model
 
@@ -76,7 +79,7 @@ Height is JS-synced to the illustration's rendered height via a `ResizeObserver`
 
 ### Product data (`data/products.js`)
 
-Each entry: `id` (4-digit locus string), `displayName`, `fullName`, `cutout` (path), `loci` (array of `{locusTag, gene, start, end, strand}` — `gene`/coordinates may be `null` if not yet known), `description`, `links`. `swatchColor` is *not* stored in this file — it's computed automatically at runtime (`computeSwatchColors()`) by averaging each cutout's opaque pixel colors, so it always matches the artwork without manual color-picking.
+Each entry: `id` (4-digit locus string), `displayName`, `fullName`, `cutout` (path), `loci` (array of `{locusTag, gene, start, end, strand}` — `gene`/coordinates may be `null` if not yet known), `description`, `links`. `swatchColor` is *not* stored in this file — `app.js` assigns it at init from the generated `data/swatch-colors.js` (see "Derived assets" above), so it always matches the artwork without manual color-picking, without needing to be recomputed by every visitor's browser.
 
 ## Adding a new product
 
@@ -86,7 +89,7 @@ This is the most common task in this repo. Workflow, in order:
 2. **Get a cutout.** Same 5612×3748 canvas, transparent background, pixel-aligned with the other cutouts, containing only that product's colored shape(s). Save as `cutouts/3A-0XXX.png` (locus number, zero-padded to 3 digits — note this is one fewer digit than the `JCVISYN3A_0XXXX` locus tag / the `id` field in `products.js`).
 3. **Look up its data.** `relevant files/goodsell-products-reference.json` has all 328 products from the source paper's Table 1, each pre-merged with real GenBank coordinates — look up by `labelLocusNumber` to get `displayName`, every constituent locus, gene name, annotation, and coordinates. This covers essentially every gene in the genome already; manual SynWiki lookups shouldn't be necessary.
 4. **Add the entry** to the end of the `PRODUCTS` array in `data/products.js` (append, don't reorder existing entries — see the id-map gotcha above).
-5. **Regenerate `assets/id-map.png`**: `python3 tools/build-idmap.py`. It processes every product in `PRODUCTS`, not just the new one. Dimensions of every cutout must be exactly 5612×3748 — the script raises immediately (naming the offending file) if one doesn't match, which usually means an accidental rotation/resize during export. Fix and rerun rather than guessing the correct orientation.
-6. **Validate**: `python3 tools/validate-products.py` — catches duplicate ids/cutouts, blank cutouts, and out-of-range locus coordinates that `build-idmap.py` doesn't check.
+5. **Regenerate the derived assets**: `python3 tools/build-assets.py`. It processes every product in `PRODUCTS`, not just the new one, rebuilding `assets/id-map.png`, `assets/color-composite.webp`, and `data/swatch-colors.js` together. Dimensions of every cutout must be exactly 5612×3748 — the script raises immediately (naming the offending file) if one doesn't match, which usually means an accidental rotation/resize during export. Fix and rerun rather than guessing the correct orientation.
+6. **Validate**: `python3 tools/validate-products.py` — catches duplicate ids/cutouts, blank cutouts, and out-of-range locus coordinates that `build-assets.py` doesn't check.
 
 `relevant files/2022_JCVI-syn3A.pdf` is the source paper (Goodsell 2022, RCSB PDB gallery) if deeper context is ever needed beyond the reference JSON. `relevant files/genome-loci-CP016816.2.json` is the raw per-locus GenBank data (coordinates/gene/annotation for every locus in the genome, not grouped into products) that `goodsell-products-reference.json` was built from.

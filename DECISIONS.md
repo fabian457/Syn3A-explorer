@@ -51,6 +51,12 @@ into a separate stable-id scheme.
 system wasn't worth it — a documented invariant plus `tools/validate-products.py`
 catching duplicate ids/cutouts is enough guardrail at this scale.
 
+## Swatch colors and the full-color composite are precomputed, not built in-browser at init
+
+Originally, `app.js` built both of these live on every page load: `computeSwatchColors()` drew each cutout onto a full 5612×3748 canvas and read the pixel data back to average its color, and `buildColorLayer()` drew all 40+ full-res cutouts onto a display canvas to produce the default colored illustration. Both are now precomputed offline by `tools/build-assets.py` into `data/swatch-colors.js` and `assets/color-composite.webp`, alongside the existing `id-map.png` generation. Individual per-product cutouts (still needed for the hover/selection spotlight effects) now load lazily on first hover/select instead of all being fetched upfront.
+
+**Why:** profiling showed `computeSwatchColors()` alone cost ~5.8s and `buildColorLayer()` ~1.3s of every page load, versus ~300ms to fetch and decode all 40+ cutouts locally — the pixel-averaging and full-res canvas compositing were the actual bottleneck, not image loading. A first attempt at downscaling before reading back pixel data only got `computeSwatchColors()` to ~4.2s, since the cost is dominated by `drawImage`'s resampling filter over a 21-megapixel source, not just the `getImageData` readback. This mirrors the existing `id-map.png` precedent (a derived artifact generated offline and committed, not rebuilt live) rather than being a new pattern.
+
 ## Detail panel is always visible (placeholder when empty), height synced via ResizeObserver
 
 Never `display: none`; height matches the illustration's rendered height via

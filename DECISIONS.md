@@ -20,7 +20,7 @@ spotlight.
 
 ## id-map.png is generated then hand-editable, not rebuilt live in-browser
 
-`tools/build-idmap.py` produces a real file on disk; the browser just loads
+`tools/build-assets.py` produces a real file on disk; the browser just loads
 it once at init and never regenerates it.
 
 **Why:** the original design built the id-map live in-browser, including
@@ -56,6 +56,27 @@ catching duplicate ids/cutouts is enough guardrail at this scale.
 Originally, `app.js` built both of these live on every page load: `computeSwatchColors()` drew each cutout onto a full 5612×3748 canvas and read the pixel data back to average its color, and `buildColorLayer()` drew all 40+ full-res cutouts onto a display canvas to produce the default colored illustration. Both are now precomputed offline by `tools/build-assets.py` into `data/swatch-colors.js` and `assets/color-composite.webp`, alongside the existing `id-map.png` generation. Individual per-product cutouts (still needed for the hover/selection spotlight effects) now load lazily on first hover/select instead of all being fetched upfront.
 
 **Why:** profiling showed `computeSwatchColors()` alone cost ~5.8s and `buildColorLayer()` ~1.3s of every page load, versus ~300ms to fetch and decode all 40+ cutouts locally — the pixel-averaging and full-res canvas compositing were the actual bottleneck, not image loading. A first attempt at downscaling before reading back pixel data only got `computeSwatchColors()` to ~4.2s, since the cost is dominated by `drawImage`'s resampling filter over a 21-megapixel source, not just the `getImageData` readback. This mirrors the existing `id-map.png` precedent (a derived artifact generated offline and committed, not rebuilt live) rather than being a new pattern.
+
+## Membrane links to its building-block enzymes via `relatedProductIds`, not by listing their loci as its own
+
+The phospholipid membrane isn't encoded by a single gene — it's assembled by
+11 separate enzymes scattered across the genome. Considered folding all 11
+enzymes' loci directly into the membrane's own `loci` array (so it would
+"own" their genome-track segments), but instead gave the membrane an empty
+`loci` and a new `relatedProductIds` field listing those 11 products' ids —
+each stays its own independent, individually-clickable product, and the
+membrane just references them.
+
+**Why:** if the membrane's `loci` array owned those segments directly,
+clicking e.g. the PlsY segment on the genome track would select the
+*membrane*, not PlsY — losing the ability to navigate to PlsY specifically
+(its own description, its own detail-panel entry). `relatedProductIds`
+keeps every enzyme independently selectable while still letting the
+membrane say "highlight all of these too" when it's the active product.
+The relationship is one-directional (hovering PlsY alone doesn't highlight
+the membrane or its siblings) to keep the mental model simple — only the
+one entry that declares `relatedProductIds` gets the expanded-highlight
+behavior, everything else behaves exactly as before.
 
 ## Detail panel is always visible (placeholder when empty), height synced via ResizeObserver
 

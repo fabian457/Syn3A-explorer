@@ -760,5 +760,69 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0512",
+    displayName: "PlsC",
+    fullName: "Acyl-phosphate glycerol 3-phosphate acyltransferase",
+    cutout: "cutouts/3A-512.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0512", gene: "plsC", start: 321754, end: 322701, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0304",
+    displayName: "CdsA",
+    fullName: "Phosphatidate cytidylyltransferase",
+    cutout: "cutouts/3A-304.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0304", gene: "cdsA", start: 187479, end: 188507, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0875",
+    displayName: "PgsA",
+    fullName: "CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase",
+    cutout: "cutouts/3A-875.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0875", gene: "pgsA", start: 524244, end: 524840, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0214",
+    displayName: "PgpA",
+    fullName: "Phosphatidylglycerophosphatase",
+    cutout: "cutouts/3A-214.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0214", gene: "pgpA", start: 129342, end: 130163, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "membrane",
+    displayName: "Phospholipid Membrane",
+    fullName: "Phospholipid bilayer membrane",
+    cutout: "cutouts/3A-membrane.png",
+    loci: [],
+    relatedProductIds: ["0616", "0617", "0420", "0117", "0419", "0621", "0513", "0512", "0304", "0875", "0214"],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

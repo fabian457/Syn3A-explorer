@@ -5,8 +5,9 @@ genome coordinate range, independent of id-map generation.
 
 Catches the mistakes that are easy to make by hand once PRODUCTS has
 hundreds of entries: a cutout path that doesn't exist, a blank cutout, a
-duplicate id, the same locus copy-pasted into two different products, or
-a locus's coordinates outside the genome / with start >= end.
+duplicate id, the same locus copy-pasted into two different products, a
+locus's coordinates outside the genome / with start >= end, or a
+`relatedProductIds` entry that references an id no product actually has.
 
 This does not modify anything -- it only reports problems.
 
@@ -49,6 +50,7 @@ def main():
             "id": p.get("id"),
             "displayName": p.get("displayName"),
             "cutout": p.get("cutout"),
+            "relatedProductIds": p.get("relatedProductIds") or [],
             "loci": [
                 {
                     "locusTag": l.get("locusTag"),
@@ -65,6 +67,7 @@ def main():
 
     errors = []
 
+    all_ids = {p["id"] for p in products if p["id"]}
     seen_ids = {}
     seen_cutouts = {}
     seen_locus_tags = {}
@@ -128,6 +131,12 @@ def main():
 
             if locus["strand"] not in (None, "+", "-"):
                 errors.append(f"{label}/{tag}: strand {locus['strand']!r} is not '+', '-', or null")
+
+        for related_id in p["relatedProductIds"]:
+            if related_id not in all_ids:
+                errors.append(
+                    f"{label}: relatedProductIds references {related_id!r}, which isn't a known product id"
+                )
 
     if warnings:
         print(f"{len(warnings)} warning(s) (review, but non-fatal):\n")

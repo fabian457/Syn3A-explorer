@@ -15,7 +15,11 @@
   const detailName = document.getElementById("detail-name");
   const detailFullName = document.getElementById("detail-fullname");
   const detailDescription = document.getElementById("detail-description");
+  const detailLociHeading = document.getElementById("detail-loci-heading");
+  const detailLociTable = document.getElementById("detail-loci-table");
   const detailLociBody = document.getElementById("detail-loci-body");
+  const detailRelatedHeading = document.getElementById("detail-related-heading");
+  const detailRelated = document.getElementById("detail-related");
   const detailLinks = document.getElementById("detail-links");
   const detailClose = document.getElementById("detail-close");
   const trackSvg = document.getElementById("genome-track");
@@ -36,6 +40,20 @@
 
   function getProduct(id) {
     return PRODUCTS.find((p) => p.id === id) || null;
+  }
+
+  // The active (hover-or-selection) product, plus any products it declares
+  // as `relatedProductIds` (e.g. the membrane lists the enzymes that build
+  // it) — everything in this set gets spotlighted together in the
+  // illustration and highlighted together on the genome track. One-way:
+  // a related product's own loci don't reference back to the membrane, so
+  // hovering e.g. PlsY on its own still only highlights itself.
+  function getActiveIds() {
+    const activeId = hoveredProductId || selectedProductId;
+    if (!activeId) return [];
+    const product = getProduct(activeId);
+    const related = (product && product.relatedProductIds) || [];
+    return [activeId, ...related];
   }
 
   function loadImage(src) {
@@ -59,7 +77,7 @@
     if (!product) return;
     cutoutLoadPromises[id] = loadImage(product.cutout).then((img) => {
       cutoutImages[id] = img;
-      if (id === hoveredProductId || id === selectedProductId) {
+      if (getActiveIds().includes(id)) {
         updateDimOverlay();
         if (id === selectedProductId) redrawSelectionLayer();
       }
@@ -105,23 +123,26 @@
   }
 
   // Redrawn only when the active (hover-or-selection) product changes: washes
-  // the whole canvas, then punches a transparent hole exactly over that
-  // product's own silhouette, revealing #colorImg beneath it undimmed while
-  // everything else visible stays washed out — the "spotlight" effect.
+  // the whole canvas, then punches a transparent hole exactly over the
+  // active product's own silhouette — and, if it declares any
+  // `relatedProductIds`, over each of theirs too — revealing #colorImg
+  // beneath undimmed while everything else visible stays washed out (the
+  // "spotlight" effect). Cutouts not yet loaded are silently skipped;
+  // ensureCutoutLoaded()'s callback re-runs this once they arrive.
   function updateDimOverlay() {
     dimCtx.clearRect(0, 0, IMAGE_WIDTH, IMAGE_HEIGHT);
-    const activeId = hoveredProductId || selectedProductId;
-    if (!activeId) return;
+    const activeIds = getActiveIds();
+    if (activeIds.length === 0) return;
 
     dimCtx.fillStyle = `rgba(${DIM_WASH_RGB}, ${DIM_WASH_OPACITY})`;
     dimCtx.fillRect(0, 0, IMAGE_WIDTH, IMAGE_HEIGHT);
 
-    const img = cutoutImages[activeId];
-    if (img) {
-      dimCtx.globalCompositeOperation = "destination-out";
-      dimCtx.drawImage(img, 0, 0);
-      dimCtx.globalCompositeOperation = "source-over"; // reset for next call
-    }
+    dimCtx.globalCompositeOperation = "destination-out";
+    activeIds.forEach((id) => {
+      const img = cutoutImages[id];
+      if (img) dimCtx.drawImage(img, 0, 0);
+    });
+    dimCtx.globalCompositeOperation = "source-over"; // reset for next call
   }
 
   function redrawSelectionLayer() {
@@ -131,7 +152,7 @@
   function setHovered(id) {
     if (id === hoveredProductId) return;
     hoveredProductId = id;
-    ensureCutoutLoaded(id);
+    getActiveIds().forEach(ensureCutoutLoaded);
     updateDimOverlay();
     updateTrackEmphasis();
     updateDetailPanel();
@@ -139,7 +160,7 @@
 
   function selectProduct(id) {
     selectedProductId = id;
-    ensureCutoutLoaded(id);
+    getActiveIds().forEach(ensureCutoutLoaded);
     redrawSelectionLayer();
     updateDimOverlay();
     updateTrackEmphasis();
@@ -233,10 +254,10 @@
   }
 
   function updateTrackEmphasis() {
-    const activeId = hoveredProductId || selectedProductId;
-    trackSvg.classList.toggle("has-active", !!activeId);
+    const activeIds = new Set(getActiveIds());
+    trackSvg.classList.toggle("has-active", activeIds.size > 0);
     trackSvg.querySelectorAll(".track-segment").forEach((seg) => {
-      seg.classList.toggle("active", seg.dataset.productId === activeId);
+      seg.classList.toggle("active", activeIds.has(seg.dataset.productId));
     });
   }
 
@@ -291,6 +312,13 @@
     detailDescription.textContent = product.description || "No description yet.";
     detailDescription.classList.toggle("placeholder", !product.description);
 
+    // Structural products like the membrane aren't gene-encoded themselves
+    // (empty loci) — hide the Loci table entirely rather than show an
+    // empty one.
+    const hasLoci = product.loci.length > 0;
+    detailLociHeading.style.display = hasLoci ? "" : "none";
+    detailLociTable.style.display = hasLoci ? "" : "none";
+
     detailLociBody.innerHTML = "";
     product.loci.forEach((locus) => {
       const tr = document.createElement("tr");
@@ -306,6 +334,31 @@
       tdCoords.textContent = coords;
       tr.append(tdLocus, tdGene, tdCoords);
       detailLociBody.appendChild(tr);
+    });
+
+    // "Built by" — the products this one declares as relatedProductIds
+    // (e.g. the membrane lists the enzymes that build it), each clickable
+    // to jump straight to that product.
+    const relatedIds = product.relatedProductIds || [];
+    detailRelatedHeading.style.display = relatedIds.length > 0 ? "" : "none";
+    detailRelated.style.display = relatedIds.length > 0 ? "" : "none";
+    detailRelated.innerHTML = "";
+    relatedIds.forEach((relatedId) => {
+      const relatedProduct = getProduct(relatedId);
+      if (!relatedProduct) return;
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = "#";
+      const locusTags = relatedProduct.loci.map((l) => l.locusTag).join(", ");
+      a.textContent = locusTags
+        ? `${relatedProduct.displayName} (${locusTags})`
+        : relatedProduct.displayName;
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        selectProduct(relatedId);
+      });
+      li.appendChild(a);
+      detailRelated.appendChild(li);
     });
 
     detailLinks.innerHTML = "";

@@ -769,7 +769,7 @@ const PRODUCTS = [
     loci: [
       { locusTag: "JCVISYN3A_0512", gene: "plsC", start: 321754, end: 322701, strand: "-" }
     ],
-    description: "2nd acylation (uses acyl-ACP) → phosphatidic acid",
+    description: "2nd acylation (uses acyl-ACP), lysophosphatidic acid → phosphatidic acid",
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]

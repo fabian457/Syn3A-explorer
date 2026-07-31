@@ -68,7 +68,7 @@ main {
 }
 
 #selectionCanvas {
-  filter: drop-shadow(0 0 3px #fff) drop-shadow(0 0 6px #22d3ee);
+  filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 4px rgba(34, 211, 238, 0.45));
 }
 
 .detail-panel {

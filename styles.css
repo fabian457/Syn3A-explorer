@@ -177,6 +177,12 @@ main {
   margin-bottom: 0.3rem;
 }
 
+.detail-related-role {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
 .genome-track-section {
   margin-top: 1.5rem;
 }

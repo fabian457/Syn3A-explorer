@@ -638,7 +638,7 @@ const PRODUCTS = [
     loci: [
       { locusTag: "JCVISYN3A_0117", gene: "plsY", start: 77446, end: 78207, strand: "+" }
     ],
-    description: "",
+    description: "1st acylation (uses acyl-phosphate directly) → lysophosphatidic acid",
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
@@ -691,7 +691,7 @@ const PRODUCTS = [
     loci: [
       { locusTag: "JCVISYN3A_0419", gene: "plsX", start: 271137, end: 272141, strand: "-" }
     ],
-    description: "",
+    description: "shuttles acyl-phosphate ↔ acyl-ACP pool",
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
@@ -704,7 +704,7 @@ const PRODUCTS = [
     loci: [
       { locusTag: "JCVISYN3A_0420", gene: "fakA", start: 272174, end: 273817, strand: "-" }
     ],
-    description: "",
+    description: "produces acyl-phosphate",
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
@@ -717,7 +717,7 @@ const PRODUCTS = [
     loci: [
       { locusTag: "JCVISYN3A_0513", gene: "acpS", start: 322858, end: 323190, strand: "-" }
     ],
-    description: "",
+    description: "activates the ACP",
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
@@ -730,7 +730,7 @@ const PRODUCTS = [
     loci: [
       { locusTag: "JCVISYN3A_0616", gene: "fakB", start: 385390, end: 386229, strand: "+" }
     ],
-    description: "",
+    description: "binds imported fatty acid",
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
@@ -743,7 +743,7 @@ const PRODUCTS = [
     loci: [
       { locusTag: "JCVISYN3A_0617", gene: "fakB", start: 386240, end: 387091, strand: "+" }
     ],
-    description: "",
+    description: "binds imported fatty acid",
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
@@ -756,7 +756,7 @@ const PRODUCTS = [
     loci: [
       { locusTag: "JCVISYN3A_0621", gene: "acpA", start: 387855, end: 388076, strand: "-" }
     ],
-    description: "",
+    description: "acyl carrier protein (the acyl-ACP pool)",
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
@@ -769,7 +769,7 @@ const PRODUCTS = [
     loci: [
       { locusTag: "JCVISYN3A_0512", gene: "plsC", start: 321754, end: 322701, strand: "-" }
     ],
-    description: "",
+    description: "2nd acylation (uses acyl-ACP) → phosphatidic acid",
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
@@ -782,7 +782,7 @@ const PRODUCTS = [
     loci: [
       { locusTag: "JCVISYN3A_0304", gene: "cdsA", start: 187479, end: 188507, strand: "-" }
     ],
-    description: "",
+    description: "→ CDP-diacylglycerol",
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
@@ -795,7 +795,7 @@ const PRODUCTS = [
     loci: [
       { locusTag: "JCVISYN3A_0875", gene: "pgsA", start: 524244, end: 524840, strand: "-" }
     ],
-    description: "",
+    description: "→ phosphatidylglycerol-phosphate",
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
@@ -808,7 +808,7 @@ const PRODUCTS = [
     loci: [
       { locusTag: "JCVISYN3A_0214", gene: "pgpA", start: 129342, end: 130163, strand: "+" }
     ],
-    description: "",
+    description: "dephosphorylates → finished phosphatidylglycerol",
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]

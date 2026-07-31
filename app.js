@@ -358,6 +358,12 @@
         selectProduct(relatedId);
       });
       li.appendChild(a);
+      if (relatedProduct.description) {
+        const role = document.createElement("p");
+        role.className = "detail-related-role";
+        role.textContent = relatedProduct.description;
+        li.appendChild(role);
+      }
       detailRelated.appendChild(li);
     });
 

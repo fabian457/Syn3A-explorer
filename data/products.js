@@ -824,5 +824,18 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0113",
+    displayName: "BcsA",
+    fullName: "Glycolipid synthase A",
+    cutout: "cutouts/3A-113.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0113", gene: "bcsA", start: 73088, end: 74437, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

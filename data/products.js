@@ -1028,5 +1028,291 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0143",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-143.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0143", gene: null, start: 94520, end: 95992, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0147",
+    displayName: "ClsA",
+    fullName: "Cardiolipin synthase",
+    cutout: "cutouts/3A-147.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0147", gene: "clsA", start: 98466, end: 99995, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0195",
+    displayName: "Spermidine/Putrescine ABC Transporter",
+    fullName: "Spermidine/putrescine ABC transporter assembly",
+    cutout: "cutouts/3A-195.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0195", gene: "potC", start: 118738, end: 121848, strand: "-" },
+      { locusTag: "JCVISYN3A_0196", gene: "potB", start: 121833, end: 122825, strand: "-" },
+      { locusTag: "JCVISYN3A_0197", gene: "potA", start: 122825, end: 123880, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0249",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-249.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0249", gene: null, start: 151760, end: 152338, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0296",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-296.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0296", gene: null, start: 176894, end: 177538, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0338",
+    displayName: "Uncharacterized Lipoprotein",
+    fullName: "Uncharacterized lipoprotein",
+    cutout: "cutouts/3A-338.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0338", gene: null, start: 202897, end: 203616, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0401",
+    displayName: "Uncharacterized Peptidase",
+    fullName: "Uncharacterized peptidase",
+    cutout: "cutouts/3A-401.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0401", gene: null, start: 246267, end: 248114, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0425",
+    displayName: "Phosphate ABC Transporter",
+    fullName: "Phosphate ABC transporter assembly",
+    cutout: "cutouts/3A-425.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0425", gene: "pstS", start: 275282, end: 276412, strand: "+" },
+      { locusTag: "JCVISYN3A_0426", gene: "pstA", start: 276464, end: 278554, strand: "+" },
+      { locusTag: "JCVISYN3A_0427", gene: "pstB", start: 278547, end: 279356, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0479",
+    displayName: "Uncharacterized Peptidase",
+    fullName: "Uncharacterized peptidase",
+    cutout: "cutouts/3A-479.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0479", gene: null, start: 308771, end: 310417, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0518",
+    displayName: "LspA",
+    fullName: "Lipoprotein signal peptidase",
+    cutout: "cutouts/3A-518.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0518", gene: "lspA", start: 325942, end: 326550, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0622",
+    displayName: "Uncharacterized Lipoprotein",
+    fullName: "Uncharacterized lipoprotein",
+    cutout: "cutouts/3A-622.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0622", gene: null, start: 388100, end: 388462, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0636",
+    displayName: "Uncharacterized Lipoprotein",
+    fullName: "Uncharacterized lipoprotein",
+    cutout: "cutouts/3A-636.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0636", gene: null, start: 392583, end: 395372, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0685",
+    displayName: "NatA",
+    fullName: "Sodium transporter",
+    cutout: "cutouts/3A-685.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0685", gene: "natA", start: 421866, end: 423467, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0691",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-691.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0691", gene: null, start: 429507, end: 431528, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0706",
+    displayName: "Thiamine ABC Transporter",
+    fullName: "Thiamine ABC transporter assembly",
+    cutout: "cutouts/3A-706.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0706", gene: "thiB", start: 438118, end: 439866, strand: "-" },
+      { locusTag: "JCVISYN3A_0707", gene: "thiQ", start: 439830, end: 440579, strand: "-" },
+      { locusTag: "JCVISYN3A_0708", gene: "thiB", start: 440593, end: 442056, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0787",
+    displayName: "MgtA",
+    fullName: "Magnesium-translocating P-type ATPase",
+    cutout: "cutouts/3A-787.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0787", gene: "mgtA", start: 463042, end: 465870, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0789",
+    displayName: "F0F1 ATP Synthase",
+    fullName: "F0F1 ATP synthase assembly",
+    cutout: "cutouts/3A-789.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0789", gene: "atpC", start: 466288, end: 466587, strand: "-" },
+      { locusTag: "JCVISYN3A_0790", gene: "atpD", start: 466587, end: 468014, strand: "-" },
+      { locusTag: "JCVISYN3A_0791", gene: "atpG", start: 468023, end: 468865, strand: "-" },
+      { locusTag: "JCVISYN3A_0792", gene: "atpA", start: 468867, end: 470444, strand: "-" },
+      { locusTag: "JCVISYN3A_0793", gene: "atpD", start: 470456, end: 471001, strand: "-" },
+      { locusTag: "JCVISYN3A_0794", gene: "atpF", start: 471003, end: 471548, strand: "-" },
+      { locusTag: "JCVISYN3A_0795", gene: "atpE", start: 471577, end: 471882, strand: "-" },
+      { locusTag: "JCVISYN3A_0796", gene: "atpB", start: 471912, end: 472775, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0818",
+    displayName: "Lgt",
+    fullName: "Diacylglyceryl transferase",
+    cutout: "cutouts/3A-818.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0818", gene: "lgt", start: 491413, end: 492843, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0878",
+    displayName: "Uncharacterized Amino Acid Permease",
+    fullName: "Uncharacterized amino acid permease",
+    cutout: "cutouts/3A-878.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0878", gene: null, start: 527321, end: 528859, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0881",
+    displayName: "Uncharacterized MFS Transporter",
+    fullName: "Uncharacterized MFS transporter",
+    cutout: "cutouts/3A-881.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0881", gene: null, start: 531973, end: 533400, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0886",
+    displayName: "GltP",
+    fullName: "Proton-glutamate symporter",
+    cutout: "cutouts/3A-886.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0886", gene: "gltP", start: 535901, end: 537478, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

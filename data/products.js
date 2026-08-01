@@ -837,5 +837,196 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0115",
+    displayName: "GalU",
+    fullName: "UTP--glucose-1-phosphate uridylyltransferase",
+    cutout: "cutouts/3A-115.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0115", gene: "galU", start: 75879, end: 76751, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0169",
+    displayName: "AmiA",
+    fullName: "Oligopeptide ABC transporter substrate-binding protein",
+    cutout: "cutouts/3A-169.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0169", gene: "amiA", start: 114778, end: 117879, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0233",
+    displayName: "PTS System",
+    fullName: "Phosphoenolpyruvate:sugar phosphotransferase system (PTS) assembly",
+    cutout: "cutouts/3A-233.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0233", gene: "ptsI", start: 143903, end: 145624, strand: "+" },
+      { locusTag: "JCVISYN3A_0234", gene: "crr", start: 145706, end: 146170, strand: "+" },
+      { locusTag: "JCVISYN3A_0694", gene: "ptsH", start: 433466, end: 433735, strand: "-" },
+      { locusTag: "JCVISYN3A_0779", gene: "ptsG", start: 460467, end: 462704, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0316",
+    displayName: "Transketolase",
+    fullName: "Transketolase",
+    cutout: "cutouts/3A-316.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0316", gene: "tkt", start: 192440, end: 194410, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0371",
+    displayName: "Flippase",
+    fullName: "Flippase (subunits A + B)",
+    cutout: "cutouts/3A-371.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0371", gene: "ywjA", start: 217523, end: 219394, strand: "+" },
+      { locusTag: "JCVISYN3A_0372", gene: "ywjA", start: 219410, end: 221263, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0542",
+    displayName: "DnaK",
+    fullName: "Molecular chaperone",
+    cutout: "cutouts/3A-542.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0542", gene: "dnaK", start: 352102, end: 353877, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0601",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-601.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0601", gene: null, start: 366679, end: 367623, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0314",
+    displayName: "EcfS",
+    fullName: "Uncharacterized ECF transporter S component",
+    cutout: "cutouts/3A-314.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0314", gene: "ecfS", start: 191373, end: 192107, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0439",
+    displayName: "Uncharacterized Lipoprotein",
+    fullName: "Uncharacterized lipoprotein",
+    cutout: "cutouts/3A-439.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0439", gene: null, start: 288217, end: 290373, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0641",
+    displayName: "ECF Transporter",
+    fullName: "ECF transporter (T + ATPase subunits)",
+    cutout: "cutouts/3A-641.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0641", gene: "ecfT", start: 401512, end: 402522, strand: "-" },
+      { locusTag: "JCVISYN3A_0642", gene: "ecfA", start: 402536, end: 403447, strand: "-" },
+      { locusTag: "JCVISYN3A_0643", gene: "ecfA", start: 403435, end: 404661, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0652",
+    displayName: "Preprotein Translocase",
+    fullName: "Preprotein translocase/insertase assembly",
+    cutout: "cutouts/3A-652.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0652", gene: "secY", start: 408864, end: 410312, strand: "-" },
+      { locusTag: "JCVISYN3A_0774", gene: "secG", start: 456670, end: 456954, strand: "+" },
+      { locusTag: "JCVISYN3A_0839", gene: "secE", start: 515188, end: 515511, strand: "+" },
+      { locusTag: "JCVISYN3A_0908", gene: "yidC", start: 541408, end: 542598, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0696",
+    displayName: "Uncharacterized Transporter",
+    fullName: "Uncharacterized transporter",
+    cutout: "cutouts/3A-696.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0696", gene: null, start: 435985, end: 436740, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0835",
+    displayName: "Uncharacterized Lipoprotein",
+    fullName: "Uncharacterized lipoprotein",
+    cutout: "cutouts/3A-835.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0835", gene: null, start: 510521, end: 511828, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0876",
+    displayName: "Uncharacterized Amino Acid Permease",
+    fullName: "Uncharacterized amino acid permease",
+    cutout: "cutouts/3A-876.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0876", gene: null, start: 524942, end: 526522, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

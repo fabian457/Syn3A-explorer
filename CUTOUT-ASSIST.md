@@ -57,9 +57,9 @@ own pixels directly:
    the working illustration is the ground truth).
 3. **Region-grow by color distance, within a bounded local crop — always,
    no exceptions.** Compute Euclidean RGB distance from the seed color
-   across a crop of a few hundred px radius, threshold it, then keep only
-   the connected component containing the seed (`scipy.ndimage.label`).
-   This is a "magic wand" / flood-fill, not a global threshold.
+   across a crop, threshold it, then keep only the connected component
+   containing the seed (`scipy.ndimage.label`). This is a "magic wand" /
+   flood-fill, not a global threshold.
 
    **The crop bound is load-bearing, not a performance nicety.** Nothing
    about color-distance similarity is inherently local — a chain of
@@ -75,6 +75,20 @@ own pixels directly:
    part of the illustration, with fewer neighboring cutouts done yet, could
    let the same unbounded search run away completely. Always crop first;
    never rely on exclusion masks alone to contain the search.
+
+   **When a rough `-01` draft exists, crop to its bounding box (padded by
+   a few dozen px), not a generic fixed radius.** A generic radius (e.g.
+   300px) is sized for "big enough to contain the true shape," but that
+   same margin is often big enough to also *reach a same-colored neighbor
+   blob* sitting just outside the true shape — see 0878 below, where a
+   300px-radius crop reached a distinct teal blob ~70px past the draft's
+   own edge, and the growth merged into it before any wall-detection
+   threshold caught it. Fabian's hasty lasso can overshoot the true
+   boundary by some margin (see the 0113 note below), but it reliably does
+   *not* enclose, or nearly enclose, an entire separate molecule — so its
+   bbox is a much tighter and more trustworthy backstop than a fixed
+   radius. Pad it enough to still find the true edge past the draft's own
+   (typically-conservative-on-at-least-one-side) boundary, but no more.
 4. **Exclude already-claimed territory as a hard mask — prefer
    `assets/id-map.png` over picking one specific neighbor file.**
    `id-map.png` encodes *every* currently-defined product's opaque pixels
@@ -161,6 +175,46 @@ draft's full extent as ground truth to match** — its centroid is a good
 seed, but its boundary can be wrong. The wall-detection heuristic, applied
 to the real base illustration, found the correct boundary independent of
 the draft's own (in this case too-generous) outline.
+
+### Pitfall: merging into a same-colored neighbor blob
+
+Found on 0296, 0691, and 0878: a generic fixed-radius crop (step 3) can be
+big enough to reach a **separate, same-colored neighbor blob** just past the
+true shape's edge, and growth can cross into it over a thin, weakly-inked
+gap. The size-jump wall-detection (step 5) doesn't reliably catch this —
+because the neighbor is a whole additional blob rather than a sliver of
+overshoot, the jump when it first connects can look unremarkable (0878 grew
+smoothly from 8641px to 10734px, a 1.24x step, nothing like the 3x+ jumps a
+true wall produces) even though the result is now two entire molecules fused
+into one cutout.
+
+**The fix is upstream, in step 3: crop to the draft's own bounding box, not
+a generic radius.** That was the actual bug in all three cases — a 300px
+fixed radius comfortably reached a neighbor blob that the draft's own bbox
+(padded modestly) would have excluded outright. Doing this correctly the
+first time prevents the merge from ever being reachable, which is more
+reliable than detecting it after the fact.
+
+As a fallback when a merge does slip through (e.g. no draft existed, or the
+draft itself was too generous), two cross-checks catch what step 5's pure
+size-count check misses:
+- **Always eyeball the finished cutout on a flat grey background, zoomed to
+  fill the frame** — not just the boundary-overlay-on-base image used while
+  tuning. Two different-colored lobes joined by a narrow neck (e.g. dark
+  green + teal) are far easier to spot against flat grey than against the
+  busy watercolor background.
+- **Track bbox extent (min/max x and y) across the threshold sweep, not just
+  pixel count.** A merge into a distant blob moves the bounding box
+  noticeably even when area growth looks smooth — 0878's merge was invisible
+  in the size column but obvious the moment `maxy` jumped from 3405 to 3484
+  in one threshold step (45→46); same for 0691 (`minx` jumped 1604→1558 at
+  48→49). Pick the last threshold before *that* jump.
+
+If a redo is needed on an already-committed product (as with 0691/0878
+here), remember the self-exclusion gotcha from step 4 above — `id-map.png`
+already contains the product's own (in this case wrong, two-lobe) region, so
+subtract its own current mask from the claimed-territory exclusion before
+regrowing, same as the redraw case.
 
 ### What this doesn't solve
 

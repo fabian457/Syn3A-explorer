@@ -1314,5 +1314,255 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0325",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-325.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0325", gene: null, start: 196094, end: 197593, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0332",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-332.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0332", gene: null, start: 201395, end: 202222, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0478",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-478.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0478", gene: null, start: 308182, end: 308766, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0505",
+    displayName: "Uncharacterized Lipoprotein",
+    fullName: "Uncharacterized lipoprotein",
+    cutout: "cutouts/3A-505.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0505", gene: null, start: 319364, end: 320437, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0165",
+    displayName: "Oligopeptide ABC Transporter",
+    fullName: "Oligopeptide ABC transporter assembly",
+    cutout: "cutouts/3A-165.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0165", gene: "amiC", start: 108907, end: 110151, strand: "+" },
+      { locusTag: "JCVISYN3A_0166", gene: null, start: 110167, end: 111177, strand: "+" },
+      { locusTag: "JCVISYN3A_0167", gene: "amiE", start: 111191, end: 112891, strand: "+" },
+      { locusTag: "JCVISYN3A_0168", gene: "amiF", start: 112893, end: 114761, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0248",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-248.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0248", gene: null, start: 151198, end: 151758, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0345",
+    displayName: "EcfS",
+    fullName: "Uncharacterized ECF transporter S component",
+    cutout: "cutouts/3A-345.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0345", gene: "ecfS", start: 204773, end: 205663, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0398",
+    displayName: "Uncharacterized Lipoprotein",
+    fullName: "Uncharacterized lipoprotein",
+    cutout: "cutouts/3A-398.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0398", gene: null, start: 237760, end: 240222, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0440",
+    displayName: "Uncharacterized Lipoprotein",
+    fullName: "Uncharacterized lipoprotein",
+    cutout: "cutouts/3A-440.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0440", gene: null, start: 290373, end: 293309, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0516",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-516.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0516", gene: null, start: 323735, end: 325036, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0604",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-604.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0604", gene: null, start: 369520, end: 370188, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0605",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-605.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0605", gene: null, start: 370371, end: 370679, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0686",
+    displayName: "TrkA",
+    fullName: "Potassium transporter",
+    cutout: "cutouts/3A-686.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0686", gene: "trkA", start: 423546, end: 424274, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0693",
+    displayName: "Uncharacterized Protease",
+    fullName: "Uncharacterized protease",
+    cutout: "cutouts/3A-693.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0693", gene: null, start: 432442, end: 433410, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0820",
+    displayName: "Lgt",
+    fullName: "Diacylglyceryl transferase",
+    cutout: "cutouts/3A-820.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0820", gene: "lgt", start: 493768, end: 495348, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0827",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-827.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0827", gene: null, start: 504267, end: 505733, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0870",
+    displayName: "Uncharacterized C4-Dicarboxylate ABC Transporter",
+    fullName: "Uncharacterized C4-dicarboxylate ABC transporter",
+    cutout: "cutouts/3A-870.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0870", gene: null, start: 520382, end: 522148, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0877",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-877.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0877", gene: null, start: 526669, end: 527349, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0879",
+    displayName: "CorA",
+    fullName: "Magnesium transporter",
+    cutout: "cutouts/3A-879.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0879", gene: "corA", start: 528917, end: 531574, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

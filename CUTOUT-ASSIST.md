@@ -44,92 +44,104 @@ background — manual crop-and-read is currently the better method.
 
 ## 2. Cleaning up a rough draft into a finished cutout
 
-This is the more useful/reliable technique. Given a rough hand-trace (e.g.
-`in-progress/3A-0XXX-01.png`) that has gaps in its outline or bleeds
-slightly into a neighbor, region-grow a clean mask from the *real* base
-illustration (`assets/syn3A.png`) instead of trying to patch the draft's
-own pixels directly:
+**Default (2026-08-01, final form after several false starts — see history
+below): region-grow by color distance, but bound the search to the rough
+draft's own traced polygon, with *zero* dilation or padding.** This
+combines the two things earlier attempts couldn't get simultaneously: it
+refines away the hasty trace's own imprecision (stray background pixels
+inside the lasso, a slightly-off edge), while being *structurally
+incapable* of reaching a neighbor blob, since the search space never
+includes a single pixel outside what was hand-traced. Validated against
+Fabian's own hand-cleaned `3A-398-example.png`: grown blind (threshold
+picked from the wall/plateau in the sweep, not from the example) scored
+**IoU 0.90** against it, and the result had none of the neighbor-bleed
+problems every wider containment strategy kept hitting (see history below).
 
 1. **Pick a seed point** solidly inside the correct blob — the draft's own
    centroid is usually good enough (`numpy.where(alpha>0)`, mean of
-   coords).
+   coords). If that pixel turns out to sit on a dark ink line rather than
+   fill color (check: is it suspiciously dark/low-saturation?), use the
+   draft mask's most-interior point instead
+   (`scipy.ndimage.distance_transform_edt`, take the argmax) — a centroid
+   can land on ink when the shape is irregular enough that the mean
+   position isn't actually inside the fill.
 2. **Sample the seed's color** from `assets/syn3A.png` (not the draft —
    the working illustration is the ground truth).
-3. **Region-grow by color distance, within a bounded local crop — always,
-   no exceptions.** Compute Euclidean RGB distance from the seed color
-   across a crop, threshold it, then keep only the connected component
-   containing the seed (`scipy.ndimage.label`). This is a "magic wand" /
-   flood-fill, not a global threshold.
-
-   **The crop bound is load-bearing, not a performance nicety.** Nothing
-   about color-distance similarity is inherently local — a chain of
-   adjacent, sufficiently-similar-colored pixels can in principle connect
-   the seed to territory arbitrarily far away, and most of a 5612×3748
-   illustration is background/other shapes that a "not yet claimed by any
-   known product" exclusion (see next point) does *nothing* to stop,
-   because unclaimed just means "no cutout exists for it yet," not "not
-   part of this shape." Tested this directly: rerunning the 0094 case with
-   *no* crop bound at all happened to land close to the true shape (~3600px
-   vs a true ~4000px) only because that specific spot is densely surrounded
-   by already-defined neighbors forming a tight enough "moat." A sparser
-   part of the illustration, with fewer neighboring cutouts done yet, could
-   let the same unbounded search run away completely. Always crop first;
-   never rely on exclusion masks alone to contain the search.
-
-   **When a rough `-01` draft exists, crop to its bounding box (padded by
-   a few dozen px), not a generic fixed radius.** A generic radius (e.g.
-   300px) is sized for "big enough to contain the true shape," but that
-   same margin is often big enough to also *reach a same-colored neighbor
-   blob* sitting just outside the true shape — see 0878 below, where a
-   300px-radius crop reached a distinct teal blob ~70px past the draft's
-   own edge, and the growth merged into it before any wall-detection
-   threshold caught it. Fabian's hasty lasso can overshoot the true
-   boundary by some margin (see the 0113 note below), but it reliably does
-   *not* enclose, or nearly enclose, an entire separate molecule — so its
-   bbox is a much tighter and more trustworthy backstop than a fixed
-   radius. Pad it enough to still find the true edge past the draft's own
-   (typically-conservative-on-at-least-one-side) boundary, but no more.
+3. **Region-grow by color distance, strictly within the draft's own
+   traced pixels — no bounding-box, no padding, no dilation.** Crop
+   loosely around the draft for convenience (exact size doesn't matter
+   since it's not the containment mechanism), but AND the color-distance
+   candidate mask with the draft's own alpha (`allowed = draft_alpha`)
+   before labeling connected components. This is the load-bearing change
+   from earlier attempts: a bounding *box* has slack in its corners an
+   irregular blob's own footprint doesn't, and *any* nonzero dilation
+   margin — even one shaped to the draft's own silhouette — turned out to
+   be enough to reach a same-colored neighbor in this densely-packed
+   illustration (see history below). Using the draft's exact pixels as the
+   hard ceiling removes the margin entirely, so there's nothing left to
+   tune wrong.
 4. **Exclude already-claimed territory as a hard mask — prefer
    `assets/id-map.png` over picking one specific neighbor file.**
    `id-map.png` encodes *every* currently-defined product's opaque pixels
    in one place (`alpha > 0` = claimed by something already), so it's a
    more complete safety net than remembering to check just the one
    neighbor you happened to think of (e.g. the membrane). Subtract its
-   claimed pixels from the candidate mask before labeling. This matters
-   most on edges where the true boundary is a soft color gradient rather
-   than a hard ink line — color-distance alone can't find a wall that
-   isn't there, but a trusted already-claimed mask can.
+   claimed pixels from the candidate mask before labeling.
 
-   **Gotcha when testing/redrawing an already-real product** (as in the
-   0094 worked example below): `id-map.png` already contains *that
-   product's own* current region, since it's built from whatever's
-   currently in `PRODUCTS`. Blanket-excluding all claimed pixels then
-   excludes the seed itself, `scipy.ndimage.label` reports the seed's
-   label as `0` (background), and `mask = labeled == seed_label` silently
-   selects *everything that isn't the tiny candidate blob* — a huge,
-   nonsensical result that looks like a runaway flood but is actually this
-   labeling bug. Fix: subtract the target's own existing mask from the
-   id-map exclusion first (`claimed & ~old_own_mask`), simulating "as if
-   this product wasn't defined yet." Sanity-check `labeled[seed] != 0`
-   before trusting the result, regardless.
+   **Gotcha when testing/redrawing an already-real product**: `id-map.png`
+   already contains *that product's own* current region, since it's built
+   from whatever's currently in `PRODUCTS`. Blanket-excluding all claimed
+   pixels then excludes the seed itself, `scipy.ndimage.label` reports the
+   seed's label as `0` (background), and `mask = labeled == seed_label`
+   silently selects *everything that isn't the tiny candidate blob* — a
+   huge, nonsensical result that looks like a runaway flood but is
+   actually this labeling bug. Fix: subtract the target's own existing
+   mask from the id-map exclusion first (`claimed & ~old_own_mask`),
+   simulating "as if this product wasn't defined yet." Sanity-check
+   `labeled[seed] != 0` before trusting the result, regardless.
 5. **Sweep the threshold** rather than guessing one value. Plot mask pixel
-   count vs. threshold — there's usually a clear "wall": pixel count creeps
-   up slowly, then suddenly jumps by 2-3x at some threshold as the region
-   floods through into a neighboring shape. Pick the last threshold before
-   that jump. (Concretely, in the 0094 case: sizes of ~3500-3600px from
-   threshold 60-83, then a jump to ~9800px at threshold 84 — 83 was the
-   pick.)
-6. **Clean stray pixels**: a small `binary_closing` then `binary_opening`
-   (3×3 structuring element) mops up single-pixel noise and thin
-   protrusions without eating into the real shape.
+   count vs. threshold. Since growth is capped by the draft's own extent,
+   there's no risk of a catastrophic neighbor-merge jump anymore — instead
+   look for a plateau (a stretch of thresholds where size grows only
+   slowly) before the mask starts climbing fast toward the draft's full
+   pixel count as the threshold gets generous enough to include ~everything
+   inside the lasso, noise included. Pick a threshold from inside that
+   plateau.
+6. **Clean stray pixels**: `binary_closing` → `binary_opening` (3×3
+   structuring element) mops up single-pixel noise and thin protrusions;
+   keep only the connected component containing the seed;
+   `binary_fill_holes` for any fully-enclosed gaps left by internal color
+   variation (a lighter/darker watercolor patch within the true shape,
+   not a real hole).
 7. **Build the output** as a full 5612×3748 transparent canvas, painting in
    the *original base illustration's* RGB at the masked pixels (preserves
-   real watercolor texture) with alpha 255, everywhere else fully
-   transparent alpha 0.
+   real watercolor texture, and avoids inheriting any flat/wrong color the
+   drafting tool used) with alpha 255, everywhere else fully transparent
+   alpha 0.
 8. **Visually verify** before finalizing: composite over a flat grey
-   background, crop tight to the region, `Read` it back. Look specifically
-   for stray specks, bites taken out of the shape, or bleed into
-   neighbors — iterate the threshold/cleanup if anything looks wrong.
+   background, crop tight to the region, **zoomed large enough to fill the
+   frame** (a thumbnail-sized contact-sheet crop hides exactly the
+   different-colored-fragment problem this technique exists to avoid).
+   Look for stray specks, bites taken out of the shape, or a visible gap
+   between the mask and the true ink line. A meaningful gap is a sign the
+   draft undershot badly on that side — that's a **redraw-tighter** ask for
+   Fabian (see `3A-398-example.png`), not a reason to loosen the containment
+   and start chasing the true edge with padding/dilation again.
+
+### Older attempts that didn't work (why the containment is this strict)
+
+Three progressively tighter containment strategies were tried before
+landing on "the draft's own pixels, zero margin," each fixing the previous
+failure but not the underlying problem — see the pitfall section below for
+the full account. In short: a generic fixed-radius crop reached neighbors
+easily; cropping to the draft's unpadded bounding *box* was better but
+still had corner slack a rectangle has and an irregular blob doesn't;
+dilating the draft's own *shape* (not its box) by a margin closed that
+gap but, in a tightly-packed area, the margin needed to correct a real
+undershoot on one side was also enough to reach a neighbor on another. No
+positive margin reliably separated those two cases. Zero margin does, by
+construction — at the cost of accepting the draft's own imprecision where
+present, which is why step 8's redraw-tighter fallback matters.
 
 ### If a known-good final cutout happens to exist (redraws, or testing)
 
@@ -176,45 +188,67 @@ seed, but its boundary can be wrong. The wall-detection heuristic, applied
 to the real base illustration, found the correct boundary independent of
 the draft's own (in this case too-generous) outline.
 
-### Pitfall: merging into a same-colored neighbor blob
+### Pitfall: merging into a same-colored neighbor blob (why containment is zero-margin now)
 
-Found on 0296, 0691, and 0878: a generic fixed-radius crop (step 3) can be
-big enough to reach a **separate, same-colored neighbor blob** just past the
-true shape's edge, and growth can cross into it over a thin, weakly-inked
-gap. The size-jump wall-detection (step 5) doesn't reliably catch this —
-because the neighbor is a whole additional blob rather than a sliver of
-overshoot, the jump when it first connects can look unremarkable (0878 grew
-smoothly from 8641px to 10734px, a 1.24x step, nothing like the 3x+ jumps a
-true wall produces) even though the result is now two entire molecules fused
-into one cutout.
+Found repeatedly across a single session — 0296, 0691, 0878, then 0398
+again despite two different fixes in between: region-growing can reach a
+**separate, same-colored neighbor blob** sitting just past the true shape's
+edge, crossing into it over a thin, weakly-inked gap. The size-jump
+wall-detection doesn't reliably catch this — because the neighbor is a whole
+additional blob rather than a sliver of overshoot, the jump when it first
+connects can look unremarkable (0878 grew smoothly from 8641px to 10734px, a
+1.24x step, nothing like the 3x+ jumps a true wall produces) even though the
+result is now two entire molecules fused into one cutout.
 
-**The fix is upstream, in step 3: crop to the draft's own bounding box, not
-a generic radius.** That was the actual bug in all three cases — a 300px
-fixed radius comfortably reached a neighbor blob that the draft's own bbox
-(padded modestly) would have excluded outright. Doing this correctly the
-first time prevents the merge from ever being reachable, which is more
-reliable than detecting it after the fact.
+Three progressively tighter containment strategies were tried, in order,
+each fixing the previous failure but not the underlying problem:
+1. **Generic fixed-radius crop** (e.g. 300px around the seed) — reached
+   neighbors easily; fixed by...
+2. **Crop to the draft's own bounding box, unpadded** — better, but a
+   *rectangle* still has slack in its corners that an irregular blob's own
+   footprint doesn't, so a neighbor sitting in a corner of the bbox (outside
+   the draft's actual traced polygon, but inside its bounding rectangle) was
+   still reachable. This is what let 0398 merge with a neighbor even under
+   this rule. Fixed by...
+3. **Dilate the draft's own irregular shape** (not its bbox) by a fixed
+   margin, use that as both the crop and an extra allowed-region mask — this
+   follows the blob's actual silhouette instead of a rectangle, closing the
+   corner-slack hole. But re-tried on 0398, it *still* reached a
+   different-colored neighbor (bright green legs the draft never included),
+   because in a densely-packed area the true wall can be closer to the
+   draft's own edge than any useful margin — the same margin needed to
+   correct a real undershoot on one side is enough to reach a neighbor on
+   another.
 
-As a fallback when a merge does slip through (e.g. no draft existed, or the
-draft itself was too generous), two cross-checks catch what step 5's pure
-size-count check misses:
+**Conclusion: for this illustration's densely-packed regions, no *positive*
+margin/containment strategy reliably separates "give growing enough room to
+correct undershoot" from "give it enough room to reach a neighbor" — the two
+distances aren't reliably different.** The fix that actually held (see the
+default above) was dropping the margin to exactly zero: bound growth to the
+draft's own already-traced pixels, nothing more. That's not a fallback
+setting to loosen when a result looks slightly conservative — loosening it
+even a little is what caused every failure documented above. Still worth
+doing when finalizing a result:
 - **Always eyeball the finished cutout on a flat grey background, zoomed to
   fill the frame** — not just the boundary-overlay-on-base image used while
-  tuning. Two different-colored lobes joined by a narrow neck (e.g. dark
-  green + teal) are far easier to spot against flat grey than against the
-  busy watercolor background.
-- **Track bbox extent (min/max x and y) across the threshold sweep, not just
-  pixel count.** A merge into a distant blob moves the bounding box
-  noticeably even when area growth looks smooth — 0878's merge was invisible
-  in the size column but obvious the moment `maxy` jumped from 3405 to 3484
-  in one threshold step (45→46); same for 0691 (`minx` jumped 1604→1558 at
-  48→49). Pick the last threshold before *that* jump.
+  tuning. Different-colored fragments joined by a narrow neck are far easier
+  to spot against flat grey than against the busy watercolor background, but
+  still easy to miss at thumbnail size — check at a large zoom, not just a
+  contact-sheet-sized crop.
+- If a redo is needed on an already-committed product (as with 0691/0878/0398
+  here), remember the self-exclusion gotcha above — `id-map.png` already
+  contains the product's own current region, so subtract its own current
+  mask from the claimed-territory exclusion before regrowing, same as the
+  redraw case.
 
-If a redo is needed on an already-committed product (as with 0691/0878
-here), remember the self-exclusion gotcha from step 4 above — `id-map.png`
-already contains the product's own (in this case wrong, two-lobe) region, so
-subtract its own current mask from the claimed-territory exclusion before
-regrowing, same as the redraw case.
+0398's original hasty `-01` draft undershot badly enough (per step 8's
+redraw-tighter guidance) that Fabian resupplied a hand-cleaned
+`3A-398-example.png`, which became the final cutout directly. Re-run blind
+with the zero-margin technique above against the *original* `-01` draft
+(after the fact, as validation, not as the actual fix used), it scored
+IoU 0.90 against that example — evidence the zero-margin approach is sound,
+even though the real fix for that specific product ended up being a better
+draft rather than a grown result.
 
 ### What this doesn't solve
 

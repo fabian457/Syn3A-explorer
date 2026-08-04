@@ -218,7 +218,13 @@ main {
 }
 
 .tooltip {
-  position: fixed;
+  /* absolute (document-relative), not fixed (viewport-relative): fixed
+     elements drift out of sync with the cursor under Safari's trackpad
+     pinch-zoom, since that transform doesn't treat position:fixed the same
+     way as normal document content. Positioning via pageX/pageY keeps the
+     tooltip in the same coordinate space as the rest of the page, which
+     stays correctly aligned with the cursor at any zoom level. */
+  position: absolute;
   z-index: 100;
   background: rgba(20, 20, 20, 0.85);
   color: #fff;

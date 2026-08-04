@@ -176,15 +176,18 @@
     updateDetailPanel();
   }
 
-  function showTooltip(product, clientX, clientY) {
+  function showTooltip(product, pageX, pageY) {
     tooltipEl.textContent = product.displayName;
     tooltipEl.classList.remove("hidden");
-    moveTooltip(clientX, clientY);
+    moveTooltip(pageX, pageY);
   }
 
-  function moveTooltip(clientX, clientY) {
-    tooltipEl.style.left = `${clientX + 16}px`;
-    tooltipEl.style.top = `${clientY + 16}px`;
+  // pageX/pageY (document-relative), not clientX/clientY (viewport-relative)
+  // — see the .tooltip comment in styles.css for why this matters under
+  // pinch-zoom.
+  function moveTooltip(pageX, pageY) {
+    tooltipEl.style.left = `${pageX + 16}px`;
+    tooltipEl.style.top = `${pageY + 16}px`;
   }
 
   function hideTooltip() {
@@ -196,7 +199,7 @@
     const product = getProductAtPixel(x, y);
     setHovered(product ? product.id : null);
     if (product) {
-      showTooltip(product, e.clientX, e.clientY);
+      showTooltip(product, e.pageX, e.pageY);
     } else {
       hideTooltip();
     }
@@ -270,7 +273,7 @@
     }
     const product = getProduct(seg.dataset.productId);
     setHovered(product.id);
-    showTooltip(product, e.clientX, e.clientY);
+    showTooltip(product, e.pageX, e.pageY);
   }
 
   function onTrackLeave() {

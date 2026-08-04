@@ -2383,5 +2383,475 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0138",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-138.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0138", gene: null, start: 89084, end: 90982, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0140",
+    displayName: "Tdk",
+    fullName: "Thymidine kinase",
+    cutout: "cutouts/3A-140.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0140", gene: "tdk", start: 91944, end: 92573, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0141",
+    displayName: "PrfA",
+    fullName: "Peptide chain release factor 1",
+    cutout: "cutouts/3A-141.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0141", gene: "prfA", start: 92576, end: 93670, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0154",
+    displayName: "Uncharacterized Peptidase",
+    fullName: "Uncharacterized peptidase",
+    cutout: "cutouts/3A-154.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0154", gene: null, start: 311816, end: 313171, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0201",
+    displayName: "Def",
+    fullName: "Peptide deformylase",
+    cutout: "cutouts/3A-201.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0201", gene: "def", start: 125583, end: 126185, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0283",
+    displayName: "RnhA",
+    fullName: "Double-stranded RNA binding RNase HI",
+    cutout: "cutouts/3A-283.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0283", gene: "rnhA", start: 167885, end: 168502, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0285",
+    displayName: "LepA",
+    fullName: "Elongation factor 4",
+    cutout: "cutouts/3A-285.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0285", gene: "lepA; EF4", start: 168527, end: 170329, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0291",
+    displayName: "RibF",
+    fullName: "FAD synthetase",
+    cutout: "cutouts/3A-291.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0291", gene: "ribF", start: 175608, end: 176162, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0317",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-317.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0317", gene: null, start: 194426, end: 194671, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0344",
+    displayName: "Ppa",
+    fullName: "Inorganic diphosphatase",
+    cutout: "cutouts/3A-344.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0344", gene: "ppa", start: 204074, end: 204634, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0347",
+    displayName: "Cmk",
+    fullName: "Cytidylate kinase",
+    cutout: "cutouts/3A-347.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0347", gene: "cmk", start: 206433, end: 207095, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0366",
+    displayName: "YlqF",
+    fullName: "L16-binding dependent 50S subunit-maturation GTPase",
+    cutout: "cutouts/3A-366.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0366", gene: "ylqF; rbgA", start: 216192, end: 217142, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0378",
+    displayName: "NadE",
+    fullName: "NAD(+) synthase",
+    cutout: "cutouts/3A-378.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0378", gene: "nadE", start: 225520, end: 226257, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0381",
+    displayName: "MtnN",
+    fullName: "5'-Methylthioadenosine nucleosidase",
+    cutout: "cutouts/3A-381.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0381", gene: "mtnN", start: 227672, end: 228331, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0394",
+    displayName: "Lon",
+    fullName: "Endopeptidase La",
+    cutout: "cutouts/3A-394.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0394", gene: "lon", start: 235262, end: 237622, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0441",
+    displayName: "IscS",
+    fullName: "Cysteine desulfurase",
+    cutout: "cutouts/3A-441.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0441", gene: "iscS", start: 293512, end: 294750, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0475",
+    displayName: "Ldh",
+    fullName: "L-lactate dehydrogenase",
+    cutout: "cutouts/3A-475.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0475", gene: "ldh", start: 307123, end: 308079, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0493",
+    displayName: "Uncharacterized Peptidase",
+    fullName: "Uncharacterized peptidase",
+    cutout: "cutouts/3A-493.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0493", gene: null, start: 313335, end: 314684, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0504",
+    displayName: "RsmI",
+    fullName: "16S rRNA (cytidine(1402)-2'-O)-methyltransferase",
+    cutout: "cutouts/3A-504.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0504", gene: "rsmI", start: 318101, end: 318988, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0527",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-527.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0527", gene: null, start: 335489, end: 336007, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0593",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-593.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0593", gene: null, start: 363271, end: 363549, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0606",
+    displayName: "Pgk",
+    fullName: "Phosphoglycerate kinase",
+    cutout: "cutouts/3A-606.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0606", gene: "pgk", start: 370946, end: 372160, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0607",
+    displayName: "GapDH",
+    fullName: "Type I glyceraldehyde-3-phosphate dehydrogenase",
+    cutout: "cutouts/3A-607.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0607", gene: "gapDH", start: 372272, end: 373288, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0615",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-615.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0615", gene: null, start: 384707, end: 385315, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0650",
+    displayName: "Map",
+    fullName: "Type I methionyl aminopeptidase",
+    cutout: "cutouts/3A-650.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0650", gene: "map", start: 407340, end: 408095, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0684",
+    displayName: "FolD",
+    fullName: "5,10-Methylene-tetrahydrofolate dehydrogenase/cyclohydrolase",
+    cutout: "cutouts/3A-684.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0684", gene: "folD", start: 420991, end: 421857, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0710",
+    displayName: "Uncharacterized Hydrolase",
+    fullName: "Uncharacterized hydrolase",
+    cutout: "cutouts/3A-710.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0710", gene: null, start: 442279, end: 443142, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0727",
+    displayName: "TpiA",
+    fullName: "Triose-phosphate isomerase",
+    cutout: "cutouts/3A-727.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0727", gene: "tpiA", start: 445270, end: 446016, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0729",
+    displayName: "Pgm",
+    fullName: "Phosphoglycerate mutase",
+    cutout: "cutouts/3A-729.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0729", gene: "pgm", start: 446848, end: 448443, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0732",
+    displayName: "DeoC",
+    fullName: "Deoxyribose-phosphate aldolase",
+    cutout: "cutouts/3A-732.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0732", gene: "deoC", start: 449195, end: 449863, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0771",
+    displayName: "Ribonucleotide Reductase",
+    fullName: "Ribonucleotide-diphosphate reductase",
+    cutout: "cutouts/3A-771.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0771", gene: "nrdE", start: 452721, end: 454883, strand: "-" },
+      { locusTag: "JCVISYN3A_0772", gene: "nrdI", start: 454870, end: 455343, strand: "-" },
+      { locusTag: "JCVISYN3A_0773", gene: "nrdF", start: 455352, end: 456371, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0775",
+    displayName: "Rnr",
+    fullName: "Ribonuclease R",
+    cutout: "cutouts/3A-775.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0775", gene: "rnr", start: 456990, end: 459104, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0821",
+    displayName: "Hpr",
+    fullName: "HPr(Ser) kinase/phosphatase",
+    cutout: "cutouts/3A-821.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0821", gene: "hpr; ptsH", start: 495359, end: 496300, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0853",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-853.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0853", gene: null, start: 517243, end: 517962, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0872",
+    displayName: "YchF",
+    fullName: "Uncharacterized ATPase",
+    cutout: "cutouts/3A-872.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0872", gene: "ychF", start: 522217, end: 523311, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0873",
+    displayName: "Uncharacterized Protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-873.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0873", gene: null, start: 523347, end: 523547, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

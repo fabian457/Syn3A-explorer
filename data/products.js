@@ -3440,5 +3440,70 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0126",
+    displayName: "GluRS",
+    fullName: "Glutamate--tRNA ligase",
+    cutout: "cutouts/3A-126.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0126", gene: "gluRS", start: 78403, end: 79854, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0260",
+    displayName: "ValRS",
+    fullName: "Valine--tRNA ligase",
+    cutout: "cutouts/3A-260.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0260", gene: "valRS", start: 158424, end: 161042, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0519",
+    displayName: "IleRS",
+    fullName: "Isoleucine--tRNA ligase",
+    cutout: "cutouts/3A-519.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0519", gene: "ileRS", start: 326541, end: 329288, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0539",
+    displayName: "Tsf",
+    fullName: "Translation elongation factor Ts",
+    cutout: "cutouts/3A-539.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0539", gene: "tsf", start: 348935, end: 349822, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0613",
+    displayName: "TyrRS",
+    fullName: "Tyrosine--tRNA ligase",
+    cutout: "cutouts/3A-613.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0613", gene: "tyrRS", start: 382415, end: 383659, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

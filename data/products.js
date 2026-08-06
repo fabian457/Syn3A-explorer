@@ -3362,5 +3362,83 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0359",
+    displayName: "Ribonuclease Y",
+    fullName: "Ribonuclease Y",
+    cutout: "cutouts/3A-359.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0359", gene: null, start: 210712, end: 212241, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0692",
+    displayName: "Uncharacterized Pseudouridine Synthase",
+    fullName: "Uncharacterized pseudouridine synthase",
+    cutout: "cutouts/3A-692.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0692", gene: null, start: 431531, end: 432439, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0885",
+    displayName: "MnmG",
+    fullName: "tRNA uridine(34) 5-carboxymethylaminomethyl synthesis enzyme",
+    cutout: "cutouts/3A-885.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0885", gene: "mnmG; gidA", start: 533864, end: 535753, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0257",
+    displayName: "RnjB",
+    fullName: "RNase J family beta-CASP ribonuclease",
+    cutout: "cutouts/3A-257.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0257", gene: "rnjB", start: 155628, end: 157379, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0240",
+    displayName: "ThiI",
+    fullName: "tRNA 4-thiouridine(8) synthase",
+    cutout: "cutouts/3A-240.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0240", gene: "thiI", start: 149254, end: 150441, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0390",
+    displayName: "Fmt",
+    fullName: "Methionyl-tRNA formyltransferase",
+    cutout: "cutouts/3A-390.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0390", gene: "fmt", start: 233209, end: 234162, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

@@ -3610,5 +3610,174 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0163",
+    displayName: "AlaRS",
+    fullName: "Alanine--tRNA ligase",
+    cutout: "cutouts/3A-163.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0163", gene: "alaRS", start: 105431, end: 108121, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0222",
+    displayName: "ThrRS",
+    fullName: "Threonine--tRNA ligase",
+    cutout: "cutouts/3A-222.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0222", gene: "thrRS", start: 135894, end: 137813, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0287",
+    displayName: "AspRS",
+    fullName: "Aspartate--tRNA ligase",
+    cutout: "cutouts/3A-287.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0287", gene: "aspRS", start: 171178, end: 172902, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0288",
+    displayName: "HisRS",
+    fullName: "Histidine--tRNA ligase",
+    cutout: "cutouts/3A-288.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0288", gene: "hisRS", start: 172911, end: 174155, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0348",
+    displayName: "EngA",
+    fullName: "Ribosome biogenesis GTPase",
+    cutout: "cutouts/3A-348.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0348", gene: "engA", start: 207102, end: 208409, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0364",
+    displayName: "TrmD",
+    fullName: "tRNA (guanosine(37)-N1)-methyltransferase",
+    cutout: "cutouts/3A-364.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0364", gene: "trmD", start: 214986, end: 215708, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0387",
+    displayName: "MnmA",
+    fullName: "tRNA 2-thiouridine(34) synthase",
+    cutout: "cutouts/3A-387.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0387", gene: "mnmA", start: 229208, end: 230335, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0500",
+    displayName: "Prp",
+    fullName: "Maturation protease for ribosomal protein L27",
+    cutout: "cutouts/3A-500.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0500", gene: "prp;ysxB", start: 316912, end: 317226, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0548",
+    displayName: "tRNA (Cytidine(34)-2'-O)-Methyltransferase",
+    fullName: "tRNA (cytidine(34)-2'-O)-methyltransferase",
+    cutout: "cutouts/3A-548.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0548", gene: null, start: 358736, end: 359281, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0640",
+    displayName: "TruA",
+    fullName: "tRNA pseudouridine(38-40) synthase",
+    cutout: "cutouts/3A-640.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0640", gene: "truA", start: 400754, end: 401509, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0823",
+    displayName: "FolC",
+    fullName: "Dihydrofolate synthase",
+    cutout: "cutouts/3A-823.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0823", gene: "folC", start: 497075, end: 498190, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0837",
+    displayName: "CysRS",
+    fullName: "Cysteine--tRNA ligase",
+    cutout: "cutouts/3A-837.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0837", gene: "cysRS", start: 512905, end: 514230, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0838",
+    displayName: "RlmB",
+    fullName: "23S rRNA (guanosine(2251)-2'-O)-methyltransferase",
+    cutout: "cutouts/3A-838.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0838", gene: "rlmB", start: 514232, end: 514966, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

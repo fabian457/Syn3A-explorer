@@ -3779,5 +3779,57 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0308",
+    displayName: "TrpRS",
+    fullName: "Tryptophan--tRNA ligase",
+    cutout: "cutouts/3A-308.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0308", gene: "trpRS", start: 190227, end: 191237, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0405",
+    displayName: "GlyRS",
+    fullName: "Glycine--tRNA ligase",
+    cutout: "cutouts/3A-405.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0405", gene: "glyRS", start: 250335, end: 251705, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0535",
+    displayName: "ArgRS",
+    fullName: "Arginine--tRNA ligase",
+    cutout: "cutouts/3A-535.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0535", gene: "argRS", start: 345258, end: 346922, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0541",
+    displayName: "DnaJ",
+    fullName: "Molecular chaperone",
+    cutout: "cutouts/3A-541.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0541", gene: "dnaJ", start: 350920, end: 352038, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

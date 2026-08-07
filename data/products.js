@@ -3857,5 +3857,31 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0437",
+    displayName: "YhaM",
+    fullName: "Putative 3'-5' exoribonuclease",
+    cutout: "cutouts/3A-437.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0437", gene: "yhaM", start: 286805, end: 287785, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0874",
+    displayName: "RsmG",
+    fullName: "16S rRNA (guanine(527)-N(7))-methyltransferase",
+    cutout: "cutouts/3A-874.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0874", gene: "rsmG", start: 523549, end: 524244, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

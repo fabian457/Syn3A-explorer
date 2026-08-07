@@ -3883,5 +3883,19 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0360",
+    displayName: "SRP",
+    fullName: "Signal recognition particle",
+    cutout: "cutouts/3A-360.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0360", gene: "ffh", start: 212275, end: 213618, strand: "+" },
+      { locusTag: "JCVISYN3A_0429", gene: "ftsY", start: 280106, end: 281335, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

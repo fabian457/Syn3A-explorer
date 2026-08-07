@@ -3505,5 +3505,110 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0402",
+    displayName: "YbeY",
+    fullName: "rRNA maturation RNase",
+    cutout: "cutouts/3A-402.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0402", gene: "ybeY", start: 248119, end: 248613, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0403",
+    displayName: "Era",
+    fullName: "Ribosome GTPase",
+    cutout: "cutouts/3A-403.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0403", gene: "era", start: 248617, end: 249522, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0282",
+    displayName: "ProRS",
+    fullName: "Proline--tRNA ligase",
+    cutout: "cutouts/3A-282.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0282", gene: "proRS", start: 166448, end: 167872, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0301",
+    displayName: "RimP",
+    fullName: "Ribosome assembly cofactor",
+    cutout: "cutouts/3A-301.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0301", gene: "rimP", start: 181752, end: 182246, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0361",
+    displayName: "RlmH",
+    fullName: "23S rRNA (pseudouridine(1915)-N3)-methyltransferase",
+    cutout: "cutouts/3A-361.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0361", gene: "rlmH", start: 213622, end: 214089, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0448",
+    displayName: "Uncharacterized rRNA Methyltransferase",
+    fullName: "Uncharacterized rRNA methyltransferase",
+    cutout: "cutouts/3A-448.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0448", gene: null, start: 299718, end: 300485, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0517",
+    displayName: "RluD",
+    fullName: "Uncharacterized RNA pseudouridine synthase",
+    cutout: "cutouts/3A-517.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0517", gene: "rluD", start: 325029, end: 325961, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0528",
+    displayName: "Phenylalanine-tRNA Ligase",
+    fullName: "Phenylalanine--tRNA ligase",
+    cutout: "cutouts/3A-528.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0528", gene: "pheRS", start: 336007, end: 338391, strand: "-" },
+      { locusTag: "JCVISYN3A_0529", gene: "pheS", start: 338400, end: 339452, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

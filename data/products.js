@@ -3831,5 +3831,31 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0524",
+    displayName: "RsmH",
+    fullName: "16S rRNA (cytosine(1402)-N(4))-methyltransferase",
+    cutout: "cutouts/3A-524.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0524", gene: "rsmH; mraW", start: 333852, end: 334778, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0543",
+    displayName: "GrpE",
+    fullName: "Nucleotide exchange factor",
+    cutout: "cutouts/3A-543.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0543", gene: "grpE", start: 353936, end: 354538, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

@@ -13,19 +13,38 @@ data/products.js:
     PRODUCTS wins the overlapping pixels (later entries are drawn on top).
     This only touches the invisible hit-test layer.
 
-  - assets/color-composite.webp: every cutout alpha-composited together in
-    PRODUCTS order (later on top, matching canvas `source-over` semantics),
-    saved as lossy WebP. This is the static "all defined products in their
-    real color" layer the app displays by default -- previously built by
-    compositing all 42+ full-res cutouts on a <canvas> at every page load
-    (~1.3s); now it's just one precomputed image the browser loads like any
-    other <img>.
+  - assets/color-composite.png: every cutout alpha-composited together in
+    PRODUCTS order (later on top, matching canvas `source-over` semantics).
+    This is the static "all defined products in their real color" layer the
+    app displays by default -- previously built by compositing all 42+
+    full-res cutouts on a <canvas> at every page load (~1.3s); now it's just
+    one precomputed image the browser loads like any other <img>.
+    Saved as plain PNG for now rather than WebP -- interim, while the
+    product set is still actively growing, specifically to avoid any lossy
+    re-compression drift across incremental builds (see below). Plan is a
+    one-time WebP optimization pass once the set is finished.
 
   - data/swatch-colors.js: each product's alpha-weighted average color,
     keyed by id, e.g. `{ "0001": "rgb(120, 45, 60)" }`. Previously computed
     at runtime by drawing each cutout onto a full 5612x3748 canvas and
     reading back the pixel data 42+ times (~5.8s, the dominant cost of
     startup); now a synchronous lookup at init.
+
+Incremental builds: a local, gitignored cache (.build-cache/manifest.json)
+records the exact product list (id, cutout path, content hash, swatch
+color) the outputs were last built from. If the current products.js is
+that same list plus new entries appended at the end (the normal "add N
+products" workflow -- see CLAUDE.md's "append, don't reorder" convention),
+this script only processes the new entries, loading the existing
+id-map.png and color-composite.png as the starting point instead of a
+blank canvas -- appended products get the highest indices and are drawn
+last, which already matches the "later wins overlapping pixels" rule
+above. Any edit to an existing cutout, reorder, or removal doesn't match
+the cached prefix and falls back to a full rebuild -- slower but always
+correct, and the cache is refreshed either way so the next run is fast
+again. Deleting .build-cache/ (or a fresh clone, which never has it) just
+costs one full rebuild; nothing depends on the cache being present for
+correctness.
 
 Regenerate this any time a cutout is added, replaced, or resized.
 
@@ -34,6 +53,8 @@ Usage:
 
 Requires: pip install pillow numpy
 """
+import hashlib
+import json
 import re
 from pathlib import Path
 
@@ -43,10 +64,11 @@ from PIL import Image
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 PRODUCTS_JS = PROJECT_ROOT / "data" / "products.js"
 IDMAP_OUTPUT_PATH = PROJECT_ROOT / "assets" / "id-map.png"
-COMPOSITE_OUTPUT_PATH = PROJECT_ROOT / "assets" / "color-composite.webp"
+COMPOSITE_OUTPUT_PATH = PROJECT_ROOT / "assets" / "color-composite.png"
 SWATCH_OUTPUT_PATH = PROJECT_ROOT / "data" / "swatch-colors.js"
+CACHE_DIR = PROJECT_ROOT / ".build-cache"
+MANIFEST_PATH = CACHE_DIR / "manifest.json"
 WIDTH, HEIGHT = 5612, 3748
-COMPOSITE_WEBP_QUALITY = 90
 
 
 def parse_products(js_text):
@@ -83,44 +105,125 @@ def average_color(arr):
     return f"rgb({round(r)}, {round(g)}, {round(b)})"
 
 
+def file_sha256(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def process_one(i, product_id, cutout_rel_path, idmap, composite):
+    """Paint product #i (1-based) into idmap/composite in place, return its swatch color."""
+    path = PROJECT_ROOT / cutout_rel_path
+    img = Image.open(path).convert("RGBA")
+    if img.size != (WIDTH, HEIGHT):
+        raise ValueError(
+            f"{cutout_rel_path} is {img.size}, expected {(WIDTH, HEIGHT)} "
+            "-- check for an accidental rotation/resize before regenerating."
+        )
+    arr = np.array(img)
+    mask = arr[:, :, 3] > 0
+
+    r = i & 0xFF
+    g = (i >> 8) & 0xFF
+    idmap[mask, 0] = r
+    idmap[mask, 1] = g
+    idmap[mask, 2] = 0
+    idmap[mask, 3] = 255
+
+    composite.alpha_composite(img)
+    swatch = average_color(arr)
+
+    print(f"  #{i:>3} {product_id}  ({cutout_rel_path}): rgb({r},{g},0), {mask.sum()} px, swatch {swatch}")
+    return swatch
+
+
+def load_manifest():
+    if not MANIFEST_PATH.exists():
+        return None
+    try:
+        return json.loads(MANIFEST_PATH.read_text())["products"]
+    except (json.JSONDecodeError, KeyError, OSError):
+        return None
+
+
+def save_manifest(products, hashes, swatches):
+    CACHE_DIR.mkdir(exist_ok=True)
+    entries = [
+        {"id": pid, "cutout": cutout, "sha256": h, "swatch": swatches[pid]}
+        for (pid, cutout), h in zip(products, hashes)
+    ]
+    MANIFEST_PATH.write_text(json.dumps({"products": entries}, indent=2))
+
+
+def cached_prefix_length(products, hashes, cached):
+    """How many leading entries of `products` exactly match `cached`, in order.
+
+    A match requires identical id, cutout path, and content hash at every
+    position -- a single mismatch anywhere (an edit, a reorder, a removed
+    entry, or a renamed/moved one) stops the prefix there, since anything
+    beyond that point can no longer be trusted to still be exactly what the
+    cached id-map.png/color-composite.png pixels represent.
+    """
+    if not cached:
+        return 0
+    n = min(len(cached), len(products))
+    count = 0
+    for entry, (pid, cutout), h in zip(cached, products[:n], hashes[:n]):
+        if entry.get("id") != pid or entry.get("cutout") != cutout or entry.get("sha256") != h:
+            break
+        count += 1
+    return count
+
+
 def main():
     products = parse_products(PRODUCTS_JS.read_text())
     print(f"Found {len(products)} products in {PRODUCTS_JS.relative_to(PROJECT_ROOT)}")
 
-    idmap = np.zeros((HEIGHT, WIDTH, 4), dtype=np.uint8)
-    composite = Image.new("RGBA", (WIDTH, HEIGHT), (0, 0, 0, 0))
+    hashes = [file_sha256(PROJECT_ROOT / cutout) for _, cutout in products]
+    cached = load_manifest()
+    prefix_len = cached_prefix_length(products, hashes, cached)
+
+    idmap = None
+    composite = None
     swatches = {}
 
-    for i, (product_id, cutout_rel_path) in enumerate(products, start=1):
-        path = PROJECT_ROOT / cutout_rel_path
-        img = Image.open(path).convert("RGBA")
-        if img.size != (WIDTH, HEIGHT):
-            raise ValueError(
-                f"{cutout_rel_path} is {img.size}, expected {(WIDTH, HEIGHT)} "
-                "-- check for an accidental rotation/resize before regenerating."
-            )
-        arr = np.array(img)
-        mask = arr[:, :, 3] > 0
+    if prefix_len > 0:
+        try:
+            composite = Image.open(COMPOSITE_OUTPUT_PATH).convert("RGBA")
+            idmap_img = Image.open(IDMAP_OUTPUT_PATH).convert("RGBA")
+            if composite.size != (WIDTH, HEIGHT) or idmap_img.size != (WIDTH, HEIGHT):
+                raise ValueError("cached output dimensions don't match")
+            idmap = np.array(idmap_img)
+            swatches = {entry["id"]: entry["swatch"] for entry in cached[:prefix_len]}
+        except (FileNotFoundError, OSError, ValueError) as e:
+            print(f"Cache manifest matches but outputs unusable ({e}) -- doing a full rebuild")
+            idmap = None
+            composite = None
+            swatches = {}
+            prefix_len = 0
 
-        r = i & 0xFF
-        g = (i >> 8) & 0xFF
-        idmap[mask, 0] = r
-        idmap[mask, 1] = g
-        idmap[mask, 2] = 0
-        idmap[mask, 3] = 255
+    if prefix_len == len(products) and idmap is not None:
+        # Nothing changed at all -- skip re-touching the big image outputs entirely.
+        print(f"No changes detected across all {len(products)} products -- outputs already up to date")
+    else:
+        if idmap is None:
+            idmap = np.zeros((HEIGHT, WIDTH, 4), dtype=np.uint8)
+            composite = Image.new("RGBA", (WIDTH, HEIGHT), (0, 0, 0, 0))
+            swatches = {}
+            prefix_len = 0
+        elif prefix_len > 0:
+            print(f"Reusing cached outputs for {prefix_len} unchanged product(s); "
+                  f"processing {len(products) - prefix_len} new product(s)")
 
-        composite.alpha_composite(img)
-        swatches[product_id] = average_color(arr)
+        for i in range(prefix_len + 1, len(products) + 1):
+            product_id, cutout_rel_path = products[i - 1]
+            swatches[product_id] = process_one(i, product_id, cutout_rel_path, idmap, composite)
 
-        print(f"  #{i:>3} {product_id}  ({cutout_rel_path}): rgb({r},{g},0), {mask.sum()} px, swatch {swatches[product_id]}")
+        Image.fromarray(idmap, "RGBA").save(IDMAP_OUTPUT_PATH)
+        print(f"Saved {IDMAP_OUTPUT_PATH.relative_to(PROJECT_ROOT)}")
 
-    Image.fromarray(idmap, "RGBA").save(IDMAP_OUTPUT_PATH)
-    print(f"Saved {IDMAP_OUTPUT_PATH.relative_to(PROJECT_ROOT)}")
+        composite.save(COMPOSITE_OUTPUT_PATH, "PNG")
+        print(f"Saved {COMPOSITE_OUTPUT_PATH.relative_to(PROJECT_ROOT)}")
 
-    composite.save(COMPOSITE_OUTPUT_PATH, "WEBP", quality=COMPOSITE_WEBP_QUALITY)
-    print(f"Saved {COMPOSITE_OUTPUT_PATH.relative_to(PROJECT_ROOT)}")
-
-    lines = [f'  "{pid}": "{color}",' for pid, color in swatches.items()]
+    lines = [f'  "{pid}": "{swatches[pid]}",' for pid, _ in products]
     swatch_js = (
         "// Generated by tools/build-assets.py -- do not hand-edit.\n"
         "// Alpha-weighted average color of each product's cutout, keyed by id.\n"
@@ -128,6 +231,9 @@ def main():
     )
     SWATCH_OUTPUT_PATH.write_text(swatch_js)
     print(f"Saved {SWATCH_OUTPUT_PATH.relative_to(PROJECT_ROOT)}")
+
+    save_manifest(products, hashes, swatches)
+    print(f"Saved {MANIFEST_PATH.relative_to(PROJECT_ROOT)}")
 
 
 if __name__ == "__main__":

@@ -3897,5 +3897,31 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0776",
+    displayName: "SmpB",
+    fullName: "SsrA-binding protein",
+    cutout: "cutouts/3A-776.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0776", gene: "smpB", start: 459114, end: 459560, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0909",
+    displayName: "RnpA",
+    fullName: "Ribonuclease P protein component",
+    cutout: "cutouts/3A-909.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0909", gene: "rnpA", start: 542616, end: 542945, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

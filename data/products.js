@@ -3923,5 +3923,109 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0150",
+    displayName: "EF-G",
+    fullName: "Translation elongation factor G",
+    cutout: "cutouts/3A-150.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0150", gene: null, start: 101117, end: 103186, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0151",
+    displayName: "EF-Tu",
+    fullName: "Translation elongation factor Tu",
+    cutout: "cutouts/3A-151.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0151", gene: null, start: 103318, end: 104505, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0200",
+    displayName: "IF-3",
+    fullName: "Translation initiation factor IF-3",
+    cutout: "cutouts/3A-200.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0200", gene: "infC", start: 124849, end: 125394, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0253",
+    displayName: "GreA",
+    fullName: "Transcription elongation factor",
+    cutout: "cutouts/3A-253.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0253", gene: "greA", start: 153156, end: 153629, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0289",
+    displayName: "RbfA",
+    fullName: "Ribosome-binding factor A",
+    cutout: "cutouts/3A-289.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0289", gene: "rbfA", start: 174340, end: 174693, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0297",
+    displayName: "IF-2",
+    fullName: "Translation initiation factor IF-2",
+    cutout: "cutouts/3A-297.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0297", gene: "infB", start: 177557, end: 179419, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0391",
+    displayName: "EF-P",
+    fullName: "Elongation factor P",
+    cutout: "cutouts/3A-391.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0391", gene: "efp", start: 234249, end: 234803, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0536",
+    displayName: "RRF",
+    fullName: "Ribosome recycling factor",
+    cutout: "cutouts/3A-536.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0536", gene: "frr", start: 346924, end: 347472, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

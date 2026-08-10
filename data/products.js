@@ -4027,5 +4027,46 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0327",
+    displayName: "SMC Complex",
+    fullName: "Structural maintenance of chromosomes complex",
+    cutout: "cutouts/3A-327.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0327", gene: "scpA", start: 198382, end: 199218, strand: "+" },
+      { locusTag: "JCVISYN3A_0328", gene: "scpB", start: 199202, end: 199831, strand: "+" },
+      { locusTag: "JCVISYN3A_0415", gene: "smc", start: 266643, end: 269609, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0544",
+    displayName: "HrcA",
+    fullName: "Heat-inducible transcription repressor",
+    cutout: "cutouts/3A-544.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0544", gene: "hrcA", start: 354540, end: 355562, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0430",
+    displayName: "Uncharacterized DNA-binding protein",
+    fullName: "Uncharacterized DNA-binding protein",
+    cutout: "cutouts/3A-430.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0430", gene: null, start: 281319, end: 281660, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

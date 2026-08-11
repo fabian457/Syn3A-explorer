@@ -4135,5 +4135,114 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0525",
+    displayName: "MraZ",
+    fullName: "Cell division/cell wall cluster transcriptional repressor",
+    cutout: "cutouts/3A-525.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0525", gene: "mraZ", start: 334787, end: 335188, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0128",
+    displayName: "RNA Polymerase",
+    fullName: "DNA-directed RNA polymerase complex",
+    cutout: "cutouts/3A-128.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0128", gene: "rpoE", start: 81097, end: 81525, strand: "+" },
+      { locusTag: "JCVISYN3A_0407", gene: "rpoD", start: 253581, end: 255101, strand: "+" },
+      { locusTag: "JCVISYN3A_0645", gene: "rpoA", start: 405148, end: 406101, strand: "-" },
+      { locusTag: "JCVISYN3A_0803", gene: "rpoC", start: 475872, end: 479639, strand: "-" },
+      { locusTag: "JCVISYN3A_0804", gene: "rpoB", start: 479651, end: 483526, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0300",
+    displayName: "NusA",
+    fullName: "Transcription termination/antitermination protein NusA",
+    cutout: "cutouts/3A-300.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0300", gene: "nusA", start: 179989, end: 181743, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0611",
+    displayName: "PolA",
+    fullName: "DNA polymerase I",
+    cutout: "cutouts/3A-611.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0611", gene: "polA", start: 376513, end: 379248, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0452",
+    displayName: "Topoisomerase IV",
+    fullName: "DNA topoisomerase IV",
+    cutout: "cutouts/3A-452.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0452", gene: "parE", start: 302258, end: 304189, strand: "+" },
+      { locusTag: "JCVISYN3A_0453", gene: "parC", start: 304191, end: 306887, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0840",
+    displayName: "NusG",
+    fullName: "Antitermination protein",
+    cutout: "cutouts/3A-840.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0840", gene: "nusG", start: 515528, end: 516169, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0859",
+    displayName: "TopA",
+    fullName: "DNA topoisomerase I",
+    cutout: "cutouts/3A-859.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0859", gene: "topA", start: 518165, end: 520126, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0350",
+    displayName: "HupA",
+    fullName: "DNA-binding protein HU",
+    cutout: "cutouts/3A-350.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0350", gene: "hupA", start: 208464, end: 208736, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

@@ -4068,5 +4068,72 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0254",
+    displayName: "UvrABC Complex",
+    fullName: "Excinuclease ABC repair complex",
+    cutout: "cutouts/3A-254.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0254", gene: "uvrC", start: 153752, end: 155506, strand: "-" },
+      { locusTag: "JCVISYN3A_0824", gene: "uvrA", start: 498183, end: 501023, strand: "-" },
+      { locusTag: "JCVISYN3A_0825", gene: "uvrB", start: 501032, end: 503029, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0817",
+    displayName: "WhiA",
+    fullName: "Uncharacterized DNA-binding protein",
+    cutout: "cutouts/3A-817.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0817", gene: "whiA", start: 490471, end: 491400, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0620",
+    displayName: "Uncharacterized transcriptional regulator",
+    fullName: "Uncharacterized transcriptional regulator",
+    cutout: "cutouts/3A-620.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0620", gene: null, start: 387390, end: 387854, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0690",
+    displayName: "LigA",
+    fullName: "DNA ligase (NAD(+))",
+    cutout: "cutouts/3A-690.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0690", gene: "ligA", start: 427497, end: 429503, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0404",
+    displayName: "RecO",
+    fullName: "DNA repair protein",
+    cutout: "cutouts/3A-404.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0404", gene: "recO", start: 249522, end: 250271, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

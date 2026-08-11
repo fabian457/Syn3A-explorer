@@ -4244,5 +4244,57 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0521",
+    displayName: "SepF",
+    fullName: "Cell division protein",
+    cutout: "cutouts/3A-521.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0521", gene: "sepF", start: 330983, end: 331399, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0522",
+    displayName: "FtsZ",
+    fullName: "Cell division protein",
+    cutout: "cutouts/3A-522.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0522", gene: "ftsZ", start: 331411, end: 332568, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0523",
+    displayName: "FtsA",
+    fullName: "Cell division protein",
+    cutout: "cutouts/3A-523.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0523", gene: "ftsA", start: 332683, end: 333843, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0239",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: "cutouts/3A-239.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0239", gene: null, start: 147459, end: 149246, strand: "+" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

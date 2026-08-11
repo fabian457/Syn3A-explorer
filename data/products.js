@@ -4296,5 +4296,18 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0634",
+    displayName: "LeuRS",
+    fullName: "Leucine--tRNA ligase",
+    cutout: "cutouts/3A-634.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0634", gene: "leuRS", start: 389882, end: 392296, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

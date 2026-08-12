@@ -1,0 +1,30 @@
+# Dev-only content, not loaded by the app at runtime -- see CLAUDE.md for
+# what's actually served (index.html, styles.css, app.js, data/, assets/*.webp
+# + id-map.png + color-composite.png, cutouts/).
+#
+# Everything here stays in git; this only controls what Vercel deploys.
+
+# Source material used only when adding/correcting a product (PDF, labeled
+# reference images, raw GenBank/paper data) -- see "Adding a new product" in
+# CLAUDE.md.
+relevant files/
+
+# Lossless masters kept only so their .webp derivatives can be regenerated
+# (see tools/build-assets.py and the color-composite.png/.webp pattern in
+# DECISIONS.md). The app loads the .webp files, never these.
+assets/syn3A.png
+assets/syn3A-grey.png
+
+# Build/validation tooling -- runs offline via `python3 tools/build-assets.py`
+# etc., never fetched by the browser.
+tools/
+
+# Internal project docs.
+CLAUDE.md
+DECISIONS.md
+CUTOUT-ASSIST.md
+
+# Local dev artifacts that would slip in if ever untracked-but-present.
+in-progress/
+.build-cache/
+color examples/

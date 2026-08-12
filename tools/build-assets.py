@@ -46,16 +46,22 @@ again. Deleting .build-cache/ (or a fresh clone, which never has it) just
 costs one full rebuild; nothing depends on the cache being present for
 correctness.
 
+A product whose `cutout` is null isn't drawn in the source illustration at
+all (the paper marks these "not shown"). It still occupies its slot in
+PRODUCTS -- id-map indices are positional, so skipping it would shift every
+product after it -- but paints nothing into either image and is absent from
+swatch-colors.js, where app.js falls back to grey for the missing key.
+
 Regenerate this any time a cutout is added, replaced, or resized.
 
 Usage:
     python3 tools/build-assets.py
 
-Requires: pip install pillow numpy
+Requires: pip install pillow numpy; a `node` binary on PATH
 """
 import hashlib
 import json
-import re
+import subprocess
 from pathlib import Path
 
 import numpy as np
@@ -63,6 +69,7 @@ from PIL import Image
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 PRODUCTS_JS = PROJECT_ROOT / "data" / "products.js"
+PARSE_SCRIPT = PROJECT_ROOT / "tools" / "parse-products.js"
 IDMAP_OUTPUT_PATH = PROJECT_ROOT / "assets" / "id-map.png"
 COMPOSITE_OUTPUT_PATH = PROJECT_ROOT / "assets" / "color-composite.png"
 SWATCH_OUTPUT_PATH = PROJECT_ROOT / "data" / "swatch-colors.js"
@@ -71,26 +78,43 @@ MANIFEST_PATH = CACHE_DIR / "manifest.json"
 WIDTH, HEIGHT = 5612, 3748
 
 
-def parse_products(js_text):
-    """Extract (id, cutout_path) pairs in file order.
+def parse_products():
+    """Every product's (id, cutout_path) in PRODUCTS order; cutout is None if it has none.
 
-    products.js is a plain script, not JSON, so this is a light regex scan
-    rather than a real parser -- it relies on every product object having an
-    `id: "...."` field followed by a `cutout: "...."` field, which is the
-    consistent shape every entry in the file already uses. Commented-out
-    entries (e.g. a product temporarily disabled due to a bad cutout) are
-    skipped as long as every line of the commented block is prefixed with
-    `//`, since the regexes below only match unindented/uncommented field
-    syntax as it actually appears in an active object literal.
+    products.js is evaluated as real JavaScript (tools/parse-products.js runs
+    it in a Node vm and prints PRODUCTS as JSON) rather than regex-scanned.
+    That matters more here than anywhere else in the repo: id-map.png encodes
+    each product's *1-based index in the evaluated PRODUCTS array*, and app.js
+    decodes it as `PRODUCTS[encodeId - 1]`, so this list has to be that array
+    exactly -- same entries, same order, nothing skipped or merged. A regex
+    scan only approximates it, and fails quietly: a product whose fields are
+    ordered cutout-before-id, a /* */ comment block, or a future nested field
+    spelled `id:` at line start would all mis-pair ids with cutouts, and every
+    index past the divergence would then resolve to the wrong product with no
+    error anywhere. Real evaluation reads the same array the browser does, so
+    producer and consumer can't disagree.
+
+    A `cutout` of null means the source paper's illustration doesn't depict
+    that gene ("not shown"). Such a product still occupies its slot here --
+    that's the point, so nothing after it shifts index -- but paints nothing
+    into either output and has no swatch color.
     """
-    ids = re.findall(r'^\s*id:\s*"([^"]+)"', js_text, re.MULTILINE)
-    cutouts = re.findall(r'^\s*cutout:\s*"([^"]+)"', js_text, re.MULTILINE)
-    if len(ids) != len(cutouts):
-        raise ValueError(
-            f"Found {len(ids)} product ids but {len(cutouts)} cutout paths -- "
-            "products.js doesn't match the expected id/cutout-per-entry shape."
+    try:
+        result = subprocess.run(
+            ["node", str(PARSE_SCRIPT)],
+            capture_output=True, text=True, check=True,
         )
-    return list(zip(ids, cutouts))
+    except FileNotFoundError:
+        raise SystemExit(
+            "Parsing products.js needs a `node` binary on PATH (the same "
+            "requirement tools/validate-products.py already has)."
+        )
+    except subprocess.CalledProcessError as e:
+        raise SystemExit(
+            f"node parse-products.js failed -- syntax error in products.js?\n{e.stderr}"
+        )
+
+    return [(p["id"], p.get("cutout")) for p in json.loads(result.stdout)["products"]]
 
 
 def average_color(arr):
@@ -147,7 +171,7 @@ def load_manifest():
 def save_manifest(products, hashes, swatches):
     CACHE_DIR.mkdir(exist_ok=True)
     entries = [
-        {"id": pid, "cutout": cutout, "sha256": h, "swatch": swatches[pid]}
+        {"id": pid, "cutout": cutout, "sha256": h, "swatch": swatches.get(pid)}
         for (pid, cutout), h in zip(products, hashes)
     ]
     MANIFEST_PATH.write_text(json.dumps({"products": entries}, indent=2))
@@ -161,6 +185,11 @@ def cached_prefix_length(products, hashes, cached):
     entry, or a renamed/moved one) stops the prefix there, since anything
     beyond that point can no longer be trusted to still be exactly what the
     cached id-map.png/color-composite.png pixels represent.
+
+    A not-shown product (cutout None) matches on (id, None, None): it has no
+    file to hash, so nothing about it can change between runs short of its id.
+    It stays a cache hit forever, which is what keeps a batch of them from
+    forcing a full rebuild on every subsequent run.
     """
     if not cached:
         return 0
@@ -174,10 +203,13 @@ def cached_prefix_length(products, hashes, cached):
 
 
 def main():
-    products = parse_products(PRODUCTS_JS.read_text())
+    products = parse_products()
     print(f"Found {len(products)} products in {PRODUCTS_JS.relative_to(PROJECT_ROOT)}")
 
-    hashes = [file_sha256(PROJECT_ROOT / cutout) for _, cutout in products]
+    hashes = [
+        None if cutout is None else file_sha256(PROJECT_ROOT / cutout)
+        for _, cutout in products
+    ]
     cached = load_manifest()
     prefix_len = cached_prefix_length(products, hashes, cached)
 
@@ -192,7 +224,14 @@ def main():
             if composite.size != (WIDTH, HEIGHT) or idmap_img.size != (WIDTH, HEIGHT):
                 raise ValueError("cached output dimensions don't match")
             idmap = np.array(idmap_img)
-            swatches = {entry["id"]: entry["swatch"] for entry in cached[:prefix_len]}
+            # Keep `swatches` meaning strictly "products that have a swatch color".
+            # A not-shown product's cached swatch is null; letting that through
+            # would write the literal string "None" into swatch-colors.js.
+            swatches = {
+                entry["id"]: entry["swatch"]
+                for entry in cached[:prefix_len]
+                if entry.get("swatch") is not None
+            }
         except (FileNotFoundError, OSError, ValueError) as e:
             print(f"Cache manifest matches but outputs unusable ({e}) -- doing a full rebuild")
             idmap = None
@@ -215,6 +254,13 @@ def main():
 
         for i in range(prefix_len + 1, len(products) + 1):
             product_id, cutout_rel_path = products[i - 1]
+            if cutout_rel_path is None:
+                # Not depicted in the illustration: no silhouette to own in the
+                # id-map, nothing to composite, no color to average. It still
+                # burns index i, which is precisely the point -- every product
+                # after it keeps the id-map index app.js decodes it by.
+                print(f"  #{i:>3} {product_id}  (not shown in the illustration -- no cutout)")
+                continue
             swatches[product_id] = process_one(i, product_id, cutout_rel_path, idmap, composite)
 
         Image.fromarray(idmap, "RGBA").save(IDMAP_OUTPUT_PATH)
@@ -223,10 +269,19 @@ def main():
         composite.save(COMPOSITE_OUTPUT_PATH, "PNG")
         print(f"Saved {COMPOSITE_OUTPUT_PATH.relative_to(PROJECT_ROOT)}")
 
-    lines = [f'  "{pid}": "{swatches[pid]}",' for pid, _ in products]
+    # Filtered on `cutout is not None` rather than `pid in swatches`: a product
+    # that *has* a cutout but somehow reached here without a swatch is a real
+    # bug, and should still raise KeyError loudly instead of silently going grey.
+    lines = [
+        f'  "{pid}": "{swatches[pid]}",'
+        for pid, cutout in products
+        if cutout is not None
+    ]
     swatch_js = (
         "// Generated by tools/build-assets.py -- do not hand-edit.\n"
         "// Alpha-weighted average color of each product's cutout, keyed by id.\n"
+        "// Products the illustration doesn't show (cutout: null) have no cutout to\n"
+        "// average and are absent here -- app.js falls back to grey for a missing key.\n"
         "const SWATCH_COLORS = {\n" + "\n".join(lines) + "\n};\n"
     )
     SWATCH_OUTPUT_PATH.write_text(swatch_js)

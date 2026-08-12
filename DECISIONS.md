@@ -89,3 +89,62 @@ panel's content (e.g. a long locus table) override the illustration's own
 `ResizeObserver` and keeping the panel permanently present (with an
 `.is-empty` state) fixed both that bug and a separate one where the panel's
 own box would change size as content changed.
+
+## `build-assets.py` evaluates products.js in Node rather than regex-scanning it
+
+Originally `parse_products()` derived the product list from two independent
+whole-file regexes — one for `id:` lines, one for `cutout:` lines — zipped
+together positionally, guarded only by a check that the two counts matched.
+Replaced (2026-08-11) with a subprocess call to `tools/parse-products.js`,
+the Node `vm` parser `validate-products.py` was already using.
+
+**Why:** that count check was the only thing standing between the script and
+silent id/cutout mis-pairing, and it only fires when the counts *differ*.
+Equal-but-shuffled counts pass it: a product whose fields happen to be
+ordered `cutout:` before `id:`, a `/* */` comment block (the docstring only
+ever promised `//`-per-line safety), or any future nested field spelled
+`id:` at line start. Nothing collided in practice — `loci` uses `locusTag`,
+`links` uses `label`/`url` — but that was luck, not design.
+
+The consequence of a mis-pair isn't a crash, it's `id-map.png` encoding the
+wrong index for every product past the divergence, so hover and click
+silently resolve to the wrong molecule with no error anywhere. Since the
+id-map's whole contract is "1-based position in the evaluated `PRODUCTS`
+array" and `app.js` decodes it as `PRODUCTS[encodeId - 1]`, only real
+evaluation guarantees producer and consumer agree; a regex is an
+approximation of the thing the invariant is stated over.
+
+The repo had in fact already reached this conclusion — `validate-products.py`
+switched to Node evaluation earlier for exactly these reasons — but had
+applied it only to the tool that *reports* problems, not the one that
+*generates* the hit-testing map. This just makes the more critical script
+match the less critical one.
+
+Verified as a no-op rather than assumed: with the build cache warm at 327
+products, the swapped parser produced a full cache hit — proving byte-identical
+`(id, cutout)` pairs for every entry, with no image work and nothing rewritten.
+
+## `cutout: null` means "the illustration doesn't show this product"
+
+15 of the source paper's 328 Table 1 products are never drawn in the
+artwork. They're still real genes with real coordinates, so they're
+ordinary `PRODUCTS` entries with `cutout: null`.
+
+**Why null rather than the alternatives:** omitting them entirely was
+rejected because the genome track would then have unexplained gaps and
+anyone revisiting the paper would re-hunt for them. Pointing them all at a
+single shared fully-transparent `blank-cutout.png` was considered and
+rejected too — it needs no `build-assets.py` change at all (a blank image
+paints nothing, and `average_color()` already returns `#999999` for zero
+alpha), but it still requires exempting that path from
+`validate-products.py`'s duplicate-path *and* blank-image checks, still
+requires the `app.js` dim-overlay guard, and replaces a clean
+`!product.cutout` test with a magic-path comparison in two files. It also
+asserts in the data that a cutout exists when none does. An empty string
+`""` is worse again: falsy *but* a valid-looking path, and `PROJECT_ROOT / ""`
+silently resolves to the project directory.
+
+These entries deliberately still consume a `PRODUCTS` index — see the
+id-map encoding note above — and their "not shown" explanation lives in the
+`description` field, which the detail panel already renders, rather than in
+a new badge component the app would otherwise not have.

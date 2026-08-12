@@ -83,8 +83,20 @@ def main():
         else:
             seen_ids[p["id"]] = label
 
-        if not p["cutout"]:
-            errors.append(f"{label}: missing cutout path")
+        if p["cutout"] is None:
+            # `cutout: null` is deliberate: a gene the source paper lists but
+            # its illustration doesn't depict ("not shown"). It keeps its slot
+            # in PRODUCTS -- id-map indices are positional, so removing it
+            # would shift every product after it -- and it still gets a
+            # genome-track segment from its loci. There's just no image to
+            # check. It also skips the duplicate-cutout check below on
+            # purpose: 15 nulls aren't 15 collisions.
+            pass
+        elif not str(p["cutout"]).strip():
+            errors.append(
+                f"{label}: cutout is blank -- write `cutout: null` if the illustration "
+                "doesn't show this product"
+            )
         else:
             if p["cutout"] in seen_cutouts:
                 errors.append(

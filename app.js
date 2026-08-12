@@ -75,6 +75,11 @@
     if (!id || cutoutImages[id] || cutoutLoadPromises[id]) return;
     const product = getProduct(id);
     if (!product) return;
+    // A null cutout means the source illustration doesn't depict this gene at
+    // all ("not shown" in the paper) — there's no file to fetch. Without this,
+    // loadImage(null) sets img.src = "null", the browser requests a bogus URL,
+    // and the 404 rejects a promise nobody catches.
+    if (!product.cutout) return;
     cutoutLoadPromises[id] = loadImage(product.cutout).then((img) => {
       cutoutImages[id] = img;
       if (getActiveIds().includes(id)) {
@@ -131,7 +136,20 @@
   // ensureCutoutLoaded()'s callback re-runs this once they arrive.
   function updateDimOverlay() {
     dimCtx.clearRect(0, 0, IMAGE_WIDTH, IMAGE_HEIGHT);
-    const activeIds = getActiveIds();
+    // Only products that actually have a silhouette can be spotlighted. One
+    // whose `cutout` is null isn't drawn in the illustration at all ("not
+    // shown" in the paper) — it has real loci and a genome-track segment, but
+    // no shape anywhere on the canvas. Washing everything 65% dark and then
+    // punching no hole would black out the whole image and read as a rendering
+    // bug, so leave it alone; the track highlight and detail panel still
+    // respond, so the hover isn't silent. Filtered on `product.cutout` rather
+    // than on `cutoutImages[id]` deliberately: the latter is also empty for a
+    // real cutout that simply hasn't finished loading, and those should still
+    // get the wash now and their hole punched a moment later.
+    const activeIds = getActiveIds().filter((id) => {
+      const product = getProduct(id);
+      return Boolean(product && product.cutout);
+    });
     if (activeIds.length === 0) return;
 
     dimCtx.fillStyle = `rgba(${DIM_WASH_RGB}, ${DIM_WASH_OPACITY})`;

@@ -4374,5 +4374,210 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  // ---------------------------------------------------------------------
+  // Not shown in the illustration.
+  //
+  // These have no cutout (`cutout: null`) because the source paper's artwork
+  // doesn't depict them -- fourteen come from a single Table 1 row listing
+  // them together as "Uncharacterized protein, not shown"; 0299 was found
+  // absent after searching. They still occupy their slot in PRODUCTS
+  // (id-map indices are positional -- see CLAUDE.md) and still get a
+  // genome-track segment from their loci; they just can't be spotlighted.
+  // ---------------------------------------------------------------------
+  {
+    id: "0005",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0005", gene: null, start: 4064, end: 5155, strand: "+" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0116",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0116", gene: null, start: 76936, end: 77376, strand: "-" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0164",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0164", gene: null, start: 108195, end: 108689, strand: "-" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0235",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0235", gene: null, start: 146279, end: 146461, strand: "+" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0299",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0299", gene: null, start: 179727, end: 180008, strand: "-" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0346",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0346", gene: null, start: 205729, end: 206424, strand: "+" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0379",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0379", gene: null, start: 226274, end: 226552, strand: "+" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0388",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0388", gene: null, start: 230382, end: 230999, strand: "+" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0599",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0599", gene: null, start: 363818, end: 363958, strand: "-" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0777",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0777", gene: null, start: 459560, end: 460045, strand: "+" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0778",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0778", gene: null, start: 460165, end: 460416, strand: "+" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0797",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0797", gene: null, start: 472775, end: 473173, strand: "-" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0830",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0830", gene: null, start: 506111, end: 506371, strand: "+" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0851",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0851", gene: null, start: 516675, end: 516857, strand: "-" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0852",
+    displayName: "Uncharacterized protein",
+    fullName: "Uncharacterized protein",
+    cutout: null,
+    loci: [
+      { locusTag: "JCVISYN3A_0852", gene: null, start: 517023, end: 517253, strand: "-" }
+    ],
+    description: "Not shown in the illustration. Listed as an uncharacterized protein in the 2022 source paper; that annotation may have changed since.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

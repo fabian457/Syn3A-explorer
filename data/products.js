@@ -4361,5 +4361,18 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0832",
+    displayName: "Pth",
+    fullName: "Aminoacyl-tRNA hydrolase",
+    cutout: "cutouts/3A-832.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0832", gene: "pth", start: 508011, end: 508571, strand: "+" }
+    ],
+    description: "Uncertain, as not labelled in the original illustration.",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

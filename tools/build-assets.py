@@ -15,14 +15,23 @@ data/products.js:
 
   - assets/color-composite.png: every cutout alpha-composited together in
     PRODUCTS order (later on top, matching canvas `source-over` semantics).
-    This is the static "all defined products in their real color" layer the
-    app displays by default -- previously built by compositing all 42+
-    full-res cutouts on a <canvas> at every page load (~1.3s); now it's just
-    one precomputed image the browser loads like any other <img>.
-    Saved as plain PNG for now rather than WebP -- interim, while the
-    product set is still actively growing, specifically to avoid any lossy
-    re-compression drift across incremental builds (see below). Plan is a
-    one-time WebP optimization pass once the set is finished.
+    Kept as the lossless working master -- the incremental cache below loads
+    this file and draws only newly-appended products onto it, so it must
+    stay lossless no matter how many times that happens, exactly like
+    syn3A-grey.png is kept as the master for syn3A-grey.webp.
+
+  - assets/color-composite.webp: what #colorImg actually loads. Re-encoded
+    fresh from color-composite.png at the end of *every* run (quality=90;
+    ~5.2MB as PNG, ~0.8MB here, with no visible difference even zoomed into
+    ink-line boundaries, the format's weak point) -- a single-generation
+    lossy encode of the current master, never a re-encode of a previous
+    WebP. That distinction matters: re-saving straight to WebP and loading
+    that back in on the next incremental build would decode-then-re-encode
+    the same pixels every time a product gets appended or a cutout gets
+    fixed, compounding lossy artifacts over repeated edits -- the same
+    "lossy re-compression drift" this file avoided by staying PNG while the
+    product set was still growing (2026-08-12: now complete, but corrections
+    to existing cutouts still happen, so the master stays PNG regardless).
 
   - data/swatch-colors.js: each product's alpha-weighted average color,
     keyed by id, e.g. `{ "0001": "rgb(120, 45, 60)" }`. Previously computed
@@ -72,6 +81,8 @@ PRODUCTS_JS = PROJECT_ROOT / "data" / "products.js"
 PARSE_SCRIPT = PROJECT_ROOT / "tools" / "parse-products.js"
 IDMAP_OUTPUT_PATH = PROJECT_ROOT / "assets" / "id-map.png"
 COMPOSITE_OUTPUT_PATH = PROJECT_ROOT / "assets" / "color-composite.png"
+COMPOSITE_WEBP_OUTPUT_PATH = PROJECT_ROOT / "assets" / "color-composite.webp"
+COMPOSITE_WEBP_QUALITY = 90
 SWATCH_OUTPUT_PATH = PROJECT_ROOT / "data" / "swatch-colors.js"
 CACHE_DIR = PROJECT_ROOT / ".build-cache"
 MANIFEST_PATH = CACHE_DIR / "manifest.json"
@@ -268,6 +279,12 @@ def main():
 
         composite.save(COMPOSITE_OUTPUT_PATH, "PNG")
         print(f"Saved {COMPOSITE_OUTPUT_PATH.relative_to(PROJECT_ROOT)}")
+
+        # A single-generation lossy encode of the master that was just written
+        # above, not a re-encode of a previous WebP -- see the module docstring
+        # for why that distinction matters across repeated incremental builds.
+        composite.save(COMPOSITE_WEBP_OUTPUT_PATH, "WEBP", quality=COMPOSITE_WEBP_QUALITY)
+        print(f"Saved {COMPOSITE_WEBP_OUTPUT_PATH.relative_to(PROJECT_ROOT)}")
 
     # Filtered on `cutout is not None` rather than `pid in swatches`: a product
     # that *has* a cutout but somehow reached here without a swatch is a real

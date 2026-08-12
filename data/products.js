@@ -4309,5 +4309,57 @@ const PRODUCTS = [
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
     ]
+  },
+  {
+    id: "0481",
+    displayName: "Uncharacterized Lipoprotein",
+    fullName: "Uncharacterized lipoprotein",
+    cutout: "cutouts/3A-481.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0481", gene: null, start: 310640, end: 311077, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0515",
+    displayName: "dCMP Deaminase",
+    fullName: "dCMP deaminase",
+    cutout: "cutouts/3A-515.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0515", gene: "dctD", start: 323250, end: 323732, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0520",
+    displayName: "Uncharacterized Hydrolase",
+    fullName: "Uncharacterized hydrolase",
+    cutout: "cutouts/3A-520.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0520", gene: null, start: 329981, end: 330970, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
+  },
+  {
+    id: "0649",
+    displayName: "IF-1",
+    fullName: "Translation initiation factor IF-1",
+    cutout: "cutouts/3A-649.png",
+    loci: [
+      { locusTag: "JCVISYN3A_0649", gene: "infA", start: 407104, end: 407328, strand: "-" }
+    ],
+    description: "",
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/" }
+    ]
   }
 ];

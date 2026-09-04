@@ -87,7 +87,7 @@ const PRODUCTS = [
       { locusTag: "JCVISYN3A_0006", gene: "gyrB", start: 5515, end: 7419, strand: "+" },
       { locusTag: "JCVISYN3A_0007", gene: "gyrA", start: 7435, end: 9939, strand: "+" }
     ],
-    description: "Gyrase is an enzyme which relieves the tight twists that build up during replication and transcription. Without functioning gyrase these supercoils stall DNA replication and cause double-strand breaks, leading to cell death. Gyrase is a type of topoisomerase.",
+    description: "Gyrase relaxes the tight twists that build up in DNA during replication and transcription.\n\nWithout functioning gyrase, the strain on the DNA stalls replication and causes breaks, leading to cell death.",
     links: [
       { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/v1/category?id=SW.3.1.2" },
       { label: "DNA gyrase (Wikipedia)", url: "https://en.wikipedia.org/wiki/DNA_gyrase" },

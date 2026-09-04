@@ -159,6 +159,7 @@ main {
 
 .detail-description {
   font-size: 0.9rem;
+  white-space: pre-line; /* honor authored paragraph breaks (\n) in descriptions */
 }
 
 .detail-description.placeholder {

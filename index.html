@@ -29,6 +29,13 @@
         <p id="detail-placeholder" class="detail-placeholder">
           Hover or click a shape in the illustration to learn about it.
         </p>
+        <!-- Narratives picker: only shown in the panel's empty state (see styles.css).
+             Goodsell's Fig. 2 "story" scenes — click one to spotlight it on the cell.
+             Links are built from NARRATIVES in app.js. -->
+        <div id="detail-narratives" class="detail-narratives">
+          <h3>Narratives</h3>
+          <ul id="detail-narratives-list" class="detail-links"></ul>
+        </div>
         <h2 id="detail-name"></h2>
         <p id="detail-fullname" class="detail-fullname"></p>
         <p id="detail-description" class="detail-description"></p>
@@ -43,6 +50,12 @@
 
         <h3 id="detail-related-heading">Built by</h3>
         <ul id="detail-related" class="detail-links"></ul>
+
+        <!-- Narrative "components view" toggle + list. Shown only in the narrative
+             panel: "See components →" switches from the traced scene to spotlighting
+             the real molecules; "← Back to scene" returns. Built in app.js. -->
+        <a id="detail-narrative-toggle" href="#" class="detail-narrative-toggle"></a>
+        <ul id="detail-components-list" class="detail-links"></ul>
 
         <h3>Links</h3>
         <ul id="detail-links" class="detail-links"></ul>

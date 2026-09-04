@@ -4581,3 +4581,41 @@ const PRODUCTS = [
     ]
   }
 ];
+
+// Narratives are Goodsell's "story" scenes (his Fig. 2) — a *process*, not a single
+// gene product. They are deliberately NOT part of PRODUCTS: they must stay invisible
+// in the base illustration, must never become a hover target, and so must be absent
+// from assets/id-map.png and assets/color-composite.png (which are built only from
+// PRODUCTS). Each narrative's cutout lives under narratives/ (not cutouts/) and is
+// loaded on demand, then painted on top as a spotlight overlay when the user opts in
+// via the picker in the detail panel's empty state. `loci` here just drive a
+// highlighted region on the genome track while the narrative is active; they do not
+// create clickable product segments. See CLAUDE.md → "Narratives".
+const NARRATIVES = [
+  {
+    id: "transcription",
+    title: "Transcription of an rRNA operon",
+    cutout: "narratives/transcription.png",
+    description:
+      "Ribosomal RNA is transcribed by multiple RNA polymerases moving together along an rRNA operon, each trailing a lengthening rRNA transcript. The proteins colored blue are rRNA modification and maturation factors. (Goodsell 2022, Fig. 2C)",
+    // rrnA operon (one of the genome's two identical rRNA operons). Highlighted on
+    // the genome track while this narrative is active (scene view).
+    loci: [
+      { locusTag: "JCVISYN3A_0069", gene: "rrsA", start: 55713, end: 57247, strand: "-" },
+      { locusTag: "JCVISYN3A_0068", gene: "rrlA", start: 52580, end: 55493, strand: "-" },
+      { locusTag: "JCVISYN3A_0067", gene: "rrfA", start: 52410, end: 52518, strand: "-" }
+    ],
+    // Molecular components depicted in the scene, listed (and spotlighted
+    // membrane-style) in the narrative's "components view": RNA Polymerase (orange)
+    // plus the 11 rRNA modification/maturation factors (blue). Each is a real
+    // PRODUCTS entry, so clicking one drills straight into it.
+    relatedProductIds: [
+      "0128", "0004", "0202", "0363", "0215", "0504",
+      "0402", "0361", "0448", "0838", "0524", "0874"
+    ],
+    links: [
+      { label: "SynWiki", url: "https://synwiki.uni-goettingen.de/v1/gene?id=2fee98f144674dcd871f7427d122697da074229b" },
+      { label: "Source paper (Goodsell 2022)", url: "https://pubmed.ncbi.nlm.nih.gov/35749071/" }
+    ]
+  }
+];

@@ -107,6 +107,29 @@ main {
   display: none;
 }
 
+/* The Narratives picker is the inverse of everything above: shown ONLY in the
+   empty state, below the placeholder. Its own <h3> and <ul> must survive the
+   blanket `.is-empty h3`/`.detail-links` hides above — the id selector outranks
+   them. Populated from NARRATIVES in app.js; the whole block is hidden by JS if
+   there are no narratives. */
+#detail-narratives {
+  display: none;
+}
+
+.detail-panel.is-empty #detail-narratives {
+  display: block;
+}
+
+.detail-panel.is-empty #detail-narratives h3,
+.detail-panel.is-empty #detail-narratives .detail-links {
+  display: block;
+}
+
+.detail-narratives a.active {
+  color: var(--fg);
+  font-weight: bold;
+}
+
 .detail-close {
   position: absolute;
   top: 0.5rem;
@@ -183,6 +206,26 @@ main {
   font-size: 0.8rem;
 }
 
+/* Narrative components-view controls. Hidden by default; app.js shows them only
+   in the narrative panel (never in the empty or product states). */
+.detail-narrative-toggle {
+  display: none;
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.detail-narrative-toggle:hover {
+  text-decoration: underline;
+}
+
+#detail-components-list {
+  display: none;
+  margin-top: 0.5rem;
+}
+
 .genome-track-section {
   margin-top: 1.5rem;
 }
@@ -224,6 +267,14 @@ main {
 .track-segment {
   cursor: pointer;
   transition: opacity 0.15s ease;
+}
+
+/* Narrative operon segments are purely visual indicators (no product behind
+   them), so they don't take pointer events — clicks/hover fall through to the
+   track background. They still inherit the .has-active dim/emphasis rules below.
+   Hidden until their narrative is active (toggled via inline display in JS). */
+.narrative-segment {
+  pointer-events: none;
 }
 
 .genome-track.has-active .track-segment:not(.active) {

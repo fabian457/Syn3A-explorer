@@ -12,7 +12,7 @@ This project is an adaptation of David Goodsell's original illustration: individ
 
 - Proteins were identified using the detailed key on the PDB-101 site: [2022_JCVI-syn3A.pdf](https://cdn.rcsb.org/pdb101/goodsell/2022_JCVI-syn3A.pdf)
 - Open-access article with more background: doi: [10.1515/jib-2022-0013](https://doi.org/10.1515/jib-2022-0013)
-- More of David Goodsell's work: [PDB-101 Goodsell Gallery](https://pdb101.rcsb.org/sci-art/goodsell-gallery) · [Website](https://ccsb.scripps.edu/goodsell/)· [The Machinery of Life](https://ccsb.scripps.edu/goodsell/machinery-of-life/)
+- More of David Goodsell's work: [PDB-101 Goodsell Gallery](https://pdb101.rcsb.org/sci-art/goodsell-gallery) · [Website](https://ccsb.scripps.edu/goodsell/) · [The Machinery of Life](https://ccsb.scripps.edu/goodsell/machinery-of-life/)
 
 ![JCVI-syn3A Minimal Cell, illustration by David S. Goodsell, RCSB Protein Data Bank](https://cdn.rcsb.org/pdb101/goodsell/png-800/jcvi-syn3a-minimal-cell.png)
 

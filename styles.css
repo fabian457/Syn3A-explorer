@@ -71,6 +71,33 @@ main {
   filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 4px rgba(34, 211, 238, 0.45));
 }
 
+/* "View original" overlay toggle. Stage children are pointer-events:none by
+   default, so this re-enables clicks. Last child of the stage → stacks on top. */
+.original-toggle {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  pointer-events: auto;
+  cursor: pointer;
+  padding: 0.35rem 0.7rem;
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--fg);
+  background: rgba(31, 34, 39, 0.85);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.original-toggle:hover {
+  border-color: var(--muted);
+}
+
+.original-toggle.active {
+  color: var(--bg);
+  background: var(--fg);
+  border-color: var(--fg);
+}
+
 .detail-panel {
   flex: 0 0 280px;
   width: 280px;

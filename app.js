@@ -11,6 +11,8 @@
   const stageEl = document.getElementById("illustration-stage");
   const dimCanvas = document.getElementById("dimCanvas");
   const selectionCanvas = document.getElementById("selectionCanvas");
+  const originalImg = document.getElementById("originalImg");
+  const originalToggle = document.getElementById("original-toggle");
   const tooltipEl = document.getElementById("tooltip");
   const detailPanel = document.getElementById("detail-panel");
   const detailName = document.getElementById("detail-name");
@@ -49,6 +51,11 @@
   //   "components" — that scene dropped, its real molecular components spotlighted
   //                  in place (membrane-style) and listed clickably in the panel.
   let narrativeView = "scene";
+  // "View original" toggle: swaps the visible base to Goodsell's full-color
+  // original (#originalImg, lazy-loaded). Orthogonal to all the hover/select/
+  // narrative state — the effect layers sit above #originalImg, so the spotlight
+  // keeps working and simply reveals the original through its holes.
+  let showingOriginal = false;
 
   const cutoutImages = {};
   const cutoutLoadPromises = {};
@@ -264,6 +271,17 @@
     updateDimOverlay();
     updateTrackEmphasis();
     updateDetailPanel();
+  }
+
+  // Toggles between the working (grey + mapped color) view and Goodsell's
+  // full-color original. Purely a base-layer swap: no redraw of the dim/selection
+  // canvases is needed since they're unaffected by which image sits beneath them.
+  function toggleOriginal() {
+    if (!originalImg.src) originalImg.src = "assets/syn3A.webp"; // lazy-load, once
+    showingOriginal = !showingOriginal;
+    originalImg.hidden = !showingOriginal;
+    originalToggle.textContent = showingOriginal ? "Show interactive products" : "View original";
+    originalToggle.classList.toggle("active", showingOriginal);
   }
 
   function activateNarrative(id) {
@@ -719,6 +737,13 @@
     detailNarrativeToggle.addEventListener("click", (e) => {
       e.preventDefault();
       setNarrativeView(narrativeView === "components" ? "scene" : "components");
+    });
+
+    // stopPropagation: the button sits inside #illustration-stage, so without this
+    // the click would also bubble to onStageClick and hit-test the artwork beneath.
+    originalToggle.addEventListener("click", (e) => {
+      e.stopPropagation();
+      toggleOriginal();
     });
 
     document.addEventListener("keydown", (e) => {

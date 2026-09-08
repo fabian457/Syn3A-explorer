@@ -34,16 +34,19 @@ A matching launch config already exists at `.claude/launch.json` (name `syn3a-st
 - `cutouts/3A-0XXX.png` — one transparent-background cutout PNG per depicted product, named after its locus number
 - `relevant files/` — source material used when adding new products (see "Adding a new product" below)
 
-### The illustration is four stacked layers, bottom to top
+### The illustration is stacked layers, bottom to top
 
 ```html
 <img id="baseImg">        <!-- always-grey base, always visible -->
 <img id="colorImg">        <!-- precomputed composite of every defined product's cutout -->
+<img id="originalImg">     <!-- Goodsell's full-color original; hidden + unloaded until toggled -->
 <canvas id="dimCanvas">     <!-- dark wash with a hole punched over the active product -->
 <canvas id="selectionCanvas"> <!-- selected product's cutout + CSS glow outline -->
 ```
 
 All currently-defined products show in their real color by default via `#colorImg` (`assets/color-composite.png`, precomputed offline — see "Derived assets" below); the grey background shows through only where no cutout exists. Hovering/selecting a product doesn't reveal color (it's already visible) — it spotlights: `updateDimOverlay()` fills `dimCanvas` with a translucent dark wash, then uses `globalCompositeOperation = "destination-out"` with the active product's own cutout (and, if it has any, each of its `relatedProductIds`' cutouts too — see "Product data" below) to erase holes exactly over their silhouettes, dimming everything else. `selectionCanvas` sits above the dim overlay so a persisted selection stays undimmed even while hovering something else elsewhere.
+
+**"View original" toggle:** `#originalImg` holds Goodsell's unmodified illustration (`assets/syn3A.webp`), lazy-loaded on first click of the top-right toggle button (`toggleOriginal()` in `app.js`) since it's a ~4.8 MB file most visits never need. It sits directly above `#colorImg` and below the effect canvases, so toggling it is purely a base-layer swap — no redraw of `dimCanvas`/`selectionCanvas` is needed. The spotlight keeps working unchanged: its holes just reveal whichever opaque layer is currently on top (`#colorImg` normally, `#originalImg` when toggled on), so a hovered molecule shows in original color instead of the composite color.
 
 A cutout (needed only for the two effects above) isn't loaded until its product is first hovered or selected, whether directly or via another product's `relatedProductIds` (`ensureCutoutLoaded()`) — not eagerly at init — since most of the 40+ cutouts are never touched in a given visit. `updateDimOverlay()`/`redrawSelectionLayer()` already no-op safely if an image hasn't arrived yet, so `ensureCutoutLoaded()` just kicks off the load and re-applies the effect once it resolves, if the product in question is still part of the active set (`getActiveIds()`).
 

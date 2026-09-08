@@ -20,8 +20,13 @@
       <div id="illustration-stage" class="illustration-stage">
         <img id="baseImg" src="assets/syn3A-grey.webp" alt="Goodsell illustration of JCVI-syn3A, greyscale" />
         <img id="colorImg" src="assets/color-composite.webp" alt="" />
+        <!-- Goodsell's full-color original. Sits ABOVE #colorImg and BELOW the effect
+             canvases so the spotlight's holes reveal it just like the composite.
+             Hidden + src-less until the "View original" button is first clicked (lazy). -->
+        <img id="originalImg" alt="Goodsell's full-color JCVI-syn3A illustration" hidden />
         <canvas id="dimCanvas" width="5612" height="3748"></canvas>
         <canvas id="selectionCanvas" width="5612" height="3748"></canvas>
+        <button id="original-toggle" class="original-toggle">View original</button>
       </div>
 
       <aside id="detail-panel" class="detail-panel is-empty">

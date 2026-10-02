@@ -16,6 +16,10 @@ This project is an adaptation of David Goodsell's original illustration: individ
 
 ![JCVI-syn3A Minimal Cell, illustration by David S. Goodsell, RCSB Protein Data Bank](https://cdn.rcsb.org/pdb101/goodsell/png-800/jcvi-syn3a-minimal-cell.png)
 
+## AI disclosure
+
+This site's code was written with the help of an AI assistant (Claude, by Anthropic). The illustration is David Goodsell's original work, and genome coordinates come directly from NCBI GenBank ([CP016816.2](https://www.ncbi.nlm.nih.gov/nuccore/CP016816.2)).
+
 ## License
 
 The original illustration remains © David S. Goodsell / RCSB PDB, licensed [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/). All other code in this repository is licensed under the [MIT License](LICENSE).
